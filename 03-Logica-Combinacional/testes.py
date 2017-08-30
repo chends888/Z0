@@ -58,9 +58,3 @@ if __name__ == "__main__":
     root = os.getcwd()
     print(root)
     vhdl(root)
-
-
-
-
-
-
