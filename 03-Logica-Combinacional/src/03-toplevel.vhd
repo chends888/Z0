@@ -29,14 +29,14 @@ entity topLevel03 is
     TEST_OR16       : boolean := False;    -- Or16
     TEST_NOT16      : boolean := False;    -- Not16
     TEST_OR8WAY     : boolean := False;    -- Or8Way
-    TEST_NOR8WAY    : boolean := False;    -- Nor8Way
+    TEST_NOR8WAY    : boolean := True;    -- Nor8Way
     -- BarrelShifter
     TEST_BS8        : boolean := False;    -- BarrelShiter8
     TEST_BS16       : boolean := False;    -- BarrelShiter16
     -- Dmux
     TEST_DMUX2      : boolean := False;    -- DMux2Way
     TEST_DMUX4      : boolean := False;    -- Dmux4Way
-    TEST_DMUX8      : boolean := True;    -- Dmux8Way
+    TEST_DMUX8      : boolean := False;    -- Dmux8Way
     TEST_DMUX8WAY16 : boolean := False;    -- Dmux8Way16
     -- Mux
     TEST_MUX2WAY    : boolean := False;    -- Mux2Way
@@ -47,8 +47,9 @@ entity topLevel03 is
     TEST_MUX8WAY16  : boolean := False     -- Mux8Way16
   );
   port (
-    SW   : in  STD_LOGIC_VECTOR(9 downto 0);
-    LEDR : out STD_LOGIC_VECTOR(9 downto 0)
+    SW       : in  STD_LOGIC_VECTOR(9 downto 0);
+	 SEVENSEG : out STD_LOGIC_VECTOR(6 downto 0);
+    LEDR 	 : out STD_LOGIC_VECTOR(9 downto 0)
   );
 end entity;
 

@@ -7,7 +7,7 @@ entity Not16 is
 			q:   out STD_LOGIC_VECTOR(15 downto 0));
 end entity;
 
-architercture not16 of Not16 is
+architecture rtl of Not16 is
 begin
 q <= not a;
-end not16;
+end rtl;
