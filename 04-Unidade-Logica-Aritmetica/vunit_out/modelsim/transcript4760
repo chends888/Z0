@@ -1,0 +1,7 @@
+# do {C:\Users\Gustavo Gobetti\Anaconda\lib\site-packages\vunit\tcl_read_eval_loop.tcl}
+# vsim -wlf C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/vunit_out/test_output/06db0ee602f16124af31f0ebe6776ffb6cee0ad1/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_fulladder(tb) -L vunit_lib -L lib -g/tb_fulladder/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/vunit_out/test_output/06db0ee602f16124af31f0ebe6776ffb6cee0ad1/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/" 
+# Start time: 18:33:16 on Sep 12,2017
+# ** Warning: Design size of 11280 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Break in Subprogram vunit_stop at C:/Users/Gustavo Gobetti/Anaconda/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10
+# Stopped at C:/Users/Gustavo Gobetti/Anaconda/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10

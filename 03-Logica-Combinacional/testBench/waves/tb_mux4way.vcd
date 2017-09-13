@@ -1,0 +1,104 @@
+$date
+  Wed Aug 30 08:00:18 2017
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 1 ! check_enabled $end
+$comment runner is not handled $end
+$var reg 1 " ina $end
+$var reg 1 # inb $end
+$var reg 1 $ inc $end
+$var reg 1 % ind $end
+$var reg 1 & outq $end
+$var reg 2 ' insel[1:0] $end
+$var reg 1 ( clk $end
+$scope module mapping $end
+$var reg 1 ) a $end
+$var reg 1 * b $end
+$var reg 1 + c $end
+$var reg 1 , d $end
+$var reg 2 - sel[1:0] $end
+$var reg 1 . q $end
+$upscope $end
+$enddefinitions $end
+#0
+1!
+1"
+0#
+1$
+0%
+1&
+b00 '
+0(
+1)
+0*
+1+
+0,
+b00 -
+1.
+#500000
+0&
+b01 '
+1(
+b01 -
+0.
+#1000000
+0(
+#1500000
+1&
+b10 '
+1(
+b10 -
+1.
+#2000000
+0(
+#2500000
+0&
+b11 '
+1(
+b11 -
+0.
+#3000000
+0(
+#3500000
+0"
+1#
+0$
+1%
+b00 '
+1(
+0)
+1*
+0+
+1,
+b00 -
+#4000000
+0(
+#4500000
+1&
+b01 '
+1(
+b01 -
+1.
+#5000000
+0(
+#5500000
+0&
+b10 '
+1(
+b10 -
+0.
+#6000000
+0(
+#6500000
+1&
+b11 '
+1(
+b11 -
+1.
+#7000000
+0(

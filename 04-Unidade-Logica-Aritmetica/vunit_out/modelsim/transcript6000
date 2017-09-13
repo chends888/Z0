@@ -1,0 +1,29 @@
+# do {C:\Users\Gustavo Gobetti\Anaconda\lib\site-packages\vunit\tcl_read_eval_loop.tcl}
+# vsim -wlf C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/vunit_out/test_output/a8ad0313227e6e4cf7e1113b280dcedad766e677/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_add16(tb) -L vunit_lib -L lib -g/tb_add16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/vunit_out/test_output/a8ad0313227e6e4cf7e1113b280dcedad766e677/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/" 
+# Start time: 13:52:51 on Sep 06,2017
+# ** Warning: Design size of 11278 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8684) No drivers exist on out port /tb_add16/mapping/q(15 downto 1), and its initial value is not used.
+# Therefore, simulation behavior may occur that is not in compliance with
+# the VHDL standard as the initial values come from the base signal /tb_add16/outQ(15 downto 1).
+# ** Error: Falha em teste: 1
+#    Time: 200 ps  Iteration: 0  Process: /tb_add16/main File: C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_Add16.vhd
+# Break in Process main at C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_Add16.vhd line 39
+# Stopped at C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_Add16.vhd line 39
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_Add16.vhd 39 return [address 0xff18677a] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   34 :     test_runner_setup(runner, runner_cfg);
+#   35 : 
+#   36 :       -- Teste: 1
+#   37 :       inA <= "0000000000000000"; inB<= "0000000000000000";
+#   38 :       wait for 200 ps;
+# ->39 :       assert(outQ = "0000000000000000")  report "Falha em teste: 1" severity error;
+#   40 : 
+#   41 :       -- Teste: 2
+#   42 :       inA <= "0000000000000000"; inB<= "1111111111111111";
+#   43 :       wait for 200 ps;
+# 

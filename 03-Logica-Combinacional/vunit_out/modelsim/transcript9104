@@ -1,0 +1,9 @@
+# do {C:\Users\chend\Anaconda3\lib\site-packages\vunit\tcl_read_eval_loop.tcl}
+# vsim -modelsimini C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/modelsim/modelsim.ini -wlf C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/test_output/b66b8fc9277e1e3933979f97f1cdc6fc5d49fe3e/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_not16(tb) -L vunit_lib -L lib -g/tb_not16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/test_output/b66b8fc9277e1e3933979f97f1cdc6fc5d49fe3e/,tb path : C::/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/testes/" 
+# Start time: 21:48:43 on Sep 10,2017
+# ** Warning: Design size of 11223 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Break in Subprogram vunit_stop at C:/Users/chend/Anaconda3/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10
+# Stopped at C:/Users/chend/Anaconda3/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10
+# End time: 21:48:44 on Sep 10,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

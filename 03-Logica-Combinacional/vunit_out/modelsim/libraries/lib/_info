@@ -1,0 +1,1899 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional
+Eand16
+Z1 w1504289271
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/03-Logica-Combinacional
+Z5 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\And16.vhd
+Z6 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\And16.vhd
+l0
+L4
+Vh]ej`Ck73hG:Zd8Jo=jjc1
+!s100 4g2NdCHBc<J3K7jR5WC:B0
+Z7 OV;C;10.5b;63
+33
+Z8 !s110 1505275860
+!i10b 1
+Z9 !s108 1505275860.000000
+Z10 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\And16.vhd|
+Z11 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\And16.vhd|
+!i113 1
+Z12 o-quiet -2008 -work lib
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+DEx4 work 5 and16 0 22 h]ej`Ck73hG:Zd8Jo=jjc1
+l11
+L10
+Va3F8UCRaA5oYTP7g5P5oF0
+!s100 ;[[EA5G`JI;G<WOd5>d=k2
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ebarrelshifter16
+Z14 w1504744444
+Z15 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R4
+Z16 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\BarrelShifter16.vhd
+Z17 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\BarrelShifter16.vhd
+l0
+L5
+VPUM7h]1ccihiISN405hWS2
+!s100 B`7<QX9JeCSO_ln?aQZOo2
+R7
+33
+R8
+!i10b 1
+R9
+Z18 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\BarrelShifter16.vhd|
+Z19 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\BarrelShifter16.vhd|
+!i113 1
+R12
+R13
+Artl
+R15
+R2
+R3
+DEx4 work 15 barrelshifter16 0 22 PUM7h]1ccihiISN405hWS2
+l15
+L13
+VV0U:gEbC1<8cO^cm2mz5Q0
+!s100 [cSQ2;U6bnNBNT]4:LIT10
+R7
+33
+R8
+!i10b 1
+R9
+R18
+R19
+!i113 1
+R12
+R13
+Ebarrelshifter8
+Z20 w1504050596
+R2
+R3
+R0
+8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\BarrelShifter8.vhd
+FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\BarrelShifter8.vhd
+l0
+L4
+VK_1oaLBY6@IV^X>mF>8gV1
+!s100 PbUG]nN5zBIU?I6FD_7jU1
+R7
+33
+!s110 1504267658
+!i10b 1
+!s108 1504267658.000000
+!s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\BarrelShifter8.vhd|
+!s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\BarrelShifter8.vhd|
+!i113 1
+R12
+R13
+Edmux2way
+R20
+R2
+R3
+R0
+8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\DMux2Way.vhd
+FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\DMux2Way.vhd
+l0
+L4
+V>:IF]Koi99f<cJ0CmCAM51
+!s100 Mk4MPhHXoJhVbDN8OhUzJ0
+R7
+33
+Z21 !s110 1504267657
+!i10b 1
+Z22 !s108 1504267657.000000
+!s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\DMux2Way.vhd|
+!s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\DMux2Way.vhd|
+!i113 1
+R12
+R13
+Edmux4way
+R20
+R2
+R3
+R0
+8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\DMux4Way.vhd
+FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\DMux4Way.vhd
+l0
+L4
+VchCWhU[f@SDYOfM[z`KAD3
+!s100 ;Fe6?`C@SB@=WbZbaI^E^0
+R7
+33
+R21
+!i10b 1
+R22
+!s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\DMux4Way.vhd|
+!s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\DMux4Way.vhd|
+!i113 1
+R12
+R13
+Edmux8way
+R20
+R2
+R3
+R0
+8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\DMux8Way.vhd
+FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\DMux8Way.vhd
+l0
+L4
+V4@:^4]]>d5jd<9PRAJQi32
+!s100 zC5^AWzR72_D_1oKAO8`>2
+R7
+33
+R21
+!i10b 1
+R22
+!s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\DMux8Way.vhd|
+!s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\DMux8Way.vhd|
+!i113 1
+R12
+R13
+Emux16
+Z23 w1505109486
+R2
+R3
+R4
+Z24 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Mux16.vhd
+Z25 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Mux16.vhd
+l0
+L4
+V^KK7>>=?KzfHlc;dK>^H53
+!s100 IzGKQCSkQ7RCdJh>^j0Q61
+R7
+33
+R8
+!i10b 1
+R9
+Z26 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Mux16.vhd|
+Z27 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Mux16.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 5 mux16 0 22 ^KK7>>=?KzfHlc;dK>^H53
+l14
+L12
+Vj@UY=iiJ?4zB8QI:6VYI;3
+!s100 8QcKO_nEE0EdhhTL>?OF91
+R7
+33
+R8
+!i10b 1
+R9
+R26
+R27
+!i113 1
+R12
+R13
+Emux2way
+R20
+R2
+R3
+R0
+8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Mux2Way.vhd
+FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Mux2Way.vhd
+l0
+L4
+V5Md04iB]KYYIl:m:EPnQ[3
+!s100 L]VTV_?L9fN8g2_`K9nZQ2
+R7
+33
+Z28 !s110 1504267656
+!i10b 1
+Z29 !s108 1504267656.000000
+!s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Mux2Way.vhd|
+!s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Mux2Way.vhd|
+!i113 1
+R12
+R13
+Emux4way
+R20
+R2
+R3
+R0
+8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Mux4Way.vhd
+FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Mux4Way.vhd
+l0
+L4
+VS6DJa:23Uele:d0oQjjO[0
+!s100 X`n8^nYIhlnNgIfP_EkID1
+R7
+33
+R28
+!i10b 1
+R29
+!s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Mux4Way.vhd|
+!s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Mux4Way.vhd|
+!i113 1
+R12
+R13
+Emux4way16
+Z30 w1505112504
+R2
+R3
+R4
+Z31 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Mux4Way16.vhd
+Z32 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Mux4Way16.vhd
+l0
+L4
+VgIliodZR>K=jaJZeHi]]@1
+!s100 8]mCOPe5cHg3o24Lz?cGK0
+R7
+33
+R8
+!i10b 1
+R9
+Z33 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Mux4Way16.vhd|
+Z34 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Mux4Way16.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 9 mux4way16 0 22 gIliodZR>K=jaJZeHi]]@1
+l16
+L15
+Vh`I<R7H;7Q@[Te^G<5S<T0
+!s100 ^Me8oUSd7U^Q;gJk_kOJ_0
+R7
+33
+R8
+!i10b 1
+R9
+R33
+R34
+!i113 1
+R12
+R13
+Emux8way
+R20
+R2
+R3
+R0
+8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Mux8Way.vhd
+FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Mux8Way.vhd
+l0
+L4
+VcMIZim^j_>0TGlG7NC03C3
+!s100 ^ag5`^MlkFaAfCaX]@3>L0
+R7
+33
+R28
+!i10b 1
+R29
+!s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Mux8Way.vhd|
+!s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Mux8Way.vhd|
+!i113 1
+R12
+R13
+Emux8way16
+Z35 w1505112665
+R2
+R3
+R4
+Z36 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Mux8Way16.vhd
+Z37 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Mux8Way16.vhd
+l0
+L4
+V7MWl=:zn]>Q>M5K]`_b<60
+!s100 @m115@68;o9gzO2VgfBG]0
+R7
+33
+R8
+!i10b 1
+R9
+Z38 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Mux8Way16.vhd|
+Z39 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Mux8Way16.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 9 mux8way16 0 22 7MWl=:zn]>Q>M5K]`_b<60
+l21
+L20
+VmYWl^S9RU;ol5<MVfchFG2
+!s100 Go68U]Vj@bK?W9;DE>M1[2
+R7
+33
+R8
+!i10b 1
+R9
+R38
+R39
+!i113 1
+R12
+R13
+Enand_vhdl
+Z40 w1504053816
+R2
+R3
+R0
+Z41 8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nand.vhd
+Z42 FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nand.vhd
+l0
+L4
+Vm[WSeLg@b3iEF_maFe2CG0
+!s100 1hRHO`W;JJ^dn;@5U0Zjd1
+R7
+33
+Z43 !s110 1504267655
+!i10b 1
+Z44 !s108 1504267655.000000
+Z45 !s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nand.vhd|
+Z46 !s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nand.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 9 nand_vhdl 0 22 m[WSeLg@b3iEF_maFe2CG0
+l14
+L13
+VH@3Z88]aX_YP9<PBAGkYA0
+!s100 oKjFOP@<YCEDHaT^=4>4;3
+R7
+33
+R43
+!i10b 1
+R44
+R45
+R46
+!i113 1
+R12
+R13
+Enor8way
+Z47 w1504271274
+R2
+R3
+R0
+Z48 8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nor8Way.vhd
+Z49 FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nor8Way.vhd
+l0
+L4
+VI6@ZGJd>JSC7UGzNAn6GU2
+!s100 bzc2JH[>FOP2l:COLj<IY2
+R7
+33
+Z50 !s110 1504271279
+!i10b 1
+Z51 !s108 1504271278.000000
+Z52 !s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nor8Way.vhd|
+Z53 !s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nor8Way.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 7 nor8way 0 22 I6@ZGJd>JSC7UGzNAn6GU2
+l17
+L16
+Vh18SCLj<67lE334<8;XS^1
+!s100 :5;NNQbaz^:M>ddl[Da9]3
+R7
+33
+R50
+!i10b 1
+R51
+R52
+R53
+!i113 1
+R12
+R13
+Enot16
+Z54 w1504288945
+R2
+R3
+R4
+Z55 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Not16.vhd
+Z56 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Not16.vhd
+l0
+L4
+VC]SG@M]l`d<egUIK]zP2?0
+!s100 fYJ1`YCnUZe9F?2KLeD4V3
+R7
+33
+Z57 !s110 1505275859
+!i10b 1
+Z58 !s108 1505275859.000000
+Z59 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Not16.vhd|
+Z60 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Not16.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+DEx4 work 5 not16 0 22 C]SG@M]l`d<egUIK]zP2?0
+l11
+L10
+VQCbZBWhHBmEMOkCVFKJzg0
+!s100 >HmFgTBieS2LXi1lT?_=_3
+R7
+33
+R57
+!i10b 1
+R58
+R59
+R60
+!i113 1
+R12
+R13
+Eor16
+Z61 w1504288679
+R2
+R3
+R4
+Z62 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Or16.vhd
+Z63 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Or16.vhd
+l0
+L4
+VFm015BPNjKE2P[ZaFANAP1
+!s100 >QKR87GJWMdVLQz<g8^hf0
+R7
+33
+R57
+!i10b 1
+R58
+Z64 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Or16.vhd|
+Z65 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\src\Or16.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+Z66 DEx4 work 4 or16 0 22 Fm015BPNjKE2P[ZaFANAP1
+l12
+L11
+V^T5KYffQmF]8E^`7ScXFm1
+!s100 b2SZM?bKUoT0M2`feQzb02
+R7
+33
+R57
+!i10b 1
+R58
+R64
+R65
+!i113 1
+R12
+R13
+Aor16
+R2
+R3
+R66
+l12
+L11
+VlfNFa[z7J<OfkjdV9hC3o3
+!s100 ^LA=KMK:kdkC@2;d:47Ba1
+R7
+33
+!s110 1504266798
+!i10b 1
+!s108 1504266798.000000
+!s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or16.vhd|
+!s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or16.vhd|
+!i113 1
+R12
+R13
+w1504266795
+R0
+FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or16.vhd
+8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or16.vhd
+Eor8way
+Z67 w1504267106
+R2
+R3
+R0
+Z68 8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or8Way.vhd
+Z69 FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or8Way.vhd
+l0
+L4
+V6_>9FK_U9`n7]^73i4MMa1
+!s100 Ag3dFfPkCD2FhoYEajciW3
+R7
+33
+Z70 !s110 1504267108
+!i10b 1
+Z71 !s108 1504267108.000000
+Z72 !s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or8Way.vhd|
+Z73 !s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or8Way.vhd|
+!i113 1
+R12
+R13
+Artl
+R2
+R3
+Z74 DEx4 work 6 or8way 0 22 6_>9FK_U9`n7]^73i4MMa1
+l18
+L17
+VYb]iAld_8e<];Z0kF:10;2
+!s100 E6g=bUYGb?3kgG_P@2_612
+R7
+33
+R70
+!i10b 1
+R71
+R72
+R73
+!i113 1
+R12
+R13
+Aor8way
+R2
+R3
+R74
+l18
+L17
+VlW9Vl]jg]7A@I0eb2T>UR2
+!s100 f_=HQARE>`KkkX]RWJzo<2
+R7
+33
+!s110 1504114927
+!i10b 1
+!s108 1504114925.000000
+R72
+R73
+!i113 1
+R12
+R13
+w1504053815
+Etb_and16
+Z75 w1505121262
+Z76 D^#x9 vunit_lib 13 vunit_context 0 22 A1MU5C4TX7dH]K[HOQTSn1
+Z77 DPx9 vunit_lib 7 run_pkg 0 22 :>o4znSG5`<A<F;hHMKhH1
+Z78 DPx9 vunit_lib 12 run_base_pkg 0 22 KULGL@1dU0BHc9b;g7igZ0
+Z79 DPx9 vunit_lib 21 run_special_types_pkg 0 22 XN>`bQV`R61M<DU>4G8]g3
+Z80 DPx9 vunit_lib 13 run_types_pkg 0 22 gnB71ZYIDP@G^<`Dze<Ol0
+Z81 DPx9 vunit_lib 4 path 0 22 Nc7]mO6O0HNNXT_k^Qgoe1
+Z82 DPx9 vunit_lib 14 check_base_pkg 0 22 6khlF7jlG3XP5Bc9=lSF=3
+Z83 DPx9 vunit_lib 23 check_special_types_pkg 0 22 >]VMHj]2_dakO@]Sz1fG81
+Z84 DPx9 vunit_lib 12 log_base_pkg 0 22 egmiOA0jOkn22SNYghHMm3
+Z85 DPx9 vunit_lib 7 log_pkg 0 22 J_?2_QhlQe2KAS=2e8Pa`0
+Z86 DPx9 vunit_lib 18 log_formatting_pkg 0 22 d75lM?2@3AXKRIPYgPWH<2
+Z87 DPx9 vunit_lib 21 log_special_types_pkg 0 22 n@GoB6`YUERo9zKGHQ[gh3
+Z88 DPx9 vunit_lib 15 check_types_pkg 0 22 b]H]`_JWR;NHO0NZ^?z_>2
+Z89 DPx9 vunit_lib 9 check_pkg 0 22 Q44daMzVXYPSe6L2D1`1P1
+Z90 DPx9 vunit_lib 13 log_types_pkg 0 22 IbPmRVYKU2TLnChTMB`EL2
+Z91 DPx9 vunit_lib 10 dictionary 0 22 T[>mL5_]X3QImm^UB7Y=53
+Z92 DPx9 vunit_lib 10 string_ops 0 22 >6lVd?dSYVCeeU;1?_=bg2
+Z93 DPx9 vunit_lib 4 lang 0 22 ;:Mg0N:Ff<C2R`d>MPj;Q2
+R15
+R2
+R3
+R4
+Z94 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_And16.vhd
+Z95 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_And16.vhd
+l0
+L13
+VV8VP1diA_Kl]jja0W0QPn1
+!s100 e^6@j2=efn@VV<f9Cm3QW0
+R7
+33
+Z96 !s110 1505275868
+!i10b 1
+Z97 !s108 1505275868.000000
+Z98 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_And16.vhd|
+Z99 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_And16.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R92
+R93
+R15
+R2
+R3
+Z100 DEx4 work 8 tb_and16 0 22 V8VP1diA_Kl]jja0W0QPn1
+l32
+L17
+Z101 V=X@>gXhD6YK=?hn@H1a^k1
+Z102 !s100 <1A?`l72U4a<D>J7Vi6F]2
+R7
+33
+R96
+!i10b 1
+R97
+R98
+R99
+!i113 1
+R12
+R13
+Etb_barrelshifter16
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+R4
+Z103 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter16.vhd
+Z104 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter16.vhd
+l0
+L12
+V0BBLho`00IQ6CgTZXQJNd3
+!s100 :jIkWh=l;PUAeL@@PSQFi1
+R7
+33
+R96
+!i10b 1
+R97
+Z105 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter16.vhd|
+Z106 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter16.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+DEx4 work 18 tb_barrelshifter16 0 22 0BBLho`00IQ6CgTZXQJNd3
+l34
+L16
+VHTgmFz7UB>K<cV?X;^EhA0
+!s100 nWO?N0dKzJ1F=:nUF=2KE0
+R7
+33
+R96
+!i10b 1
+R97
+R105
+R106
+!i113 1
+R12
+R13
+Etb_barrelshifter8
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+R4
+Z107 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter8.vhd
+Z108 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter8.vhd
+l0
+L12
+ViRE[gVaoHG8eiYLUk;aQn1
+!s100 =E31ni0gVBK^;e<GQR40H3
+R7
+33
+R96
+!i10b 1
+R97
+Z109 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter8.vhd|
+Z110 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter8.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+DEx4 work 17 tb_barrelshifter8 0 22 iRE[gVaoHG8eiYLUk;aQn1
+l34
+L16
+Vg@03_GmM7_iU<OJk7e3jh0
+!s100 inndK_Ni<al4k7;E`Pm=C2
+R7
+33
+R96
+!i10b 1
+R97
+R109
+R110
+!i113 1
+R12
+R13
+Etb_dmux2way
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+R4
+Z111 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_DMux2Way.vhd
+Z112 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_DMux2Way.vhd
+l0
+L12
+VG:gDjdXf`XMEEa6MSKYg91
+!s100 [1Z=A_3fz?JUHBkFamn6I2
+R7
+33
+R96
+!i10b 1
+R97
+Z113 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_DMux2Way.vhd|
+Z114 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_DMux2Way.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+DEx4 work 11 tb_dmux2way 0 22 G:gDjdXf`XMEEa6MSKYg91
+l32
+L16
+VLAX`MK9JC0;9YeomJM7GM0
+!s100 FMa2l2z>?4N>UTW8N[6bI1
+R7
+33
+R96
+!i10b 1
+R97
+R113
+R114
+!i113 1
+R12
+R13
+Etb_dmux4way
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+R4
+Z115 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_DMux4Way.vhd
+Z116 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_DMux4Way.vhd
+l0
+L12
+V`Ee`nD5m75@]0SXha_9SP1
+!s100 5L:fMX;o]V`Iz=oWiK7[U2
+R7
+33
+R96
+!i10b 1
+Z117 !s108 1505275867.000000
+Z118 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_DMux4Way.vhd|
+Z119 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_DMux4Way.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+DEx4 work 11 tb_dmux4way 0 22 `Ee`nD5m75@]0SXha_9SP1
+l35
+L16
+V[TF3WEP@7^^7[d_YZH6[K3
+!s100 LU7oJN3bC:BAN9Y9eMITK0
+R7
+33
+R96
+!i10b 1
+R117
+R118
+R119
+!i113 1
+R12
+R13
+Etb_dmux8way
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+R4
+Z120 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_DMux8Way.vhd
+Z121 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_DMux8Way.vhd
+l0
+L12
+VHiaKRaP^V6`K]LiSlL30K2
+!s100 iehVRVU^^QCZmlH98YUAo2
+R7
+33
+Z122 !s110 1505275867
+!i10b 1
+R117
+Z123 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_DMux8Way.vhd|
+Z124 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_DMux8Way.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+DEx4 work 11 tb_dmux8way 0 22 HiaKRaP^V6`K]LiSlL30K2
+l40
+L16
+Vn01RXGJnK6^F7JU2Wo8YZ2
+!s100 d:Q9Y_e`MX3bh^J8bS]>U3
+R7
+33
+R122
+!i10b 1
+R117
+R123
+R124
+!i113 1
+R12
+R13
+Etb_mux16
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+R4
+Z125 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux16.vhd
+Z126 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux16.vhd
+l0
+L12
+V5Z]ZkVV6VIZMS?M8>MR6?2
+!s100 3n31zl2E@ZdA]^PRFF7mX1
+R7
+33
+R122
+!i10b 1
+R117
+Z127 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux16.vhd|
+Z128 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux16.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+DEx4 work 8 tb_mux16 0 22 5Z]ZkVV6VIZMS?M8>MR6?2
+l35
+L16
+V`32An?MfZV[M@N:b<9j@l3
+!s100 S5>]hC]MaLSged^zS;zf02
+R7
+33
+R122
+!i10b 1
+R117
+R127
+R128
+!i113 1
+R12
+R13
+Etb_mux2way
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+R4
+Z129 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux2Way.vhd
+Z130 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux2Way.vhd
+l0
+L12
+V95m^RLJlHFlg>N:l43E;U2
+!s100 A<l=WNIfZE5maHh?`UzL72
+R7
+33
+R122
+!i10b 1
+R117
+Z131 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux2Way.vhd|
+Z132 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux2Way.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+DEx4 work 10 tb_mux2way 0 22 95m^RLJlHFlg>N:l43E;U2
+l32
+L16
+V^^c^o1JSVGZ:Q?c9mCd[50
+!s100 gTh;OkMEkKXc_5BkJcIJI1
+R7
+33
+R122
+!i10b 1
+R117
+R131
+R132
+!i113 1
+R12
+R13
+Etb_mux4way
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+R4
+Z133 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way.vhd
+Z134 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way.vhd
+l0
+L12
+VAda6XcZ=REYG4gJAeGf1g1
+!s100 jG^of^A;C2;2>ja<A[@JO0
+R7
+33
+R122
+!i10b 1
+R117
+Z135 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way.vhd|
+Z136 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+DEx4 work 10 tb_mux4way 0 22 Ada6XcZ=REYG4gJAeGf1g1
+l35
+L16
+VRSBdzM`:mc9QZWKS<=PWh0
+!s100 _T3oRQDKzgB0Nb_2Z`B0h2
+R7
+33
+R122
+!i10b 1
+R117
+R135
+R136
+!i113 1
+R12
+R13
+Etb_mux4way16
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+R4
+Z137 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way16.vhd
+Z138 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way16.vhd
+l0
+L12
+VDS:56mK]g96;>;b?Lmk=50
+!s100 I3Z6UV8_2?^?2NkM`FklZ0
+R7
+33
+R122
+!i10b 1
+Z139 !s108 1505275866.000000
+Z140 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way16.vhd|
+Z141 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way16.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+DEx4 work 12 tb_mux4way16 0 22 DS:56mK]g96;>;b?Lmk=50
+l36
+L16
+VmU<BzWzc=Z3=1JkmVDZ[Y1
+!s100 E=gZ^C8C[3EafG=2NeM`i3
+R7
+33
+R122
+!i10b 1
+R139
+R140
+R141
+!i113 1
+R12
+R13
+Etb_mux8way
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+R4
+Z142 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way.vhd
+Z143 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way.vhd
+l0
+L12
+VPDf@K^Ye<I;N8zF2dLHNh1
+!s100 [UnHZFZVDODn]FGh@[^VQ1
+R7
+33
+Z144 !s110 1505275866
+!i10b 1
+R139
+Z145 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way.vhd|
+Z146 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+DEx4 work 10 tb_mux8way 0 22 PDf@K^Ye<I;N8zF2dLHNh1
+l39
+L16
+V=hKMhS=5BI73=Q<_:jS4X0
+!s100 HZMS_Yg@OeTCX_J:EUMeD2
+R7
+33
+R144
+!i10b 1
+R139
+R145
+R146
+!i113 1
+R12
+R13
+Etb_mux8way16
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+R4
+Z147 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way16.vhd
+Z148 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way16.vhd
+l0
+L12
+VP9KBZQlE49@LXezA7:F?E0
+!s100 J4P_l7gI=?QB@ao:I]^Qg1
+R7
+33
+R144
+!i10b 1
+R139
+Z149 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way16.vhd|
+Z150 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way16.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+DEx4 work 12 tb_mux8way16 0 22 P9KBZQlE49@LXezA7:F?E0
+l39
+L16
+Vm7j`I=0m9]5nR^hOVJHTW3
+!s100 S^6R8D]LYCg8Y]8m17H=>3
+R7
+33
+R144
+!i10b 1
+R139
+R149
+R150
+!i113 1
+R12
+R13
+Etb_nand
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+R4
+Z151 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_nand.vhd
+Z152 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_nand.vhd
+l0
+L12
+VnQ]o>b3kU]B^zW0_j^FD=0
+!s100 aMe6E3WRV^[86=G6LDNL=3
+R7
+33
+Z153 !s110 1505275865
+!i10b 1
+Z154 !s108 1505275865.000000
+Z155 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_nand.vhd|
+Z156 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_nand.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+DEx4 work 7 tb_nand 0 22 nQ]o>b3kU]B^zW0_j^FD=0
+l31
+L16
+V416ATGDMo[;P6TT=>V^3h0
+!s100 kQN0ie;aKiPVJaHh3T3Sz2
+R7
+33
+R153
+!i10b 1
+R154
+R155
+R156
+!i113 1
+R12
+R13
+Etb_nor8way
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+R4
+Z157 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Nor8Way.vhd
+Z158 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Nor8Way.vhd
+l0
+L12
+V=KAhzYIkhoeK=m8Ue0bFN2
+!s100 6bboNo6b<mcRjn]lTR`Cj0
+R7
+33
+R144
+!i10b 1
+R139
+Z159 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Nor8Way.vhd|
+Z160 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Nor8Way.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+DEx4 work 10 tb_nor8way 0 22 =KAhzYIkhoeK=m8Ue0bFN2
+l37
+L16
+VkfB@U7;ARjmdMfnzAiPPR2
+!s100 NYWg`18MELKRKFIW3aC0K3
+R7
+33
+R144
+!i10b 1
+R139
+R159
+R160
+!i113 1
+R12
+R13
+Etb_not16
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+R4
+Z161 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Not16.vhd
+Z162 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Not16.vhd
+l0
+L12
+Vi;?K[CJOlH`^5nSY>YMhz3
+!s100 4dm6NASM[>mYeOOAV9?jT3
+R7
+33
+R144
+!i10b 1
+R139
+Z163 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Not16.vhd|
+Z164 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Not16.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+DEx4 work 8 tb_not16 0 22 i;?K[CJOlH`^5nSY>YMhz3
+l30
+L16
+V;JJJOB^?Cknl[IlJ=AnI73
+!s100 zMRTjAjN7di_Z:LnGjMol2
+R7
+33
+R144
+!i10b 1
+R139
+R163
+R164
+!i113 1
+R12
+R13
+Etb_or16
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+R4
+Z165 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Or16.vhd
+Z166 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Or16.vhd
+l0
+L12
+V=Yc8_oJ3PKMZS6m_d<=6l2
+!s100 gFNQ;eQ3H<gUII[Ri?G:X1
+R7
+33
+R144
+!i10b 1
+R139
+Z167 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Or16.vhd|
+Z168 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Or16.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+DEx4 work 7 tb_or16 0 22 =Yc8_oJ3PKMZS6m_d<=6l2
+l31
+L16
+VVgZ>gEMakbj8[jWklafPV0
+!s100 GFjjE1dk3acljM1YGKFRB3
+R7
+33
+R144
+!i10b 1
+R139
+R167
+R168
+!i113 1
+R12
+R13
+Etb_or8way
+R75
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+R4
+Z169 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Or8Way.vhd
+Z170 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Or8Way.vhd
+l0
+L12
+VF1NRUj=[@hQ<4nhTNgo<20
+!s100 lIW3RH9SMR6k_FRD;XMDH0
+R7
+33
+R153
+!i10b 1
+R154
+Z171 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Or8Way.vhd|
+Z172 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Z0\03-Logica-Combinacional\testBench\tb_Or8Way.vhd|
+!i113 1
+R12
+R13
+Atb
+R76
+R77
+R78
+R79
+R80
+R81
+R82
+R83
+R84
+R85
+R86
+R87
+R88
+R89
+R90
+R91
+R15
+R92
+R93
+R2
+R3
+DEx4 work 9 tb_or8way 0 22 F1NRUj=[@hQ<4nhTNgo<20
+l37
+L16
+V06gI:I96FKEOYXWN0UFX20
+!s100 C=>J:J]FlL9]mP8CdJRXh1
+R7
+33
+R153
+!i10b 1
+R154
+R171
+R172
+!i113 1
+R12
+R13

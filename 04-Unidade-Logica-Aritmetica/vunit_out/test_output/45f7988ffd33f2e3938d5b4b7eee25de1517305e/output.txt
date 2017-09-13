@@ -1,0 +1,6 @@
+# vsim -wlf C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/vunit_out/test_output/45f7988ffd33f2e3938d5b4b7eee25de1517305e/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_zerador16(tb) -L vunit_lib -L lib -g/tb_zerador16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/vunit_out/test_output/45f7988ffd33f2e3938d5b4b7eee25de1517305e/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/" 
+# Start time: 20:07:28 on Sep 12,2017
+# ** Warning: Design size of 11220 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Break in Subprogram vunit_stop at C:/Users/Gustavo Gobetti/Anaconda/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10
+# Stopped at C:/Users/Gustavo Gobetti/Anaconda/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10

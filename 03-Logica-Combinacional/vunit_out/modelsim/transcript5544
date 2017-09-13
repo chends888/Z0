@@ -1,0 +1,30 @@
+# do {C:\Users\chend\Anaconda3\lib\site-packages\vunit\tcl_read_eval_loop.tcl}
+# vsim -modelsimini C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/modelsim/modelsim.ini -wlf C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/test_output/fb0bc40e098775e6627136388335c453a9775362/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_nor8way(tb) -L vunit_lib -L lib -g/tb_nor8way/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/test_output/fb0bc40e098775e6627136388335c453a9775362/,tb path : C::/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/testes/" 
+# Start time: 09:12:02 on Sep 01,2017
+# ** Warning: Design size of 11410 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_nor8way/mapping/q has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Error: Falha em teste: 1
+#    Time: 500 ps  Iteration: 1  Process: /tb_nor8way/main File: C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/testes/tb_Nor8Way.vhd
+# Break in Process main at C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/testes/tb_Nor8Way.vhd line 57
+# Stopped at C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/testes/tb_Nor8Way.vhd line 57
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/testes/tb_Nor8Way.vhd 57 return [address 0xff1869e9] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   52 :     test_runner_setup(runner, runner_cfg);
+#   53 : 
+#   54 :     -- Teste: 1
+#   55 :     inA <= '0'; inB <= '0'; inC <= '0'; inD <= '0'; inE <= '0'; inF <= '0'; inG <= '0'; inH <= '0';
+#   56 :     wait until clk='1';
+# ->57 :     assert(outQ = '1')  report "Falha em teste: 1" severity error;
+#   58 : 
+#   59 :     -- Teste: 2
+#   60 :     inA <= '0'; inB <= '0'; inC <= '0'; inD <= '0'; inE <= '0'; inF <= '0'; inG <= '0'; inH <= '1';
+#   61 :     wait until clk='1';
+# 
+# End time: 09:12:02 on Sep 01,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2

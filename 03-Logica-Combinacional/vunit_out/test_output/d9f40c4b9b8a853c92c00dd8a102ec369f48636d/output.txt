@@ -1,0 +1,6 @@
+# vsim -wlf C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Z0/03-Logica-Combinacional/vunit_out/test_output/d9f40c4b9b8a853c92c00dd8a102ec369f48636d/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_nand(tb) -L vunit_lib -L lib -g/tb_nand/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/03-Logica-Combinacional/vunit_out/test_output/d9f40c4b9b8a853c92c00dd8a102ec369f48636d/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/03-Logica-Combinacional/testBench/" 
+# Start time: 19:11:13 on Sep 12,2017
+# ** Warning: Design size of 11240 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Break in Subprogram vunit_stop at C:/Users/Gustavo Gobetti/Anaconda/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10
+# Stopped at C:/Users/Gustavo Gobetti/Anaconda/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10

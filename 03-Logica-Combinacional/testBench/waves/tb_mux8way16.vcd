@@ -1,0 +1,58 @@
+$date
+  Wed Aug 30 08:00:18 2017
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 1 ! check_enabled $end
+$comment runner is not handled $end
+$var reg 16 " ina[15:0] $end
+$var reg 16 # inb[15:0] $end
+$var reg 16 $ inc[15:0] $end
+$var reg 16 % ind[15:0] $end
+$var reg 16 & ine[15:0] $end
+$var reg 16 ' inf[15:0] $end
+$var reg 16 ( ing[15:0] $end
+$var reg 16 ) inh[15:0] $end
+$var reg 16 * outq[15:0] $end
+$var reg 3 + insel[2:0] $end
+$var reg 1 , clk $end
+$scope module mapping $end
+$var reg 16 - a[15:0] $end
+$var reg 16 . b[15:0] $end
+$var reg 16 / c[15:0] $end
+$var reg 16 0 d[15:0] $end
+$var reg 16 1 e[15:0] $end
+$var reg 16 2 f[15:0] $end
+$var reg 16 3 g[15:0] $end
+$var reg 16 4 h[15:0] $end
+$var reg 3 5 sel[2:0] $end
+$var reg 16 6 q[15:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+1!
+b1111111111111111 "
+b0000000000000000 #
+b0000000000000000 $
+b0000000000000000 %
+b0000000000000000 &
+b0000000000000000 '
+b0000000000000000 (
+b0000000000000000 )
+b1111111111111111 *
+b000 +
+0,
+b1111111111111111 -
+b0000000000000000 .
+b0000000000000000 /
+b0000000000000000 0
+b0000000000000000 1
+b0000000000000000 2
+b0000000000000000 3
+b0000000000000000 4
+b000 5
+b1111111111111111 6

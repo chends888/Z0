@@ -1,0 +1,57 @@
+# do {C:\Users\Gustavo Gobetti\Anaconda\lib\site-packages\vunit\tcl_read_eval_loop.tcl}
+# vsim -wlf C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/vunit_out/test_output/53751435b7028e85b030e707046b124bb6cda23d/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_comparador16(tb) -L vunit_lib -L lib -g/tb_comparador16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/vunit_out/test_output/53751435b7028e85b030e707046b124bb6cda23d/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/" 
+# Start time: 19:03:03 on Sep 12,2017
+# ** Warning: Design size of 11234 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_comparador16/cmp16/zr has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Warning: (vsim-8683) Uninitialized out port /tb_comparador16/cmp16/ng has no driver.
+# This port will contribute value (U) to the signal network.
+# ** Error: zr não é 0 quando a=0000
+#    Time: 40 ns  Iteration: 1  Process: /tb_comparador16/main File: C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_comparador16.vhd
+# Break in Process main at C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_comparador16.vhd line 45
+# Stopped at C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_comparador16.vhd line 45
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_comparador16.vhd 45 return [address 0xff1868cf] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   40 :   begin
+#   41 :     test_runner_setup(runner, runner_cfg);
+#   42 :     wait until clk'event and clk='1';
+#   43 :     a <= x"0000";
+#   44 :     wait until clk'event and clk='1';
+# ->45 :     assert(zr = '1') report "zr não é 0 quando a=0000";
+#   46 :     assert(ng = '0') report "ng não é 0 quando a=0000";
+#   47 :     wait until clk'event and clk='1';
+#   48 :     a <= x"8000";
+#   49 :     wait until clk'event and clk='1';
+# 
+# vsim -wlf C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/vunit_out/test_output/2eeb55b34fbd7b5d1c8fa04094fa8e04485ace6a/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_inc16(tb) -L vunit_lib -L lib -g/tb_inc16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/vunit_out/test_output/2eeb55b34fbd7b5d1c8fa04094fa8e04485ace6a/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/" 
+# Start time: 19:03:05 on Sep 12,2017
+# ** Warning: (vsim-3473) Component instance "mapping : Inc16" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_inc16 File: C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_Inc16.vhd
+# ** Warning: Design size of 11198 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Error: Falha em teste: 1
+#    Time: 200 ps  Iteration: 0  Process: /tb_inc16/main File: C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_Inc16.vhd
+# Break in Process main at C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_Inc16.vhd line 38
+# Stopped at C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_Inc16.vhd line 38
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_Inc16.vhd 38 return [address 0xff1866ba] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   33 :     test_runner_setup(runner, runner_cfg);
+#   34 : 
+#   35 :       -- Teste: 1
+#   36 :       inA <= "0000000000000000";
+#   37 :       wait for 200 ps;
+# ->38 :       assert(outQ = "0000000000000001")  report "Falha em teste: 1" severity error;
+#   39 : 
+#   40 :       -- Teste: 2
+#   41 :       inA <= "1111111111111111";
+#   42 :       wait for 200 ps;
+# 

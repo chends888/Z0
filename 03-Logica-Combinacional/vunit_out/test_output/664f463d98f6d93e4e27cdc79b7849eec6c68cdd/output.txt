@@ -1,0 +1,8 @@
+# vsim -wlf C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Z0/03-Logica-Combinacional/vunit_out/test_output/664f463d98f6d93e4e27cdc79b7849eec6c68cdd/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_barrelshifter8(tb) -L vunit_lib -L lib -g/tb_barrelshifter8/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/03-Logica-Combinacional/vunit_out/test_output/664f463d98f6d93e4e27cdc79b7849eec6c68cdd/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/03-Logica-Combinacional/testBench/" 
+# Start time: 19:11:10 on Sep 12,2017
+# ** Error: (vsim-3173) Entity 'C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/03-Logica-Combinacional/vunit_out/modelsim/libraries/lib.barrelshifter8' has no architecture.
+# Load interrupted
+# Error loading design
+Error loading design
+# End time: 19:11:10 on Sep 12,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

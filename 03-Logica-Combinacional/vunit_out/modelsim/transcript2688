@@ -1,0 +1,17 @@
+# do {C:\Users\chend\Anaconda3\lib\site-packages\vunit\tcl_read_eval_loop.tcl}
+# vsim -modelsimini C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/modelsim/modelsim.ini -wlf C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/test_output/d9f40c4b9b8a853c92c00dd8a102ec369f48636d/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_nand(tb) -L vunit_lib -L lib -g/tb_nand/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/test_output/d9f40c4b9b8a853c92c00dd8a102ec369f48636d/,tb path : C::/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/testes/" 
+# Start time: 09:22:26 on Sep 01,2017
+# ** Warning: Design size of 11240 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Break in Subprogram vunit_stop at C:/Users/chend/Anaconda3/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10
+# Stopped at C:/Users/chend/Anaconda3/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10
+# End time: 09:22:27 on Sep 01,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# vsim -modelsimini C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/modelsim/modelsim.ini -wlf C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/test_output/7db2fcc4a54596dd4345e1e4eb3670ecf79e2819/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_or8way(tb) -L vunit_lib -L lib -g/tb_or8way/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/test_output/7db2fcc4a54596dd4345e1e4eb3670ecf79e2819/,tb path : C::/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/testes/" 
+# Start time: 09:22:27 on Sep 01,2017
+# ** Warning: Design size of 11410 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Break in Subprogram vunit_stop at C:/Users/chend/Anaconda3/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10
+# Stopped at C:/Users/chend/Anaconda3/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10
+# End time: 09:22:28 on Sep 01,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1

@@ -1,0 +1,28 @@
+# do {C:\Users\Gustavo Gobetti\Anaconda\lib\site-packages\vunit\tcl_read_eval_loop.tcl}
+# vsim -wlf C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/vunit_out/test_output/2a9f30afe01faed90d95ca9cf2cee2354e984c4c/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_halfadder(tb) -L vunit_lib -L lib -g/tb_halfadder/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/vunit_out/test_output/2a9f30afe01faed90d95ca9cf2cee2354e984c4c/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/" 
+# Start time: 13:49:02 on Sep 06,2017
+# ** Warning: (vsim-3473) Component instance "mapping : HalfAdder" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /tb_halfadder File: C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_HalfAdder.vhd
+# ** Warning: Design size of 11216 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Error: Falha em teste: 1
+#    Time: 200 ps  Iteration: 0  Process: /tb_halfadder/main File: C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_HalfAdder.vhd
+# Break in Process main at C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_HalfAdder.vhd line 38
+# Stopped at C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_HalfAdder.vhd line 38
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/04-Unidade-Logica-Aritmetica/testBench/tb_HalfAdder.vhd 38 return [address 0xff186709] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   33 :     test_runner_setup(runner, runner_cfg);
+#   34 : 
+#   35 :       -- Teste: 1
+#   36 :       inA <= '0'; inB<= '0';
+#   37 :       wait for 200 ps;
+# ->38 :       assert(soma = '0' and vaium = '0')  report "Falha em teste: 1" severity error;
+#   39 : 
+#   40 :       -- Teste: 2
+#   41 :       inA <= '0'; inB<= '1';
+#   42 :       wait for 200 ps;
+# 

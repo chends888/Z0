@@ -1,0 +1,101 @@
+|topLevel03
+<<<<<<< HEAD
+SW[0] => Nor8Way:TestNor8Way:Unor8way.a
+SW[1] => Nor8Way:TestNor8Way:Unor8way.b
+SW[2] => Nor8Way:TestNor8Way:Unor8way.c
+SW[3] => Nor8Way:TestNor8Way:Unor8way.d
+SW[4] => Nor8Way:TestNor8Way:Unor8way.e
+SW[5] => Nor8Way:TestNor8Way:Unor8way.f
+SW[6] => Nor8Way:TestNor8Way:Unor8way.g
+SW[7] => Nor8Way:TestNor8Way:Unor8way.h
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+LEDR[0] << Nor8Way:TestNor8Way:Unor8way.q
+LEDR[1] << <GND>
+LEDR[2] << <GND>
+LEDR[3] << <GND>
+LEDR[4] << <GND>
+LEDR[5] << <GND>
+LEDR[6] << <GND>
+LEDR[7] << <GND>
+LEDR[8] << <GND>
+LEDR[9] << <GND>
+
+
+|topLevel03|Nor8Way:\TestNor8Way:Unor8way
+a => q.IN0
+b => q.IN1
+c => q.IN1
+d => q.IN1
+e => q.IN1
+f => q.IN1
+g => q.IN1
+h => q.IN1
+q <= q.DB_MAX_OUTPUT_PORT_TYPE
+=======
+SW[0] => DMux8Way:TestDMUX8:Udmux8.sel[0]
+SW[1] => DMux8Way:TestDMUX8:Udmux8.sel[1]
+SW[2] => DMux8Way:TestDMUX8:Udmux8.sel[2]
+SW[3] => DMux8Way:TestDMUX8:Udmux8.a
+SW[4] => ~NO_FANOUT~
+SW[5] => ~NO_FANOUT~
+SW[6] => ~NO_FANOUT~
+SW[7] => ~NO_FANOUT~
+SW[8] => ~NO_FANOUT~
+SW[9] => ~NO_FANOUT~
+LEDR[0] <= DMux8Way:TestDMUX8:Udmux8.q0
+LEDR[1] <= DMux8Way:TestDMUX8:Udmux8.q1
+LEDR[2] <= DMux8Way:TestDMUX8:Udmux8.q2
+LEDR[3] <= DMux8Way:TestDMUX8:Udmux8.q3
+LEDR[4] <= DMux8Way:TestDMUX8:Udmux8.q4
+LEDR[5] <= DMux8Way:TestDMUX8:Udmux8.q5
+LEDR[6] <= DMux8Way:TestDMUX8:Udmux8.q6
+LEDR[7] <= DMux8Way:TestDMUX8:Udmux8.q7
+LEDR[8] <= <GND>
+LEDR[9] <= <GND>
+
+
+|topLevel03|DMux8Way:\TestDMUX8:Udmux8
+a => q0.DATAB
+a => q1.DATAB
+a => q2.DATAB
+a => q3.DATAB
+a => q4.DATAB
+a => q5.DATAB
+a => q6.DATAB
+a => q7.DATAB
+sel[0] => Equal0.IN2
+sel[0] => Equal1.IN2
+sel[0] => Equal2.IN1
+sel[0] => Equal3.IN2
+sel[0] => Equal4.IN1
+sel[0] => Equal5.IN2
+sel[0] => Equal6.IN0
+sel[0] => Equal7.IN2
+sel[1] => Equal0.IN1
+sel[1] => Equal1.IN1
+sel[1] => Equal2.IN2
+sel[1] => Equal3.IN1
+sel[1] => Equal4.IN0
+sel[1] => Equal5.IN0
+sel[1] => Equal6.IN2
+sel[1] => Equal7.IN1
+sel[2] => Equal0.IN0
+sel[2] => Equal1.IN0
+sel[2] => Equal2.IN0
+sel[2] => Equal3.IN0
+sel[2] => Equal4.IN2
+sel[2] => Equal5.IN1
+sel[2] => Equal6.IN1
+sel[2] => Equal7.IN0
+q0 <= q0.DB_MAX_OUTPUT_PORT_TYPE
+q1 <= q1.DB_MAX_OUTPUT_PORT_TYPE
+q2 <= q2.DB_MAX_OUTPUT_PORT_TYPE
+q3 <= q3.DB_MAX_OUTPUT_PORT_TYPE
+q4 <= q4.DB_MAX_OUTPUT_PORT_TYPE
+q5 <= q5.DB_MAX_OUTPUT_PORT_TYPE
+q6 <= q6.DB_MAX_OUTPUT_PORT_TYPE
+q7 <= q7.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> 5240d4fca957e9c4e157624f502801139e60bd9a
+
+

@@ -1,0 +1,185 @@
+Flow report for 03-Logica-Combinacional
+<<<<<<< HEAD
+Fri Sep 01 10:11:38 2017
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+=======
+Wed Aug 23 14:56:04 2017
+Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+>>>>>>> 5240d4fca957e9c4e157624f502801139e60bd9a
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+<<<<<<< HEAD
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+=======
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+>>>>>>> 5240d4fca957e9c4e157624f502801139e60bd9a
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+<<<<<<< HEAD
+; Flow Status                     ; Successful - Fri Sep 01 10:11:38 2017       ;
+; Quartus Prime Version           ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+=======
+; Flow Status                     ; Successful - Wed Aug 23 14:56:04 2017       ;
+; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
+>>>>>>> 5240d4fca957e9c4e157624f502801139e60bd9a
+; Revision Name                   ; 03-Logica-Combinacional                     ;
+; Top-level Entity Name           ; topLevel03                                  ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CEBA4F23C7                                 ;
+; Timing Models                   ; Final                                       ;
+<<<<<<< HEAD
+; Logic utilization (in ALMs)     ; 2 / 18,480 ( < 1 % )                        ;
+=======
+; Logic utilization (in ALMs)     ; 5 / 18,480 ( < 1 % )                        ;
+>>>>>>> 5240d4fca957e9c4e157624f502801139e60bd9a
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 20 / 224 ( 9 % )                            ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 3,153,920 ( 0 % )                       ;
+; Total DSP Blocks                ; 0 / 66 ( 0 % )                              ;
+; Total HSSI RX PCSs              ; 0                                           ;
+; Total HSSI PMA RX Deserializers ; 0                                           ;
+; Total HSSI TX PCSs              ; 0                                           ;
+; Total HSSI PMA TX Serializers   ; 0                                           ;
+; Total PLLs                      ; 0 / 4 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
+
+
++---------------------------------------------+
+; Flow Settings                               ;
++-------------------+-------------------------+
+; Option            ; Setting                 ;
++-------------------+-------------------------+
+<<<<<<< HEAD
+; Start date & time ; 09/01/2017 10:10:12     ;
+=======
+; Start date & time ; 08/23/2017 14:55:17     ;
+>>>>>>> 5240d4fca957e9c4e157624f502801139e60bd9a
+; Main task         ; Compilation             ;
+; Revision Name     ; 03-Logica-Combinacional ;
++-------------------+-------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                      ;
++-------------------------------------+----------------------------------------+-------------------------+-------------+----------------+
+; Assignment Name                     ; Value                                  ; Default Value           ; Entity Name ; Section Id     ;
++-------------------------------------+----------------------------------------+-------------------------+-------------+----------------+
+<<<<<<< HEAD
+; COMPILER_SIGNATURE_ID               ; 268891677066512.150427141204048        ; --                      ; --          ; --             ;
+=======
+; COMPILER_SIGNATURE_ID               ; 137098623015374.150351091716489        ; --                      ; --          ; --             ;
+>>>>>>> 5240d4fca957e9c4e157624f502801139e60bd9a
+; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                            ; --                      ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)              ; <None>                  ; --          ; --             ;
+; EDA_TIME_SCALE                      ; 1 ps                                   ; --                      ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --                      ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --                      ; --          ; --             ;
+; NUM_PARALLEL_PROCESSORS             ; 1                                      ; --                      ; --          ; --             ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --                      ; topLevel03  ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --                      ; topLevel03  ; Top            ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --                      ; topLevel03  ; Top            ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --                      ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --                      ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --                      ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; topLevel03                             ; 03-Logica-Combinacional ; --          ; --             ;
++-------------------------------------+----------------------------------------+-------------------------+-------------+----------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+<<<<<<< HEAD
+; Analysis & Synthesis      ; 00:00:27     ; 1.0                     ; 741 MB              ; 00:00:36                           ;
+; Fitter                    ; 00:00:34     ; 1.0                     ; 1596 MB             ; 00:00:30                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 697 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:11     ; 1.0                     ; 894 MB              ; 00:00:07                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 611 MB              ; 00:00:01                           ;
+; Total                     ; 00:01:19     ; --                      ; --                  ; 00:01:19                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; Chends888        ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; Chends888        ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; Chends888        ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; Chends888        ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; Chends888        ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
+=======
+; Analysis & Synthesis      ; 00:00:14     ; 1.0                     ; 1015 MB             ; 00:00:32                           ;
+; Fitter                    ; 00:00:21     ; 1.0                     ; 1687 MB             ; 00:00:22                           ;
+; Assembler                 ; 00:00:04     ; 1.0                     ; 945 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.0                     ; 1058 MB             ; 00:00:05                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 1124 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:45     ; --                      ; --                  ; 00:01:03                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                               ;
++---------------------------+------------------+---------------+---------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name       ; OS Version    ; Processor type ;
++---------------------------+------------------+---------------+---------------+----------------+
+; Analysis & Synthesis      ; corsi-pc         ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
+; Fitter                    ; corsi-pc         ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
+; Assembler                 ; corsi-pc         ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
+; TimeQuest Timing Analyzer ; corsi-pc         ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
+; EDA Netlist Writer        ; corsi-pc         ; Manjaro Linux ; Manjaro Linux ; x86_64         ;
++---------------------------+------------------+---------------+---------------+----------------+
+>>>>>>> 5240d4fca957e9c4e157624f502801139e60bd9a
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off 03-Logica-Combinacional -c 03-Logica-Combinacional
+quartus_fit --read_settings_files=off --write_settings_files=off 03-Logica-Combinacional -c 03-Logica-Combinacional
+quartus_asm --read_settings_files=off --write_settings_files=off 03-Logica-Combinacional -c 03-Logica-Combinacional
+quartus_sta 03-Logica-Combinacional -c 03-Logica-Combinacional
+quartus_eda --read_settings_files=off --write_settings_files=off 03-Logica-Combinacional -c 03-Logica-Combinacional
+
+
+

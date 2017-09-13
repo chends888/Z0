@@ -1,0 +1,22 @@
+<<<<<<< HEAD
+Analysis & Synthesis Status : Successful - Fri Sep 01 10:10:38 2017
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+=======
+Analysis & Synthesis Status : Successful - Wed Aug 23 14:55:31 2017
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+>>>>>>> 5240d4fca957e9c4e157624f502801139e60bd9a
+Revision Name : 03-Logica-Combinacional
+Top-level Entity Name : topLevel03
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 0
+Total pins : 20
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0

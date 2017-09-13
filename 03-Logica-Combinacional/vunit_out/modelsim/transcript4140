@@ -1,0 +1,44 @@
+# do {C:\Users\chend\Anaconda3\lib\site-packages\vunit\tcl_read_eval_loop.tcl}
+# vsim -modelsimini C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/modelsim/modelsim.ini -wlf C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/test_output/606ba1c5dfe76896aadaa815e44c0f75c086532c/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_mux16(tb) -L vunit_lib -L lib -g/tb_mux16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/test_output/606ba1c5dfe76896aadaa815e44c0f75c086532c/,tb path : C::/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/testes/" 
+# Start time: 15:33:27 on Sep 06,2017
+# ** Warning: Design size of 11252 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Error: Falha em teste: 1
+#    Time: 500 ps  Iteration: 1  Process: /tb_mux16/main File: C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/testes/tb_Mux16.vhd
+# Break in Process main at C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/testes/tb_Mux16.vhd line 56
+# Stopped at C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/testes/tb_Mux16.vhd line 56
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/testes/tb_Mux16.vhd 56 return [address 0xff18692a] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   51 :     test_runner_setup(runner, runner_cfg);
+#   52 : 
+#   53 :     -- Teste: 1
+#   54 :     inA <= "1111000011110000"; inB <= "0000000000000000"; inSel <= '0';
+#   55 :     wait until clk='1';
+# ->56 :     assert(outQ = "1111000011110000")  report "Falha em teste: 1" severity error;
+#   57 : 
+#   58 :     -- Teste: 2
+#   59 :     inA <= "0000000000000000"; inB <= "1111000011110000"; inSel <= '1';
+#   60 :     wait until clk='1';
+# 
+# End time: 15:33:28 on Sep 06,2017, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+# vsim -modelsimini C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/modelsim/modelsim.ini -wlf C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/test_output/d9f40c4b9b8a853c92c00dd8a102ec369f48636d/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_nand(tb) -L vunit_lib -L lib -g/tb_nand/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/test_output/d9f40c4b9b8a853c92c00dd8a102ec369f48636d/,tb path : C::/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/testes/" 
+# Start time: 15:33:28 on Sep 06,2017
+# ** Warning: Design size of 11240 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Break in Subprogram vunit_stop at C:/Users/chend/Anaconda3/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10
+# Stopped at C:/Users/chend/Anaconda3/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10
+# End time: 15:33:29 on Sep 06,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# vsim -modelsimini C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/modelsim/modelsim.ini -wlf C:/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/test_output/b66b8fc9277e1e3933979f97f1cdc6fc5d49fe3e/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_not16(tb) -L vunit_lib -L lib -g/tb_not16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/vunit_out/test_output/b66b8fc9277e1e3933979f97f1cdc6fc5d49fe3e/,tb path : C::/Users/chend/Documents/GitHub/Z0/03-Logica-Combinacional/testes/" 
+# Start time: 15:33:29 on Sep 06,2017
+# ** Warning: Design size of 11223 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Break in Subprogram vunit_stop at C:/Users/chend/Anaconda3/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10
+# Stopped at C:/Users/chend/Anaconda3/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10
+# End time: 15:33:30 on Sep 06,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
