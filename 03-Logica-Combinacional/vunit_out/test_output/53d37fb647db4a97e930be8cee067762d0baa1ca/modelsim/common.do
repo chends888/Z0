@@ -22,11 +22,11 @@ proc _vunit_source_init_files_after_load {} {
 
 proc vunit_load {{vsim_extra_args ""}} {
     set vsim_failed [catch {
-        eval vsim ${vsim_extra_args} {-wlf {C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Z0/03-Logica-Combinacional/vunit_out/test_output/53d37fb647db4a97e930be8cee067762d0baa1ca/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_mux8way/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/03-Logica-Combinacional/vunit_out/test_output/53d37fb647db4a97e930be8cee067762d0baa1ca/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/03-Logica-Combinacional/testBench/"} lib.tb_mux8way(tb)   -L vunit_lib -L lib}
+        eval vsim ${vsim_extra_args} {-wlf {C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/03-Logica-Combinacional/vunit_out/test_output/53d37fb647db4a97e930be8cee067762d0baa1ca/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_mux8way/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/03-Logica-Combinacional/vunit_out/test_output/53d37fb647db4a97e930be8cee067762d0baa1ca/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/03-Logica-Combinacional/testBench/"} lib.tb_mux8way(tb)   -L vunit_lib -L lib}
     }]
 
     if {${vsim_failed}} {
-       echo Command 'vsim ${vsim_extra_args} -wlf {C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Z0/03-Logica-Combinacional/vunit_out/test_output/53d37fb647db4a97e930be8cee067762d0baa1ca/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_mux8way/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/03-Logica-Combinacional/vunit_out/test_output/53d37fb647db4a97e930be8cee067762d0baa1ca/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/03-Logica-Combinacional/testBench/"} lib.tb_mux8way(tb)   -L vunit_lib -L lib' failed
+       echo Command 'vsim ${vsim_extra_args} -wlf {C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/03-Logica-Combinacional/vunit_out/test_output/53d37fb647db4a97e930be8cee067762d0baa1ca/modelsim/vsim.wlf} -quiet -t ps -onfinish stop  -g/tb_mux8way/runner_cfg={"active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/03-Logica-Combinacional/vunit_out/test_output/53d37fb647db4a97e930be8cee067762d0baa1ca/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/03-Logica-Combinacional/testBench/"} lib.tb_mux8way(tb)   -L vunit_lib -L lib' failed
        echo Bad flag from vsim_extra_args?
        return 1
     }
@@ -125,7 +125,7 @@ proc vunit_compile {} {
     set cmd_show {C:\Users\Gustavo Gobetti\Anaconda\python.exe -u teste03.py --compile}
     puts "Re-compiling using command ${cmd_show}"
 
-    set chan [open |[list {C:\Users\Gustavo Gobetti\Anaconda\python.exe} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['C:\\Users\\Gustavo Gobetti\\Anaconda\\python.exe', '-u', 'teste03.py', '--compile'], cwd='C:\\Users\\Gustavo Gobetti\\Documents\\Insper\\4-Semestre-2017\\Z0\\03-Logica-Combinacional', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
+    set chan [open |[list {C:\Users\Gustavo Gobetti\Anaconda\python.exe} {-u} {-c} {import sys;import subprocess;exit(subprocess.call(['C:\\Users\\Gustavo Gobetti\\Anaconda\\python.exe', '-u', 'teste03.py', '--compile'], cwd='C:\\Users\\Gustavo Gobetti\\Documents\\Insper\\4-Semestre-2017\\Elementos-de-Sistema-2\\Z0\\03-Logica-Combinacional', bufsize=0, universal_newlines=True, stdout=sys.stdout, stderr=sys.stdout))}] r]
 
     while {[gets $chan line] >= 0} {
         puts $line
