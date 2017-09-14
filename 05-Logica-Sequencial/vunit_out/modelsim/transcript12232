@@ -1,0 +1,8 @@
+# do {C:\Users\Gustavo Gobetti\Anaconda\lib\site-packages\vunit\tcl_read_eval_loop.tcl}
+# vsim -wlf C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/vunit_out/test_output/c5c66660a959522836aa1c4c7aae83ec20d9bfef/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_register16(tb) -L vunit_lib -L lib -g/tb_register16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/vunit_out/test_output/c5c66660a959522836aa1c4c7aae83ec20d9bfef/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/testBench/" 
+# Start time: 10:51:22 on Sep 13,2017
+# ** Error: (vsim-3173) Entity 'C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/vunit_out/modelsim/libraries/lib.register16' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 10:51:22 on Sep 13,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

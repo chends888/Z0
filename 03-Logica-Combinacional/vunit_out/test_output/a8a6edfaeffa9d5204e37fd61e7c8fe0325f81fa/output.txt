@@ -1,8 +1,8 @@
 # vsim -wlf C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/03-Logica-Combinacional/vunit_out/test_output/a8a6edfaeffa9d5204e37fd61e7c8fe0325f81fa/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_dmux2way(tb) -L vunit_lib -L lib -g/tb_dmux2way/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/03-Logica-Combinacional/vunit_out/test_output/a8a6edfaeffa9d5204e37fd61e7c8fe0325f81fa/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/03-Logica-Combinacional/testBench/" 
-# Start time: 10:47:10 on Sep 13,2017
+# Start time: 15:24:13 on Sep 13,2017
 # ** Error: (vsim-3173) Entity 'C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/03-Logica-Combinacional/vunit_out/modelsim/libraries/lib.dmux2way' has no architecture.
 # Load interrupted
 # Error loading design
 Error loading design
-# End time: 10:47:12 on Sep 13,2017, Elapsed time: 0:00:02
+# End time: 15:24:13 on Sep 13,2017, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0

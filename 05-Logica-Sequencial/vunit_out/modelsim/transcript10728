@@ -1,0 +1,36 @@
+# do {C:\Users\Gustavo Gobetti\Anaconda\lib\site-packages\vunit\tcl_read_eval_loop.tcl}
+# vsim -wlf C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/vunit_out/test_output/1ebeffcc215f6d79a04097ce7ccb46918c662a20/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_ram4k(tb) -L vunit_lib -L lib -g/tb_ram4k/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/vunit_out/test_output/1ebeffcc215f6d79a04097ce7ccb46918c662a20/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/testBench/" 
+# Start time: 13:24:15 on Sep 13,2017
+# ** Warning: Design size of 11366 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /tb_ram4k/mapping
+# ** Fatal: (vsim-3734) Index value 4075 is out of range 0 to 3999.
+#    Time: 3 ns  Iteration: 1  Process: /tb_ram4k/mapping/line__32 File: C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/src/Ram4K.vhd
+# Fatal error in Architecture rtl at C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/src/Ram4K.vhd line 32
+# 
+# HDL call sequence:
+# Stopped at C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/src/Ram4K.vhd 32 Architecture rtl
+# 
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/src/Ram4K.vhd 32 return [address 0xff187f2b] Architecture rtl
+# 
+# 
+# Surrounding code from 'see' command
+#   27 : 		if(clock'event and clock ='1' and load='1') then
+#   28 : 				signal_ram(to_integer(unsigned(address))) <= input;
+#   29 : 		end if;
+#   30 : 	end process;
+#   31 : 
+# ->32 : 	output <= signal_ram(to_integer(unsigned(address)));
+#   33 : 
+#   34 : end rtl;
+# 
+# vsim -wlf C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/vunit_out/test_output/c5c66660a959522836aa1c4c7aae83ec20d9bfef/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_register16(tb) -L vunit_lib -L lib -g/tb_register16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/vunit_out/test_output/c5c66660a959522836aa1c4c7aae83ec20d9bfef/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/testBench/" 
+# Start time: 13:24:16 on Sep 13,2017
+# ** Error: (vsim-3173) Entity 'C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/vunit_out/modelsim/libraries/lib.register16' has no architecture.
+# Load interrupted
+# Error loading design
+# End time: 13:24:17 on Sep 13,2017, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0

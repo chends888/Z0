@@ -212,7 +212,7 @@ R27
 R12
 R13
 Emux2way
-Z28 w1505332024
+Z28 w1505340833
 R2
 R3
 R4
@@ -224,9 +224,9 @@ V5Md04iB]KYYIl:m:EPnQ[3
 !s100 L]VTV_?L9fN8g2_`K9nZQ2
 R7
 33
-Z31 !s110 1505332029
+Z31 !s110 1505348652
 !i10b 1
-Z32 !s108 1505332029.000000
+Z32 !s108 1505348652.000000
 Z33 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux2way.vhd|
 Z34 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux2way.vhd|
 !i113 1
@@ -235,11 +235,11 @@ R13
 Aarch_mux2way
 R2
 R3
-DEx4 work 7 mux2way 0 22 5Md04iB]KYYIl:m:EPnQ[3
+Z35 DEx4 work 7 mux2way 0 22 5Md04iB]KYYIl:m:EPnQ[3
 l14
 L11
-VmINff9lXPec1[UnfW[Pi;2
-!s100 fRP85:3;NSX_g0VOP^`Xm0
+Z36 VmINff9lXPec1[UnfW[Pi;2
+Z37 !s100 fRP85:3;NSX_g0VOP^`Xm0
 R7
 33
 R31
@@ -263,21 +263,21 @@ VS6DJa:23Uele:d0oQjjO[0
 !s100 X`n8^nYIhlnNgIfP_EkID1
 R7
 33
-Z35 !s110 1504267656
+Z38 !s110 1504267656
 !i10b 1
-Z36 !s108 1504267656.000000
+Z39 !s108 1504267656.000000
 !s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Mux4Way.vhd|
 !s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Mux4Way.vhd|
 !i113 1
 R12
 R13
 Emux4way16
-Z37 w1505112504
+Z40 w1505112504
 R2
 R3
 R4
-Z38 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux4Way16.vhd
-Z39 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux4Way16.vhd
+Z41 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux4Way16.vhd
+Z42 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux4Way16.vhd
 l0
 L4
 VgIliodZR>K=jaJZeHi]]@1
@@ -286,9 +286,9 @@ R7
 33
 R8
 !i10b 1
-Z40 !s108 1505331557.000000
-Z41 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux4Way16.vhd|
-Z42 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux4Way16.vhd|
+Z43 !s108 1505331557.000000
+Z44 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux4Way16.vhd|
+Z45 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux4Way16.vhd|
 !i113 1
 R12
 R13
@@ -304,9 +304,9 @@ R7
 33
 R8
 !i10b 1
-R40
-R41
-R42
+R43
+R44
+R45
 !i113 1
 R12
 R13
@@ -323,32 +323,32 @@ VcMIZim^j_>0TGlG7NC03C3
 !s100 ^ag5`^MlkFaAfCaX]@3>L0
 R7
 33
-R35
+R38
 !i10b 1
-R36
+R39
 !s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Mux8Way.vhd|
 !s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Mux8Way.vhd|
 !i113 1
 R12
 R13
 Emux8way16
-Z43 w1505112665
+Z46 w1505112665
 R2
 R3
 R4
-Z44 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux8Way16.vhd
-Z45 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux8Way16.vhd
+Z47 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux8Way16.vhd
+Z48 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux8Way16.vhd
 l0
 L4
 V7MWl=:zn]>Q>M5K]`_b<60
 !s100 @m115@68;o9gzO2VgfBG]0
 R7
 33
-Z46 !s110 1505331557
+Z49 !s110 1505331557
 !i10b 1
-R40
-Z47 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux8Way16.vhd|
-Z48 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux8Way16.vhd|
+R43
+Z50 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux8Way16.vhd|
+Z51 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Mux8Way16.vhd|
 !i113 1
 R12
 R13
@@ -362,32 +362,32 @@ VmYWl^S9RU;ol5<MVfchFG2
 !s100 Go68U]Vj@bK?W9;DE>M1[2
 R7
 33
-R46
+R49
 !i10b 1
-R40
-R47
-R48
+R43
+R50
+R51
 !i113 1
 R12
 R13
 Enand_vhdl
-Z49 w1504053816
+Z52 w1504053816
 R2
 R3
 R0
-Z50 8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nand.vhd
-Z51 FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nand.vhd
+Z53 8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nand.vhd
+Z54 FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nand.vhd
 l0
 L4
 Vm[WSeLg@b3iEF_maFe2CG0
 !s100 1hRHO`W;JJ^dn;@5U0Zjd1
 R7
 33
-Z52 !s110 1504267655
+Z55 !s110 1504267655
 !i10b 1
-Z53 !s108 1504267655.000000
-Z54 !s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nand.vhd|
-Z55 !s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nand.vhd|
+Z56 !s108 1504267655.000000
+Z57 !s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nand.vhd|
+Z58 !s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nand.vhd|
 !i113 1
 R12
 R13
@@ -401,32 +401,32 @@ VH@3Z88]aX_YP9<PBAGkYA0
 !s100 oKjFOP@<YCEDHaT^=4>4;3
 R7
 33
-R52
-!i10b 1
-R53
-R54
 R55
+!i10b 1
+R56
+R57
+R58
 !i113 1
 R12
 R13
 Enor8way
-Z56 w1504271274
+Z59 w1504271274
 R2
 R3
 R0
-Z57 8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nor8Way.vhd
-Z58 FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nor8Way.vhd
+Z60 8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nor8Way.vhd
+Z61 FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nor8Way.vhd
 l0
 L4
 VI6@ZGJd>JSC7UGzNAn6GU2
 !s100 bzc2JH[>FOP2l:COLj<IY2
 R7
 33
-Z59 !s110 1504271279
+Z62 !s110 1504271279
 !i10b 1
-Z60 !s108 1504271278.000000
-Z61 !s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nor8Way.vhd|
-Z62 !s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nor8Way.vhd|
+Z63 !s108 1504271278.000000
+Z64 !s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nor8Way.vhd|
+Z65 !s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Nor8Way.vhd|
 !i113 1
 R12
 R13
@@ -440,32 +440,32 @@ Vh18SCLj<67lE334<8;XS^1
 !s100 :5;NNQbaz^:M>ddl[Da9]3
 R7
 33
-R59
-!i10b 1
-R60
-R61
 R62
+!i10b 1
+R63
+R64
+R65
 !i113 1
 R12
 R13
 Enot16
-Z63 w1504288945
+Z66 w1504288945
 R2
 R3
 R4
-Z64 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Not16.vhd
-Z65 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Not16.vhd
+Z67 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Not16.vhd
+Z68 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Not16.vhd
 l0
 L4
 VC]SG@M]l`d<egUIK]zP2?0
 !s100 fYJ1`YCnUZe9F?2KLeD4V3
 R7
 33
-R46
+R49
 !i10b 1
-R40
-Z66 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Not16.vhd|
-Z67 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Not16.vhd|
+R43
+Z69 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Not16.vhd|
+Z70 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Not16.vhd|
 !i113 1
 R12
 R13
@@ -479,57 +479,57 @@ VQCbZBWhHBmEMOkCVFKJzg0
 !s100 >HmFgTBieS2LXi1lT?_=_3
 R7
 33
-R46
+R49
 !i10b 1
-R40
-R66
-R67
+R43
+R69
+R70
 !i113 1
 R12
 R13
 Eor16
-Z68 w1504288679
+Z71 w1504288679
 R2
 R3
 R4
-Z69 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Or16.vhd
-Z70 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Or16.vhd
+Z72 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Or16.vhd
+Z73 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Or16.vhd
 l0
 L4
 VFm015BPNjKE2P[ZaFANAP1
 !s100 >QKR87GJWMdVLQz<g8^hf0
 R7
 33
-R46
+R49
 !i10b 1
-R40
-Z71 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Or16.vhd|
-Z72 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Or16.vhd|
+R43
+Z74 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Or16.vhd|
+Z75 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\src\Or16.vhd|
 !i113 1
 R12
 R13
 Artl
 R2
 R3
-Z73 DEx4 work 4 or16 0 22 Fm015BPNjKE2P[ZaFANAP1
+Z76 DEx4 work 4 or16 0 22 Fm015BPNjKE2P[ZaFANAP1
 l12
 L11
 V^T5KYffQmF]8E^`7ScXFm1
 !s100 b2SZM?bKUoT0M2`feQzb02
 R7
 33
-R46
+R49
 !i10b 1
-R40
-R71
-R72
+R43
+R74
+R75
 !i113 1
 R12
 R13
 Aor16
 R2
 R3
-R73
+R76
 l12
 L11
 VlfNFa[z7J<OfkjdV9hC3o3
@@ -549,48 +549,48 @@ R0
 FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or16.vhd
 8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or16.vhd
 Eor8way
-Z74 w1504267106
+Z77 w1504267106
 R2
 R3
 R0
-Z75 8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or8Way.vhd
-Z76 FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or8Way.vhd
+Z78 8C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or8Way.vhd
+Z79 FC:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or8Way.vhd
 l0
 L4
 V6_>9FK_U9`n7]^73i4MMa1
 !s100 Ag3dFfPkCD2FhoYEajciW3
 R7
 33
-Z77 !s110 1504267108
+Z80 !s110 1504267108
 !i10b 1
-Z78 !s108 1504267108.000000
-Z79 !s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or8Way.vhd|
-Z80 !s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or8Way.vhd|
+Z81 !s108 1504267108.000000
+Z82 !s90 -quiet|-modelsimini|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or8Way.vhd|
+Z83 !s107 C:\Users\chend\Documents\GitHub\Z0\03-Logica-Combinacional\src\Or8Way.vhd|
 !i113 1
 R12
 R13
 Artl
 R2
 R3
-Z81 DEx4 work 6 or8way 0 22 6_>9FK_U9`n7]^73i4MMa1
+Z84 DEx4 work 6 or8way 0 22 6_>9FK_U9`n7]^73i4MMa1
 l18
 L17
 VYb]iAld_8e<];Z0kF:10;2
 !s100 E6g=bUYGb?3kgG_P@2_612
 R7
 33
-R77
-!i10b 1
-R78
-R79
 R80
+!i10b 1
+R81
+R82
+R83
 !i113 1
 R12
 R13
 Aor8way
 R2
 R3
-R81
+R84
 l18
 L17
 VlW9Vl]jg]7A@I0eb2T>UR2
@@ -600,56 +600,53 @@ R7
 !s110 1504114927
 !i10b 1
 !s108 1504114925.000000
-R79
-R80
+R82
+R83
 !i113 1
 R12
 R13
 w1504053815
 Etb_and16
-Z82 w1505121262
-Z83 D^#x9 vunit_lib 13 vunit_context 0 22 A1MU5C4TX7dH]K[HOQTSn1
-Z84 DPx9 vunit_lib 7 run_pkg 0 22 :>o4znSG5`<A<F;hHMKhH1
-Z85 DPx9 vunit_lib 12 run_base_pkg 0 22 KULGL@1dU0BHc9b;g7igZ0
-Z86 DPx9 vunit_lib 21 run_special_types_pkg 0 22 XN>`bQV`R61M<DU>4G8]g3
-Z87 DPx9 vunit_lib 13 run_types_pkg 0 22 gnB71ZYIDP@G^<`Dze<Ol0
-Z88 DPx9 vunit_lib 4 path 0 22 Nc7]mO6O0HNNXT_k^Qgoe1
-Z89 DPx9 vunit_lib 14 check_base_pkg 0 22 6khlF7jlG3XP5Bc9=lSF=3
-Z90 DPx9 vunit_lib 23 check_special_types_pkg 0 22 >]VMHj]2_dakO@]Sz1fG81
-Z91 DPx9 vunit_lib 12 log_base_pkg 0 22 egmiOA0jOkn22SNYghHMm3
-Z92 DPx9 vunit_lib 7 log_pkg 0 22 J_?2_QhlQe2KAS=2e8Pa`0
-Z93 DPx9 vunit_lib 18 log_formatting_pkg 0 22 d75lM?2@3AXKRIPYgPWH<2
-Z94 DPx9 vunit_lib 21 log_special_types_pkg 0 22 n@GoB6`YUERo9zKGHQ[gh3
-Z95 DPx9 vunit_lib 15 check_types_pkg 0 22 b]H]`_JWR;NHO0NZ^?z_>2
-Z96 DPx9 vunit_lib 9 check_pkg 0 22 Q44daMzVXYPSe6L2D1`1P1
-Z97 DPx9 vunit_lib 13 log_types_pkg 0 22 IbPmRVYKU2TLnChTMB`EL2
-Z98 DPx9 vunit_lib 10 dictionary 0 22 T[>mL5_]X3QImm^UB7Y=53
-Z99 DPx9 vunit_lib 10 string_ops 0 22 >6lVd?dSYVCeeU;1?_=bg2
-Z100 DPx9 vunit_lib 4 lang 0 22 ;:Mg0N:Ff<C2R`d>MPj;Q2
+Z85 w1505121262
+Z86 D^#x9 vunit_lib 13 vunit_context 0 22 A1MU5C4TX7dH]K[HOQTSn1
+Z87 DPx9 vunit_lib 7 run_pkg 0 22 :>o4znSG5`<A<F;hHMKhH1
+Z88 DPx9 vunit_lib 12 run_base_pkg 0 22 KULGL@1dU0BHc9b;g7igZ0
+Z89 DPx9 vunit_lib 21 run_special_types_pkg 0 22 XN>`bQV`R61M<DU>4G8]g3
+Z90 DPx9 vunit_lib 13 run_types_pkg 0 22 gnB71ZYIDP@G^<`Dze<Ol0
+Z91 DPx9 vunit_lib 4 path 0 22 Nc7]mO6O0HNNXT_k^Qgoe1
+Z92 DPx9 vunit_lib 14 check_base_pkg 0 22 6khlF7jlG3XP5Bc9=lSF=3
+Z93 DPx9 vunit_lib 23 check_special_types_pkg 0 22 >]VMHj]2_dakO@]Sz1fG81
+Z94 DPx9 vunit_lib 12 log_base_pkg 0 22 egmiOA0jOkn22SNYghHMm3
+Z95 DPx9 vunit_lib 7 log_pkg 0 22 J_?2_QhlQe2KAS=2e8Pa`0
+Z96 DPx9 vunit_lib 18 log_formatting_pkg 0 22 d75lM?2@3AXKRIPYgPWH<2
+Z97 DPx9 vunit_lib 21 log_special_types_pkg 0 22 n@GoB6`YUERo9zKGHQ[gh3
+Z98 DPx9 vunit_lib 15 check_types_pkg 0 22 b]H]`_JWR;NHO0NZ^?z_>2
+Z99 DPx9 vunit_lib 9 check_pkg 0 22 Q44daMzVXYPSe6L2D1`1P1
+Z100 DPx9 vunit_lib 13 log_types_pkg 0 22 IbPmRVYKU2TLnChTMB`EL2
+Z101 DPx9 vunit_lib 10 dictionary 0 22 T[>mL5_]X3QImm^UB7Y=53
+Z102 DPx9 vunit_lib 10 string_ops 0 22 >6lVd?dSYVCeeU;1?_=bg2
+Z103 DPx9 vunit_lib 4 lang 0 22 ;:Mg0N:Ff<C2R`d>MPj;Q2
 R15
 R2
 R3
 R4
-Z101 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_And16.vhd
-Z102 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_And16.vhd
+Z104 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_And16.vhd
+Z105 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_And16.vhd
 l0
 L13
 VV8VP1diA_Kl]jja0W0QPn1
 !s100 e^6@j2=efn@VV<f9Cm3QW0
 R7
 33
-Z103 !s110 1505331562
+Z106 !s110 1505331562
 !i10b 1
-Z104 !s108 1505331562.000000
-Z105 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_And16.vhd|
-Z106 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_And16.vhd|
+Z107 !s108 1505331562.000000
+Z108 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_And16.vhd|
+Z109 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_And16.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -665,6 +662,9 @@ R97
 R98
 R99
 R100
+R101
+R102
+R103
 R15
 R2
 R3
@@ -675,18 +675,15 @@ V=X@>gXhD6YK=?hn@H1a^k1
 !s100 <1A?`l72U4a<D>J7Vi6F]2
 R7
 33
-R103
-!i10b 1
-R104
-R105
 R106
+!i10b 1
+R107
+R108
+R109
 !i113 1
 R12
 R13
 Etb_barrelshifter16
-R82
-R83
-R84
 R85
 R86
 R87
@@ -701,32 +698,32 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 R4
-Z107 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter16.vhd
-Z108 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter16.vhd
+Z110 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter16.vhd
+Z111 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter16.vhd
 l0
 L12
 V0BBLho`00IQ6CgTZXQJNd3
 !s100 :jIkWh=l;PUAeL@@PSQFi1
 R7
 33
-R103
+R106
 !i10b 1
-R104
-Z109 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter16.vhd|
-Z110 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter16.vhd|
+R107
+Z112 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter16.vhd|
+Z113 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter16.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -740,9 +737,12 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 DEx4 work 18 tb_barrelshifter16 0 22 0BBLho`00IQ6CgTZXQJNd3
@@ -752,18 +752,15 @@ VHTgmFz7UB>K<cV?X;^EhA0
 !s100 nWO?N0dKzJ1F=:nUF=2KE0
 R7
 33
-R103
+R106
 !i10b 1
-R104
-R109
-R110
+R107
+R112
+R113
 !i113 1
 R12
 R13
 Etb_barrelshifter8
-R82
-R83
-R84
 R85
 R86
 R87
@@ -778,32 +775,32 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 R4
-Z111 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter8.vhd
-Z112 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter8.vhd
+Z114 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter8.vhd
+Z115 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter8.vhd
 l0
 L12
 ViRE[gVaoHG8eiYLUk;aQn1
 !s100 =E31ni0gVBK^;e<GQR40H3
 R7
 33
-R103
+R106
 !i10b 1
-R104
-Z113 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter8.vhd|
-Z114 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter8.vhd|
+R107
+Z116 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter8.vhd|
+Z117 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_BarrelShifter8.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -817,9 +814,12 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 DEx4 work 17 tb_barrelshifter8 0 22 iRE[gVaoHG8eiYLUk;aQn1
@@ -829,18 +829,15 @@ Vg@03_GmM7_iU<OJk7e3jh0
 !s100 inndK_Ni<al4k7;E`Pm=C2
 R7
 33
-R103
+R106
 !i10b 1
-R104
-R113
-R114
+R107
+R116
+R117
 !i113 1
 R12
 R13
 Etb_dmux2way
-R82
-R83
-R84
 R85
 R86
 R87
@@ -855,32 +852,32 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 R4
-Z115 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux2Way.vhd
-Z116 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux2Way.vhd
+Z118 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux2Way.vhd
+Z119 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux2Way.vhd
 l0
 L12
 VG:gDjdXf`XMEEa6MSKYg91
 !s100 [1Z=A_3fz?JUHBkFamn6I2
 R7
 33
-Z117 !s110 1505331561
+Z120 !s110 1505331561
 !i10b 1
-Z118 !s108 1505331561.000000
-Z119 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux2Way.vhd|
-Z120 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux2Way.vhd|
+Z121 !s108 1505331561.000000
+Z122 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux2Way.vhd|
+Z123 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux2Way.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -894,9 +891,12 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 DEx4 work 11 tb_dmux2way 0 22 G:gDjdXf`XMEEa6MSKYg91
@@ -906,18 +906,15 @@ VLAX`MK9JC0;9YeomJM7GM0
 !s100 FMa2l2z>?4N>UTW8N[6bI1
 R7
 33
-R117
-!i10b 1
-R118
-R119
 R120
+!i10b 1
+R121
+R122
+R123
 !i113 1
 R12
 R13
 Etb_dmux4way
-R82
-R83
-R84
 R85
 R86
 R87
@@ -932,32 +929,32 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 R4
-Z121 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux4Way.vhd
-Z122 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux4Way.vhd
+Z124 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux4Way.vhd
+Z125 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux4Way.vhd
 l0
 L12
 V`Ee`nD5m75@]0SXha_9SP1
 !s100 5L:fMX;o]V`Iz=oWiK7[U2
 R7
 33
-R117
+R120
 !i10b 1
-R118
-Z123 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux4Way.vhd|
-Z124 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux4Way.vhd|
+R121
+Z126 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux4Way.vhd|
+Z127 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux4Way.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -971,9 +968,12 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 DEx4 work 11 tb_dmux4way 0 22 `Ee`nD5m75@]0SXha_9SP1
@@ -983,18 +983,15 @@ V[TF3WEP@7^^7[d_YZH6[K3
 !s100 LU7oJN3bC:BAN9Y9eMITK0
 R7
 33
-R117
+R120
 !i10b 1
-R118
-R123
-R124
+R121
+R126
+R127
 !i113 1
 R12
 R13
 Etb_dmux8way
-R82
-R83
-R84
 R85
 R86
 R87
@@ -1009,32 +1006,32 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 R4
-Z125 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux8Way.vhd
-Z126 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux8Way.vhd
+Z128 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux8Way.vhd
+Z129 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux8Way.vhd
 l0
 L12
 VHiaKRaP^V6`K]LiSlL30K2
 !s100 iehVRVU^^QCZmlH98YUAo2
 R7
 33
-R117
+R120
 !i10b 1
-R118
-Z127 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux8Way.vhd|
-Z128 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux8Way.vhd|
+R121
+Z130 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux8Way.vhd|
+Z131 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_DMux8Way.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -1048,9 +1045,12 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 DEx4 work 11 tb_dmux8way 0 22 HiaKRaP^V6`K]LiSlL30K2
@@ -1060,18 +1060,15 @@ Vn01RXGJnK6^F7JU2Wo8YZ2
 !s100 d:Q9Y_e`MX3bh^J8bS]>U3
 R7
 33
-R117
+R120
 !i10b 1
-R118
-R127
-R128
+R121
+R130
+R131
 !i113 1
 R12
 R13
 Etb_mux16
-R82
-R83
-R84
 R85
 R86
 R87
@@ -1086,32 +1083,32 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 R4
-Z129 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux16.vhd
-Z130 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux16.vhd
+Z132 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux16.vhd
+Z133 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux16.vhd
 l0
 L12
 V5Z]ZkVV6VIZMS?M8>MR6?2
 !s100 3n31zl2E@ZdA]^PRFF7mX1
 R7
 33
-R117
+R120
 !i10b 1
-R118
-Z131 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux16.vhd|
-Z132 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux16.vhd|
+R121
+Z134 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux16.vhd|
+Z135 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux16.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -1125,9 +1122,12 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 DEx4 work 8 tb_mux16 0 22 5Z]ZkVV6VIZMS?M8>MR6?2
@@ -1137,18 +1137,15 @@ V`32An?MfZV[M@N:b<9j@l3
 !s100 S5>]hC]MaLSged^zS;zf02
 R7
 33
-R117
+R120
 !i10b 1
-R118
-R131
-R132
+R121
+R134
+R135
 !i113 1
 R12
 R13
 Etb_mux2way
-R82
-R83
-R84
 R85
 R86
 R87
@@ -1163,32 +1160,32 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 R4
-Z133 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux2Way.vhd
-Z134 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux2Way.vhd
+Z136 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux2Way.vhd
+Z137 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux2Way.vhd
 l0
 L12
 V95m^RLJlHFlg>N:l43E;U2
 !s100 A<l=WNIfZE5maHh?`UzL72
 R7
 33
-R117
+R120
 !i10b 1
-R118
-Z135 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux2Way.vhd|
-Z136 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux2Way.vhd|
+R121
+Z138 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux2Way.vhd|
+Z139 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux2Way.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -1202,9 +1199,12 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 DEx4 work 10 tb_mux2way 0 22 95m^RLJlHFlg>N:l43E;U2
@@ -1214,18 +1214,15 @@ V^^c^o1JSVGZ:Q?c9mCd[50
 !s100 gTh;OkMEkKXc_5BkJcIJI1
 R7
 33
-R117
+R120
 !i10b 1
-R118
-R135
-R136
+R121
+R138
+R139
 !i113 1
 R12
 R13
 Etb_mux4way
-R82
-R83
-R84
 R85
 R86
 R87
@@ -1240,32 +1237,32 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 R4
-Z137 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way.vhd
-Z138 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way.vhd
+Z140 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way.vhd
+Z141 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way.vhd
 l0
 L12
 VAda6XcZ=REYG4gJAeGf1g1
 !s100 jG^of^A;C2;2>ja<A[@JO0
 R7
 33
-Z139 !s110 1505331560
+Z142 !s110 1505331560
 !i10b 1
-Z140 !s108 1505331560.000000
-Z141 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way.vhd|
-Z142 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way.vhd|
+Z143 !s108 1505331560.000000
+Z144 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way.vhd|
+Z145 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -1279,9 +1276,12 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 DEx4 work 10 tb_mux4way 0 22 Ada6XcZ=REYG4gJAeGf1g1
@@ -1291,18 +1291,15 @@ VRSBdzM`:mc9QZWKS<=PWh0
 !s100 _T3oRQDKzgB0Nb_2Z`B0h2
 R7
 33
-R139
-!i10b 1
-R140
-R141
 R142
+!i10b 1
+R143
+R144
+R145
 !i113 1
 R12
 R13
 Etb_mux4way16
-R82
-R83
-R84
 R85
 R86
 R87
@@ -1317,32 +1314,32 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 R4
-Z143 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way16.vhd
-Z144 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way16.vhd
+Z146 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way16.vhd
+Z147 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way16.vhd
 l0
 L12
 VDS:56mK]g96;>;b?Lmk=50
 !s100 I3Z6UV8_2?^?2NkM`FklZ0
 R7
 33
-R139
+R142
 !i10b 1
-R140
-Z145 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way16.vhd|
-Z146 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way16.vhd|
+R143
+Z148 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way16.vhd|
+Z149 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux4Way16.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -1356,9 +1353,12 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 DEx4 work 12 tb_mux4way16 0 22 DS:56mK]g96;>;b?Lmk=50
@@ -1368,18 +1368,15 @@ VmU<BzWzc=Z3=1JkmVDZ[Y1
 !s100 E=gZ^C8C[3EafG=2NeM`i3
 R7
 33
-R139
+R142
 !i10b 1
-R140
-R145
-R146
+R143
+R148
+R149
 !i113 1
 R12
 R13
 Etb_mux8way
-R82
-R83
-R84
 R85
 R86
 R87
@@ -1394,32 +1391,32 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 R4
-Z147 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way.vhd
-Z148 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way.vhd
+Z150 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way.vhd
+Z151 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way.vhd
 l0
 L12
 VPDf@K^Ye<I;N8zF2dLHNh1
 !s100 [UnHZFZVDODn]FGh@[^VQ1
 R7
 33
-R139
+R142
 !i10b 1
-R140
-Z149 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way.vhd|
-Z150 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way.vhd|
+R143
+Z152 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way.vhd|
+Z153 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -1433,9 +1430,12 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 DEx4 work 10 tb_mux8way 0 22 PDf@K^Ye<I;N8zF2dLHNh1
@@ -1445,18 +1445,15 @@ V=hKMhS=5BI73=Q<_:jS4X0
 !s100 HZMS_Yg@OeTCX_J:EUMeD2
 R7
 33
-R139
+R142
 !i10b 1
-R140
-R149
-R150
+R143
+R152
+R153
 !i113 1
 R12
 R13
 Etb_mux8way16
-R82
-R83
-R84
 R85
 R86
 R87
@@ -1471,32 +1468,32 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 R4
-Z151 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way16.vhd
-Z152 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way16.vhd
+Z154 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way16.vhd
+Z155 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way16.vhd
 l0
 L12
 VP9KBZQlE49@LXezA7:F?E0
 !s100 J4P_l7gI=?QB@ao:I]^Qg1
 R7
 33
-R139
+R142
 !i10b 1
-R140
-Z153 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way16.vhd|
-Z154 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way16.vhd|
+R143
+Z156 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way16.vhd|
+Z157 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Mux8Way16.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -1510,9 +1507,12 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 DEx4 work 12 tb_mux8way16 0 22 P9KBZQlE49@LXezA7:F?E0
@@ -1522,18 +1522,15 @@ Vm7j`I=0m9]5nR^hOVJHTW3
 !s100 S^6R8D]LYCg8Y]8m17H=>3
 R7
 33
-R139
+R142
 !i10b 1
-R140
-R153
-R154
+R143
+R156
+R157
 !i113 1
 R12
 R13
 Etb_nand
-R82
-R83
-R84
 R85
 R86
 R87
@@ -1548,32 +1545,32 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 R4
-Z155 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_nand.vhd
-Z156 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_nand.vhd
+Z158 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_nand.vhd
+Z159 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_nand.vhd
 l0
 L12
 VnQ]o>b3kU]B^zW0_j^FD=0
 !s100 aMe6E3WRV^[86=G6LDNL=3
 R7
 33
-Z157 !s110 1505331559
+Z160 !s110 1505331559
 !i10b 1
 R9
-Z158 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_nand.vhd|
-Z159 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_nand.vhd|
+Z161 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_nand.vhd|
+Z162 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_nand.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -1587,9 +1584,12 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 DEx4 work 7 tb_nand 0 22 nQ]o>b3kU]B^zW0_j^FD=0
@@ -1599,18 +1599,15 @@ V416ATGDMo[;P6TT=>V^3h0
 !s100 kQN0ie;aKiPVJaHh3T3Sz2
 R7
 33
-R157
+R160
 !i10b 1
 R9
-R158
-R159
+R161
+R162
 !i113 1
 R12
 R13
 Etb_nor8way
-R82
-R83
-R84
 R85
 R86
 R87
@@ -1625,32 +1622,32 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 R4
-Z160 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Nor8Way.vhd
-Z161 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Nor8Way.vhd
+Z163 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Nor8Way.vhd
+Z164 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Nor8Way.vhd
 l0
 L12
 V=KAhzYIkhoeK=m8Ue0bFN2
 !s100 6bboNo6b<mcRjn]lTR`Cj0
 R7
 33
-R157
+R160
 !i10b 1
-Z162 !s108 1505331559.000000
-Z163 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Nor8Way.vhd|
-Z164 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Nor8Way.vhd|
+Z165 !s108 1505331559.000000
+Z166 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Nor8Way.vhd|
+Z167 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Nor8Way.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -1664,9 +1661,12 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 DEx4 work 10 tb_nor8way 0 22 =KAhzYIkhoeK=m8Ue0bFN2
@@ -1676,18 +1676,15 @@ VkfB@U7;ARjmdMfnzAiPPR2
 !s100 NYWg`18MELKRKFIW3aC0K3
 R7
 33
-R157
+R160
 !i10b 1
-R162
-R163
-R164
+R165
+R166
+R167
 !i113 1
 R12
 R13
 Etb_not16
-R82
-R83
-R84
 R85
 R86
 R87
@@ -1702,32 +1699,32 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 R4
-Z165 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Not16.vhd
-Z166 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Not16.vhd
+Z168 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Not16.vhd
+Z169 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Not16.vhd
 l0
 L12
 Vi;?K[CJOlH`^5nSY>YMhz3
 !s100 4dm6NASM[>mYeOOAV9?jT3
 R7
 33
-R157
+R160
 !i10b 1
-R162
-Z167 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Not16.vhd|
-Z168 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Not16.vhd|
+R165
+Z170 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Not16.vhd|
+Z171 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Not16.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -1741,9 +1738,12 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 DEx4 work 8 tb_not16 0 22 i;?K[CJOlH`^5nSY>YMhz3
@@ -1753,18 +1753,15 @@ V;JJJOB^?Cknl[IlJ=AnI73
 !s100 zMRTjAjN7di_Z:LnGjMol2
 R7
 33
-R157
+R160
 !i10b 1
-R162
-R167
-R168
+R165
+R170
+R171
 !i113 1
 R12
 R13
 Etb_or16
-R82
-R83
-R84
 R85
 R86
 R87
@@ -1779,32 +1776,32 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 R4
-Z169 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Or16.vhd
-Z170 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Or16.vhd
+Z172 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Or16.vhd
+Z173 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Or16.vhd
 l0
 L12
 V=Yc8_oJ3PKMZS6m_d<=6l2
 !s100 gFNQ;eQ3H<gUII[Ri?G:X1
 R7
 33
-R157
+R160
 !i10b 1
-R162
-Z171 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Or16.vhd|
-Z172 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Or16.vhd|
+R165
+Z174 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Or16.vhd|
+Z175 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Or16.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -1818,9 +1815,12 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 DEx4 work 7 tb_or16 0 22 =Yc8_oJ3PKMZS6m_d<=6l2
@@ -1830,18 +1830,15 @@ VVgZ>gEMakbj8[jWklafPV0
 !s100 GFjjE1dk3acljM1YGKFRB3
 R7
 33
-R157
+R160
 !i10b 1
-R162
-R171
-R172
+R165
+R174
+R175
 !i113 1
 R12
 R13
 Etb_or8way
-R82
-R83
-R84
 R85
 R86
 R87
@@ -1856,32 +1853,32 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 R4
-Z173 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Or8Way.vhd
-Z174 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Or8Way.vhd
+Z176 8C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Or8Way.vhd
+Z177 FC:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Or8Way.vhd
 l0
 L12
 VF1NRUj=[@hQ<4nhTNgo<20
 !s100 lIW3RH9SMR6k_FRD;XMDH0
 R7
 33
-R157
+R160
 !i10b 1
-R162
-Z175 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Or8Way.vhd|
-Z176 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Or8Way.vhd|
+R165
+Z178 !s90 -quiet|-modelsimini|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\vunit_out\modelsim\modelsim.ini|-2008|-work|lib|C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Or8Way.vhd|
+Z179 !s107 C:\Users\Gustavo Gobetti\Documents\Insper\4-Semestre-2017\Elementos-de-Sistema-2\Z0\03-Logica-Combinacional\testBench\tb_Or8Way.vhd|
 !i113 1
 R12
 R13
 Atb
-R83
-R84
-R85
 R86
 R87
 R88
@@ -1895,9 +1892,12 @@ R95
 R96
 R97
 R98
-R15
 R99
 R100
+R101
+R15
+R102
+R103
 R2
 R3
 DEx4 work 9 tb_or8way 0 22 F1NRUj=[@hQ<4nhTNgo<20
@@ -1907,11 +1907,11 @@ V06gI:I96FKEOYXWN0UFX20
 !s100 C=>J:J]FlL9]mP8CdJRXh1
 R7
 33
-R157
+R160
 !i10b 1
-R162
-R175
-R176
+R165
+R178
+R179
 !i113 1
 R12
 R13

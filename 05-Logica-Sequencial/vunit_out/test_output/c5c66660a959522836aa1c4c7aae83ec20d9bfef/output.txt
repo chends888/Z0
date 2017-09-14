@@ -1,0 +1,6 @@
+# vsim -wlf C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/vunit_out/test_output/c5c66660a959522836aa1c4c7aae83ec20d9bfef/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_register16(tb) -L vunit_lib -L lib -g/tb_register16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/vunit_out/test_output/c5c66660a959522836aa1c4c7aae83ec20d9bfef/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/05-Logica-Sequencial/testBench/" 
+# Start time: 15:23:20 on Sep 13,2017
+# ** Warning: Design size of 11344 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# Break in Subprogram vunit_stop at C:/Users/Gustavo Gobetti/Anaconda/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10
+# Stopped at C:/Users/Gustavo Gobetti/Anaconda/lib/site-packages/vunit/vhdl/core/src/stop_body_2008.vhd line 10

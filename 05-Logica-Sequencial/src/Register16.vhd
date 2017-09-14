@@ -13,3 +13,20 @@ entity Register16 is
 		output: out STD_LOGIC_VECTOR(15 downto 0)
 	);
 end entity;
+
+architecture rtl of Register16 is
+
+begin
+
+process(clock)
+
+	begin 
+		if(clock'event and clock ='1' and load='1') then
+				output <= input;
+		end if;
+	end process;
+
+end rtl;
+
+
+

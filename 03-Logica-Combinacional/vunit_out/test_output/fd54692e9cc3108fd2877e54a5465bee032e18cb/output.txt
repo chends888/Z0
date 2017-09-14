@@ -1,5 +1,5 @@
 # vsim -wlf C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/03-Logica-Combinacional/vunit_out/test_output/fd54692e9cc3108fd2877e54a5465bee032e18cb/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_barrelshifter16(tb) -L vunit_lib -L lib -g/tb_barrelshifter16/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/03-Logica-Combinacional/vunit_out/test_output/fd54692e9cc3108fd2877e54a5465bee032e18cb/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/03-Logica-Combinacional/testBench/" 
-# Start time: 10:47:10 on Sep 13,2017
+# Start time: 15:24:13 on Sep 13,2017
 # ** Warning: Design size of 11303 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
 # Expect performance to be adversely affected.
 # ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
