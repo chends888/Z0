@@ -38,7 +38,7 @@ begin
     f  <= instruction(7);
     no <= instruction(0);
 
-    LoadM <= instruction(2)   and instruction(15);
+    LoadM <= instruction(3)   and instruction(15);
 
     loadPC <= instruction(15) and ((instruction(0)  and ((not ng) and (not zr))) or (instruction(1) and zr) or (instruction(2) and ng));
 
