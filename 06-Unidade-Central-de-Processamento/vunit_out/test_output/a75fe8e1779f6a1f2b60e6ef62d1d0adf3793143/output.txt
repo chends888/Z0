@@ -1,0 +1,25 @@
+# vsim -wlf C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Z0/06-Unidade-Central-de-Processamento/vunit_out/test_output/a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_controlunit(tb) -L vunit_lib -L lib -g/tb_controlunit/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/06-Unidade-Central-de-Processamento/vunit_out/test_output/a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/06-Unidade-Central-de-Processamento/testBench/" 
+# Start time: 09:28:11 on Sep 15,2017
+# ** Warning: Design size of 11235 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Error: Falha em load A instrucao tipo A
+#    Time: 200 ps  Iteration: 0  Process: /tb_controlunit/main File: C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/06-Unidade-Central-de-Processamento/testBench/tb_ControlUnit.vhd
+# Break in Process main at C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/06-Unidade-Central-de-Processamento/testBench/tb_ControlUnit.vhd line 53
+# Stopped at C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/06-Unidade-Central-de-Processamento/testBench/tb_ControlUnit.vhd line 53
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Z0/06-Unidade-Central-de-Processamento/testBench/tb_ControlUnit.vhd 53 return [address 0xff1866b5] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   48 :     test_runner_setup(runner, runner_cfg);
+#   49 : 
+#   50 : 		-- Teste: 0
+#   51 :     instruction <= "0111111111111111";
+#   52 :     wait for 200 ps;
+# ->53 : 		assert(loadA = '1')  report "Falha em load A instrucao tipo A" severity error;
+#   54 :     assert(loadD = '0')  report "Falha em load D instrucao tipo A" severity error;
+#   55 :     assert(loadM = '0')  report "Falha em load M instrucao tipo A" severity error;
+#   56 :     test_runner_cleanup(runner); -- Simulation ends here
+#   57 : 
+# 
