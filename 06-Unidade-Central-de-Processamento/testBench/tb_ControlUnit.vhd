@@ -57,31 +57,39 @@ begin
     wait for 200 ps;
     instruction <= "1110001111010000";
     assert(loadA = '0' and loadD = '1' and loadM = '0') report "Falha em load D instrução tipo C " severity error;
-    teste_runner_cleanup(runner); 
+    teste_runner_cleanup(runner_cfg); 
 
     -- Teste 2 tipo C (-A carrega em A)
     wait for 200 ps;
     instruction <= "1111011001110000";
     assert(loadA='1' and loadD='0' and loadM ='0') report "Falha em load A instrução tipo C" severity error;
-    teste_runner_cleanup
+    teste_runner_cleanup(runner_cfg);
 
     --Teste 3 tipo A (carrega 10 no registrador A)
     wait for 200 ps;
     instruction <= "0000000000001010";
     assert(loadA = '1' and loadD = '0' and loadM = '0') report "Falha em load A instrução tipo A" severity error;
-    teste_runner_cleanup
+    teste_runner_cleanup(runner);
 
     --Teste 4 tipo C (D+M carrega em AD)
     wait for 200 ps;
     instruction <= "1111000010110000";
     assert(loadA = '1' and loadD = '1' and loadM = '1') report "Falha em loadA e loadD instrucao tipo C" severity error;
-    teste_runner_cleanup
+    teste_runner_cleanup(runner_cfg);
 
     -- Teste 5 tipo C (D&M carrega em AMD)
     wait for 200 ps;
     instruction <= "1111000000111000";
     assert(loadA = '1' and loadD = '1' and loadM = '1') report "Falha em em loadA e loadD e loadM tipo C" severity error;
-    teste_runner_cleanup
+    teste_runner_cleanup(runner_cfg);
+
+    -- Teste 6 tipo C (carrega !A em M + JGE)
+    --wait for 200 ps;
+    --instruction <= "1111110001001011";
+    --assert(loadA = '0' and loadD = '0' and loadM = '1' and loadPC = '?')
+
+
+
 
 	wait;
   end process;
