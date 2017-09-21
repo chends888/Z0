@@ -46,42 +46,43 @@ begin
   main : process
     begin
     test_runner_setup(runner, runner_cfg);
-
-		-- Teste: 0
-		wait for 200 ps;
+    
+    -- Teste: 0
+    wait for 200 ps;
     instruction <= "0111111111111111";
-		assert(loadA = '1' and loadD = '0' and loadM = '0')  report "Falha em load A instrucao tipo A" severity error;
-    test_runner_cleanup(runner); -- Simulation ends here
+    assert(loadA = '1' and loadD = '0' and loadM = '0')  report "Falha em load A instrucao tipo A" severity error;
+     -- Simulation ends here
 
     -- Teste 1 tipo C (-D carrega em D) 
     wait for 200 ps;
     instruction <= "1110001111010000";
     assert(loadA = '0' and loadD = '1' and loadM = '0') report "Falha em load D instrução tipo C " severity error;
-    teste_runner_cleanup(runner_cfg); 
+     
 
     -- Teste 2 tipo C (-A carrega em A)
     wait for 200 ps;
     instruction <= "1111011001110000";
     assert(loadA='1' and loadD='0' and loadM ='0') report "Falha em load A instrução tipo C" severity error;
-    teste_runner_cleanup(runner_cfg);
+    
 
     --Teste 3 tipo A (carrega 10 no registrador A)
     wait for 200 ps;
     instruction <= "0000000000001010";
     assert(loadA = '1' and loadD = '0' and loadM = '0') report "Falha em load A instrução tipo A" severity error;
-    teste_runner_cleanup(runner);
+    
 
     --Teste 4 tipo C (D+M carrega em AD)
     wait for 200 ps;
     instruction <= "1111000010110000";
     assert(loadA = '1' and loadD = '1' and loadM = '1') report "Falha em loadA e loadD instrucao tipo C" severity error;
-    teste_runner_cleanup(runner_cfg);
+    
 
     -- Teste 5 tipo C (D&M carrega em AMD)
     wait for 200 ps;
     instruction <= "1111000000111000";
     assert(loadA = '1' and loadD = '1' and loadM = '1') report "Falha em em loadA e loadD e loadM tipo C" severity error;
-    teste_runner_cleanup(runner_cfg);
+   
+    test_runner_cleanup(runner);
 
     -- Teste 6 tipo C (carrega !A em M + JGE)
     --wait for 200 ps;
@@ -91,6 +92,6 @@ begin
 
 
 
-	wait;
+	   wait;
   end process;
 end architecture;
