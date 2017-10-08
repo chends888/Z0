@@ -1,0 +1,15 @@
+# Arquivo que define as rotinas de testes
+# Criado por Luciano Soares <lpsoares@insper.edu.br>
+# Editado por Rafael Corsi <rafael.corsi@insper.edu.br>
+#   Setembro/2017
+
+math_max            0 1024 
+math_abs            0 1024  
+math_divisao        0 1024
+math_multiplicacao  0 1024
+math_fibonacci      0 1024
+math_fatorial       0 1024
+math_somaMatiz      0 1024           
+math_determinante   0 1024
+display_G           0 1024
+display_C           0 1024

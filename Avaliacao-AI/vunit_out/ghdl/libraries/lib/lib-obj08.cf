@@ -1,0 +1,7 @@
+v 4
+file / "/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/4-Projetos/Avaliacao-AI/hdl/MultiplicadorAcomB.vhd" "886990e522254247d24567f9127faaa31031bb0f" "20170928102410.086":
+  entity multiplicadoracomb at 5( 75) + 0 on 11;
+  architecture arch of multiplicadoracomb at 16( 317) + 0 on 12;
+file / "/home/corsi/Dropbox/Insper/3s-ElementoDeSistemas/4-Projetos/Avaliacao-AI/hdl/tb_MultiplicadorAcomB.vhd" "0a27684896bca6c720b8ee0fb3930d7d0c1afd48" "20170928102948.344":
+  entity tb_multiplicador at 6( 102) + 0 on 15;
+  architecture tb of tb_multiplicador at 16( 282) + 0 on 16;
