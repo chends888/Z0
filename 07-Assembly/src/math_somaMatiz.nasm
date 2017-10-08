@@ -1,7 +1,7 @@
 ; Abs.nasm
 ; Copia o valor de RAM[1] para RAM[0] deixando o valor sempre positivo.
 
-MAIN: 
+MAIN:
   leaw %R1,%A    ; A <= 1
   movw (%A),%D  ; D <= RAM[1]
   leaw %DPOS,%A ; A <= DPOS
