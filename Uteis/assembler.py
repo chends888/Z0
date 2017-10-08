@@ -39,8 +39,12 @@ def assembler(jar,testes,in_dir,out_dir_mif, out_dir_hack,bits,processos):
                 jar = jar.replace('/','\\')
                 testes = testes.replace('/','\\')
                 in_dir = in_dir.replace('/','\\')
+<<<<<<< HEAD
                 out_dir_mif = out_dir_mif.replace('/','\\')
                 out_dir_hack = out_dir_hack.replace('/','\\')
+=======
+                out_dir = out_dir.replace('/','\\')
+>>>>>>> 5e41e46b24dd4e1f20efbd51f421498432cb2b86
                 shell=True
         else:
                 rotina_mkdir.append("-p") # para criar os subdiretórios no mkdir no UNIX

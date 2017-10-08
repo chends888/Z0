@@ -38,7 +38,11 @@ begin
     f  <= instruction(7);
     no <= instruction(0);
 
+<<<<<<< HEAD
     LoadM <= instruction(2)   and instruction(15);
+=======
+    LoadM <= instruction(3)   and instruction(15);
+>>>>>>> 5e41e46b24dd4e1f20efbd51f421498432cb2b86
 
     loadPC <= instruction(15) and ((instruction(0)  and ((not ng) and (not zr))) or (instruction(1) and zr) or (instruction(2) and ng));
 
