@@ -22,10 +22,9 @@ end entity;
 architecture arch of ControlUnit is
 begin
 
-    muxALUI_A <= not instruction(15);
+    muxALUI_A <= not instruction(12);
 
     loadA <= (instruction(5) and instruction(15)) or (not instruction(15));
-
 
     loadD <= (instruction(4) and instruction(15));
 
@@ -36,7 +35,7 @@ begin
     zy <= instruction(9);
     ny <= instruction(8);
     f  <= instruction(7);
-    no <= instruction(0);
+    no <= instruction(6);
 
     LoadM <= instruction(3)   and instruction(15);
 

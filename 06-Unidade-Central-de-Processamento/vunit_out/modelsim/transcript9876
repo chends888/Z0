@@ -1,0 +1,26 @@
+# do {C:\Users\Gustavo Gobetti\Anaconda\lib\site-packages\vunit\tcl_read_eval_loop.tcl}
+# vsim -wlf C:/Users/Gustavo\ Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/06-Unidade-Central-de-Processamento/vunit_out/test_output/a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/modelsim/vsim.wlf -quiet -t ps -onfinish stop lib.tb_controlunit(tb) -L vunit_lib -L lib -g/tb_controlunit/runner_cfg="active python runner : true,enabled_test_cases : ,output path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/06-Unidade-Central-de-Processamento/vunit_out/test_output/a75fe8e1779f6a1f2b60e6ef62d1d0adf3793143/,tb path : C::/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/06-Unidade-Central-de-Processamento/testBench/" 
+# Start time: 15:29:53 on Sep 20,2017
+# ** Warning: Design size of 11257 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Error: Falha em load D instrução tipo C 
+#    Time: 400 ps  Iteration: 0  Process: /tb_controlunit/main File: C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/06-Unidade-Central-de-Processamento/testBench/tb_ControlUnit.vhd
+# Break in Process main at C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/06-Unidade-Central-de-Processamento/testBench/tb_ControlUnit.vhd line 59
+# Stopped at C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/06-Unidade-Central-de-Processamento/testBench/tb_ControlUnit.vhd line 59
+# 
+# Stack trace result from 'tb' command
+#  C:/Users/Gustavo Gobetti/Documents/Insper/4-Semestre-2017/Elementos-de-Sistema-2/Z0/06-Unidade-Central-de-Processamento/testBench/tb_ControlUnit.vhd 59 return [address 0xff18680b] Process main
+# 
+# 
+# Surrounding code from 'see' command
+#   54 :      -- Simulation ends here
+#   55 : 
+#   56 :     -- Teste 1 tipo C (-D carrega em D) 
+#   57 :     instruction <= "1110001111010000";
+#   58 :     wait for 200 ps;
+# ->59 :     assert(loadA = '0' and loadD = '1' and loadM = '0') report "Falha em load D instrução tipo C " severity error;
+#   60 :      
+#   61 : 
+#   62 :     -- Teste 2 tipo C (-A carrega em A)
+#   63 :     instruction <= "1111011001110000";
+# 

@@ -39,7 +39,7 @@ architecture tb of tb_ControlUnit is
 
 begin
 
-	--CU: ControlUnit port map(instruction, zr, ng, maxALUIA_A, maxAM_ALU, zx, nx, zy, ny, f, no, loadA, loadD, loadM, loadPC);
+	CU: ControlUnit port map(instruction, zr, ng, muxALUI_A, muxAM_ALU, zx, nx, zy, ny, f, no, loadA, loadD, loadM, loadPC);
 
 	inClock <= not inClock after 100 ps;
 
@@ -48,26 +48,26 @@ begin
     test_runner_setup(runner, runner_cfg);
     
     -- Teste: 0
-    wait for 200 ps;
     instruction <= "0111111111111111";
+    wait for 200 ps;
     assert(loadA = '1' and loadD = '0' and loadM = '0')  report "Falha em load A instrucao tipo A" severity error;
      -- Simulation ends here
 
     -- Teste 1 tipo C (-D carrega em D) 
-    wait for 200 ps;
     instruction <= "1110001111010000";
+    wait for 200 ps;
     assert(loadA = '0' and loadD = '1' and loadM = '0') report "Falha em load D instrução tipo C " severity error;
      
 
     -- Teste 2 tipo C (-A carrega em A)
+    instruction <= "1110011001110000";
     wait for 200 ps;
-    instruction <= "1111011001110000";
     assert(loadA='1' and loadD='0' and loadM ='0') report "Falha em load A instrução tipo C" severity error;
     
 
     --Teste 3 tipo A (carrega 10 no registrador A)
-    wait for 200 ps;
     instruction <= "0000000000001010";
+    wait for 200 ps;
     assert(loadA = '1' and loadD = '0' and loadM = '0') report "Falha em load A instrução tipo A" severity error;
     
 
