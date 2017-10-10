@@ -1,33 +1,79 @@
-; math_somaMatriz.nasm
-; Faz a soma de duas matrizes 2x2 (RAM[1000] e RAM[1010]) e salva seu resultado
-;  no endereço RAM[0]
+; math_determinante.nasm
+; Calcula o determinante de uma matriz 2x2 (RAM[10]) e
+;  salva seu resultado no endereço RAM[0]
 ;
-; Calcula o determinante de uma matriz 3x3 da forma
-; A = [ a00, a01 ] 
-;     [ a10, a11 ]
-;
-; B = [ b00, b01 ] 
-;     [ b10, b11 ]
+; Calcula o determinante de uma matriz 2x2 da forma
+; [ a0, a1 ]
+; [ b0, b1 ]
 ;
 ; Salva na memória da seguinte maneira  :
-; RAM[1000] = a00
-; RAM[1001] = a01
-; RAM[1002] = a10
-; RAM[1003] = a11
-;
-; RAM[1010] = b00
-; RAM[1011] = b01
-; ....
-;
-; E salva o resultado em no endereço RAM[0]
-;
-;
-;  C = A + B
-;
-; RAM[0] = c00
-; RAM[1] = c01
-; ....
+; RAM[10] = a0
+; RAM[11] = a1
+; RAM[12] = b0
+; RAM[13] = b1
 
 
+LOOP:
+
+leaw $10, %A
+movw (%A), %D
 
 
+leaw %END, %A
+movw %D, %D
+jle
+nop
+
+decw %D
+leaw $10, %A
+movw %D, (%A)
+leaw $13, %A
+movw (%A), %D
+leaw $1, %A
+addw (%A), %D, %D
+movw %D, (%A)
+leaw %LOOP, %A
+jmp
+nop
+
+
+END:
+
+LOOP2:
+
+leaw $11, %A
+movw (%A), %D
+
+
+leaw %END2, %A
+movw %D, %D
+jle
+nop
+
+decw %D
+leaw $11, %A
+movw %D, (%A)
+leaw $12, %A
+movw (%A), %D
+leaw $2, %A
+addw (%A), %D, %D
+movw %D, (%A)
+leaw %LOOP2, %A
+jmp
+nop
+
+
+END2:
+
+leaw $2, %A
+movw (%A), %D
+leaw $1, %A
+subw (%A), %D, %D
+leaw %0, %A
+movw %D, (%A)
+
+
+END3:
+leaw %END3, %A
+jmp
+nop
