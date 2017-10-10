@@ -5,86 +5,249 @@
 
 package assembler;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+
 /**
- * Encapsula o código de leitura. Carrega as instruções na linguagem assembly,
- * analisa, e oferece acesso as partes da instrução  (campos e símbolos).
- * Além disso, remove todos os espaços em branco e comentários.
+ * Encapsula o cÃ³digo de leitura. Carrega as instruÃ§Ãµes na linguagem assembly,
+ * analisa, e oferece acesso as partes da instruÃ§Ã£o  (campos e sÃ­mbolos).
+ * AlÃ©m disso, remove todos os espaÃ§os em branco e comentÃ¡rios.
  */
-public class Parser {
+public class Parser 
+{
 
     /** Enumerator para os tipos de comandos do Assembler. */
-    public enum CommandType {
+    public enum CommandType 
+    {
         A_COMMAND,      // comandos LEA, que armazenam no registrador A
         C_COMMAND,      // comandos de calculos
-        L_COMMAND       // comandos de Label (símbolos)
+        L_COMMAND       // comandos de Label (sÃ­mbolos)
     }
 
+    private SymbolTable symbolTable;
+    String currentCommand;
+    
+    
+    
+    
+    BufferedReader br;
+    
     /**
-     * Abre o arquivo de entrada NASM e se prepara para analisá-lo.
-     * @param file arquivo NASM que será feito o parser.
+     * Abre o arquivo de entrada NASM e se prepara para analisÃ¡-lo.
+     * @param file arquivo NASM que serÃ¡ feito o parser.
      */
-    public Parser(String file) {
+    public Parser(String file) 
+    {
+    	
+    	symbolTable = new SymbolTable();
+        try 
+        {
+        	System.out.println("Working Directory = " +
+                    System.getProperty("user.dir"));
+
+        	//int i = 0;
+
+        	try (BufferedReader br_1p = new BufferedReader(new FileReader(file))) 
+        	{
+        	    String line;
+        	    int i = 0;
+        	    while ((line = br_1p.readLine()) != null) 
+        	    {
+        	    	if (line.indexOf(';') == 0 || line.isEmpty() )
+        	  {
+                        //i += 1;
+              }  else if (line.contains(":"))
+                {
+                    	line = line.split(":")[0];
+                    	System.out.println("SS"+line);
+                    	
+                    if (!symbolTable.contains(line)) 
+                    	{
+                         symbolTable.addEntry(line,i);
+                         System.out.println("SS"+line);
+                        }
+               } else 
+                    {
+                    	i++;
+                    }
+        	       System.out.println(line);// process the line.
+        	    }
+        	}
+
+        	br = new BufferedReader(new FileReader(file));
+
+
+        } catch (Exception e)
+        { 
+            e.printStackTrace();
+        }
+
+        //currentCommand = "";
 
     }
 
+
     /**
-     * Carrega uma instrução e avança seu apontador interno para o próxima
-     * linha do arquivo de entrada. Caso não haja mais linhas no arquivo de
-     * entrada o método retorna "Falso", senão retorna "Verdadeiro".
-     * @return Verdadeiro se ainda há instruções, Falso se as instruções terminaram.
+     * Carrega uma instruÃ§Ã£o e avanÃ§a seu apontador interno para o prÃ³xima
+     * linha do arquivo de entrada. Caso nÃ£o haja mais linhas no arquivo de
+     * entrada o mÃ©todo retorna "Falso", senÃ£o retorna "Verdadeiro".
+     * @return Verdadeiro se ainda hÃ¡ instruÃ§Ãµes, Falso se as instruÃ§Ãµes terminaram.
      */
-    public Boolean advance() {
-    	return null;
+    public boolean advance()
+    
+    {
+    	
+    	
+    	try {
+			currentCommand = br.readLine();
+			} catch (IOException e) 
+    	{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		//System.out.println(currentCommand);
+
+    	if(currentCommand==null)
+    	{
+    		return false;
+    	}
+
+			if (currentCommand.trim().isEmpty())
+		{
+				return advance();
+		}
+
+			if (currentCommand.charAt(0) == ';')
+		{
+				return advance();
+		}
+
+    	return true;
     }
 
+    
     /**
-     * Retorna o comando "intrução" atual (sem o avanço)
-     * @return a instrução atual para ser analilisada
+     * Retorna o comando "intruÃ§Ã£o" atual (sem o avanÃ§o)
+     * @return a instruÃ§Ã£o atual para ser analilisada
      */
-    public String command() {
-    	return null;
+    public String command() 
+    {
+    	return currentCommand;
     }
 
     /**
-     * Retorna o tipo da instrução passada no argumento:
+     * Retorna o tipo da instruÃ§Ã£o passada no argumento:
      *  A_COMMAND para leaw, por exemplo leaw $1,%A
-     *  L_COMMAND para labels, por exemplo Xyz: , onde Xyz é um símbolo.
+     *  L_COMMAND para labels, por exemplo Xyz: , onde Xyz Ã© um sÃ­mbolo.
      *  C_COMMAND para todos os outros comandos
-     * @param  command instrução a ser analisada.
-     * @return o tipo da instrução.
+     * @param  command instruÃ§Ã£o a ser analisada.
+     * @return o tipo da instruÃ§Ã£o.
      */
-    public CommandType commandType(String command) {
-    	return null;
+    public CommandType commandType(String command) 
+    {
+    	// l == leaw==instrucao do tipo A
+        Character first = command.charAt(0);
+         if(first == 'l') 
+         {
+        	 return CommandType.A_COMMAND;
+         }
+
+         // Se termina com :, é um label
+         int length = command.length();
+         
+         Character last = command.charAt(length - 1);
+         
+         if (last == ':')
+         {
+        	 return CommandType.L_COMMAND;
+         }
+         // Caso seja outro comando
+         return CommandType.C_COMMAND;
     }
 
     /**
-     * Retorna o símbolo ou valor numérico da instrução passada no argumento.
-     * Deve ser chamado somente quando commandType() é A_COMMAND.
-     * @param  command instrução a ser analisada.
-     * @return somente o símbolo ou o valor número da instrução.
+     * Retorna o sÃ­mbolo ou valor numÃ©rico da instruÃ§Ã£o passada no argumento.
+     * Deve ser chamado somente quando commandType() Ã© A_COMMAND.
+     * @param  command instruÃ§Ã£o a ser analisada.
+     * @return somente o sÃ­mbolo ou o valor nÃºmero da instruÃ§Ã£o.
      */
-    public String symbol(String command) {
-    	return null;
+    public String symbol(String command) 
+    {
+    	String[] s1 = command.split("\\s");
+    	
+    	String symbol = s1[1].replace("$", "");
+    	
+    	symbol = symbol.replace(",%A", "");
+    	
+    	System.out.println("!"+symbol);
+    	
+    	return symbol;
+    
     }
 
     /**
-     * Retorna o símbolo da instrução passada no argumento.
-     * Deve ser chamado somente quando commandType() é L_COMMAND.
-     * @param  command instrução a ser analisada.
-     * @return o símbolo da instrução (sem os dois pontos).
+     * Retorna o sÃ­mbolo da instruÃ§Ã£o passada no argumento.
+     * Deve ser chamado somente quando commandType() Ã© L_COMMAND.
+     * @param  command instruÃ§Ã£o a ser analisada.
+     * @return o sÃ­mbolo da instruÃ§Ã£o (sem os dois pontos).
      */
-    public String label(String command) {
-    	return null;
+    
+    // Comandos sem ':'
+    public String label(String command) 
+    {
+    	if (command.indexOf(":") !=0)
+    		
+    	{
+            return command.replace(":","");
+            
+        }
+      	return null;
     }
 
     /**
-     * Separa os mnemônicos da instrução fornecida em tokens em um vetor de Strings.
-     * Deve ser chamado somente quando CommandType () é C_COMMAND.
-     * @param  command instrução a ser analisada.
-     * @return um vetor de string contento os tokens da instrução (as partes do comando).
+     * Separa os mnemÃ´nicos da instruÃ§Ã£o fornecida em tokens em um vetor de Strings.
+     * Deve ser chamado somente quando CommandType () Ã© C_COMMAND.
+     * @param  command instruÃ§Ã£o a ser analisada.
+     * @return um vetor de string contento os tokens da instruÃ§Ã£o (as partes do comando).
      */
-    public String[] instruction(String command) {
-    	return null;
+    public String[] instruction(String command) 
+    {
+    	
+        String[] instructionCode = command.split(" ");
+
+     	if (instructionCode.length <= 1)
+    {
+     		return instructionCode;
+   	}
+   	else 
+   	{
+   		String[] secondParts = instructionCode[1].split(",");
+   		
+   		List<String> answer = new ArrayList<String>();
+   		
+   		answer.add(instructionCode[0]);
+   		
+   		for(int i = 0; i < secondParts.length; i++)
+   		{
+   			answer.add(secondParts[i]);
+   		}
+   		String[] instruction = new String[answer.size()];
+   		
+   		instruction = answer.toArray(instruction);
+   		
+   		return instruction;
+
+   	}
+    }
+
+      public SymbolTable getSymbolTable(){
+          return symbolTable;
+    	
     }
 
 }
