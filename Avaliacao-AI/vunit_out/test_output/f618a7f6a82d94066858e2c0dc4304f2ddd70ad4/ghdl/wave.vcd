@@ -1,0 +1,20 @@
+$date
+  Thu Sep 28 07:29:48 2017
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 1 ! check_enabled $end
+$comment runner is not handled $end
+$var reg 16 " a[15:0] $end
+$var reg 16 # b[15:0] $end
+$var reg 16 $ y[15:0] $end
+$scope module u1 $end
+$var reg 16 % a[15:0] $end
+$var reg 16 & b[15:0] $end
+$var reg 16 ' y[15:0] $end
+$upscope $end
+$enddefinitions $end

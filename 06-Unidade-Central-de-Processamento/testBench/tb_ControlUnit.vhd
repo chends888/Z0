@@ -46,6 +46,16 @@ begin
   main : process
     begin
     test_runner_setup(runner, runner_cfg);
+<<<<<<< HEAD
+
+		-- Teste: 0
+		wait for 200 ps;
+    --instructions <= "0111111111111111111"
+		--assert(loadA = '1' and loadD = '0' and loadM = '0')  report "Falha em load A instrucao tipo A" severity error;
+    test_runner_cleanup(runner); -- Simulation ends here
+
+	wait;
+=======
     
     -- Teste: 0
     instruction <= "0111111111111111";
@@ -93,5 +103,6 @@ begin
 
 
 	   wait;
+>>>>>>> 5e41e46b24dd4e1f20efbd51f421498432cb2b86
   end process;
 end architecture;
