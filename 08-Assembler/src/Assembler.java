@@ -15,6 +15,8 @@ package assembler;
  */
 class AssemblerZ0 {
 
+    int bits = 16;
+
     public static void main(String[] args) {
 
         String help = "file.nasm -o outFile{.hack .mif} -d debug -h help";
@@ -56,15 +58,39 @@ class AssemblerZ0 {
             System.out.println("-i / -o");
             System.exit(02);
         }
+
         outputFileHack = outputFile.concat(".hack");
         outputFileMif  = outputFile.concat(".mif");
 
         System.out.printf("-i = %s, -o = %s , %s", inputFile, outputFileHack, outputFileMif);
 
+
+        table = new SymbolTable(); // Cria e inicializa a tabela de simbolos
+
         Parser parser = new Parser(inputFile);
-        // Varre todos as linhas
+
+        // Varre todos as linhas para criar a tabela
         do {
             System.out.println(parser.command());
         }while (parser.advance());
+
+        int romAddress = 0;
+        String symbol;
+        while (parser.advance()) {
+            if (parser.commandType(parser.command()) == Parser.CommandType.L_COMMAND) {
+                symbol = parser.label(parser.command());
+                if (!table.contains(symbol))
+                    table.addEntry(symbol, romAddress);
+                else {
+                    System.out.println("Mesmo símbolo aparece mais de uma vezes no programa : "+symbol);
+                }
+            } else {
+                romAddress++;
+                if (romAddress > Math.round(Math.pow(2,bits-1))) // aviso caso a memoria ROM tenha acabado
+                    System.out.println("Aviso: toda a ROM disponível do Z0 foi usada");
+            }
+        }
     }
 }
+
+
