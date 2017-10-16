@@ -45,16 +45,16 @@ public class ParserTest {
     	
         try {
         	
-            assertTrue("leaw $0,%A",parser.commandType("leaw $0,%A")==Parser.CommandType.A_COMMAND);
+            assertTrue("leaw $0,%A",parser.commandType("   leaw $0,%A")==Parser.CommandType.A_COMMAND);
             assertTrue("abc:",parser.commandType("abc:")==Parser.CommandType.L_COMMAND);
             assertTrue("movw %A,%D",parser.commandType("movw %A,%D")==Parser.CommandType.C_COMMAND);
             assertTrue("TESTE:",parser.commandType("TESTE:")==Parser.CommandType.L_COMMAND);
             assertTrue("leaw $100,%A",parser.commandType("leaw $100,%A")==Parser.CommandType.A_COMMAND);
             assertTrue("Z0:",parser.commandType("Z0:")==Parser.CommandType.L_COMMAND);
-            assertTrue("movw %D,%A",parser.commandType("movw %D,%A")==Parser.CommandType.C_COMMAND);
+            assertTrue("movw %D,%A",parser.commandType("  movw %D,%A")==Parser.CommandType.C_COMMAND);
             assertTrue("jmp",parser.commandType("jmp")==Parser.CommandType.C_COMMAND);
             assertTrue("nop",parser.commandType("nop")==Parser.CommandType.C_COMMAND);
-            assertTrue("addw %D,%A,%D",parser.commandType("addw %D,%A,%D")==Parser.CommandType.C_COMMAND);
+            assertTrue("addw %D,%A,%D",parser.commandType("addw   %D,%A,%D")==Parser.CommandType.C_COMMAND);
             
 	    } catch(Exception e) {
             e.printStackTrace();
@@ -91,17 +91,19 @@ public class ParserTest {
     public void testParser_symbol() {
 
     	try {
-    		org.junit.Assume.assumeNotNull( parser.symbol("leaw $0,%A") );		// ignora test
+    		org.junit.Assume.assumeNotNull( parser.symbol("leaw   $0,%A") );		// ignora test
         } catch(Exception e) { 
         	org.junit.Assume.assumeNoException(e);
         }
         try {
 
-	            assertTrue("leaw $0,%A",parser.symbol("leaw $0,%A").equals("0"));
-	            assertTrue("leaw $i,%A",parser.symbol("leaw $i,%A").equals("i"));
+	            assertTrue("leaw   $0 ,%A",parser.symbol("leaw   $0 ,%A").equals("0"));
+                assertTrue("leaw $i,%A",parser.symbol("leaw $i,%A").equals("i"));
 	            assertTrue("leaw $LOOP,%A",parser.symbol("leaw $LOOP,%A").equals("LOOP"));
 	            assertTrue("leaw $12345,%A",parser.symbol("leaw $12345,%A").equals("12345"));
-	        
+                assertTrue("leaw $0,%A",parser.symbol("leaw   0 ,%A").equals("0"));
+
+
         } catch(Exception e) {
             e.printStackTrace();
         }
@@ -121,7 +123,7 @@ public class ParserTest {
     	
         try {
     	
-            assertTrue("leaw $0,%A",Arrays.equals(parser.instruction("leaw $0,%A"),new String[] {"leaw","$0","%A"}));
+            assertTrue("leaw $0,%A",Arrays.equals(parser.instruction("leaw   $0,%A"),new String[] {"leaw","$0","%A"}));
             assertTrue("leaw $i,%A",Arrays.equals(parser.instruction("leaw $i,%A"),new String[] {"leaw","$i","%A"}));
             assertTrue("leaw $LOOP,%A",Arrays.equals(parser.instruction("leaw $LOOP,%A"),new String[] {"leaw","$LOOP","%A"}));
             assertTrue("leaw $12345,%A",Arrays.equals(parser.instruction("leaw $12345,%A"),new String[] {"leaw","$12345","%A"}));
@@ -164,7 +166,7 @@ public class ParserTest {
             assertTrue("Parser advance()",parser_testLeaw.advance());
             assertTrue("Parser leaw $1,%A",parser_testLeaw.command().equals("leaw $1,%A"));
             assertTrue("Parser advance()",parser_testLeaw.advance());
-            assertTrue("Parser leaw $2,%A",parser_testLeaw.command().equals("leaw $2,%A"));
+            assertTrue("Parser leaw $2,%A",parser_testLeaw.command().equals("leaw   $2,%A"));
             assertTrue("Parser advance()",parser_testLeaw.advance());
             assertTrue("Parser leaw $R0,%A",parser_testLeaw.command().equals("leaw $R0,%A"));
             assertTrue("Parser advance()",parser_testLeaw.advance());
@@ -195,7 +197,7 @@ public class ParserTest {
 
             Parser parser_testComp = new Parser("src/test/resources/testComp.nasm");
             assertTrue("Parser advance()",parser_testComp.advance());
-            assertTrue("Parser movw %A,%D",parser_testComp.command().equals("movw %A,%D"));
+            assertTrue("Parser movw %A,%D",parser_testComp.command().equals("movw   %A,%D"));
             assertTrue("Parser advance()",parser_testComp.advance());
             assertTrue("Parser addw %A,%D,%D",parser_testComp.command().equals("addw %A,%D,%D"));
             assertTrue("Parser advance()",parser_testComp.advance());

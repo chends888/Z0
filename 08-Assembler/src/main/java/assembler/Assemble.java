@@ -65,8 +65,6 @@ public class Assemble {
     public void fillSymbolTable() throws FileNotFoundException, IOException {
         Parser parser = new Parser(inputFile);
 
-        try {
-
             int romAddress = 0;
             String symbol;
             while (parser.advance()) {
@@ -92,10 +90,6 @@ public class Assemble {
                 outMIF.println("\nCONTENT BEGIN");
             }
 
-        } catch (InvalidAssemblyException ex) {
-
-        }
-
         parser.close();
         return;
     }
@@ -113,7 +107,6 @@ public class Assemble {
 
         boolean flagNOP = false;    // para ser usado no teste de NOP depois um JUMP
 
-        try {
 
         while (parser.advance()){
             if(this.debug) {
@@ -121,44 +114,26 @@ public class Assemble {
             }
             if (parser.commandType(parser.command()) == Parser.CommandType.C_COMMAND) {
 
-                try {
 
                     String[] array = parser.instruction(parser.command());
                     value = "";
                     value += String.join("", Collections.nCopies(bits-16, "1"));
                     value += "111" + Code.comp(array) + Code.dest(array) + Code.jump(array);
 
-                } catch (InvalidDestException ex) {
-                    Error.error("Tentando salvar dados em um local inválido da CPU");
-                    throw new InvalidAssemblyException();
-                } catch (InvalidCompException ex) {
-                    Error.error("Instrução inválida");
-                    throw new InvalidAssemblyException();
-                } catch (InvalidJumpException ex) {
-                    Error.error("Instrução de jump inválida");
-                    throw new InvalidAssemblyException();
-                }
 
             } else if (parser.commandType(parser.command()) == Parser.CommandType.A_COMMAND) {
                 symbol = parser.symbol(parser.command());
                 value = "0";
                 if (Character.isDigit(symbol.charAt(0)) || 
                     (symbol.charAt(0) == '+' && Character.isDigit(symbol.charAt(1)) ) ){
-                    if(bits==16) {
-                        value = "0" + Code.toBinary(symbol);
-                    } else {
-                        value = "0" + Code.toBinary32(symbol);
-                    }
+                    value = "0" + Code.toBinary(symbol);
                 } else if (symbol.charAt(0) == '-'){
                     System.err.println("Arquitetura não suporta a entrada de números negativos no LEAW");
                 } else if (table.contains(symbol)) {
                     value = Integer.toString(table.getAddress(symbol));
                     //value = "0" + Code.toBinary(value);
-                    if(bits==16) {
-                        value = "0" + Code.toBinary(value);
-                    } else {
-                        value = "0" + Code.toBinary32(value);
-                    }
+                    value = "0" + Code.toBinary(value);
+
                 } else { // avisos caso memória tenha estourado
                     if (ramAddress > 16383) 
                         System.err.println("Aviso: alocando variável em memória mapeada de I/O");
@@ -166,11 +141,8 @@ public class Assemble {
                         System.err.println("Aviso: não há mais memória RAM disponível");
                     table.addEntry(symbol, ramAddress);
                     //value = "0" + Code.toBinary("" + ramAddress);
-                    if(bits==16) {
-                        value = "0" + Code.toBinary("" + ramAddress);
-                    } else {
-                        value = "0" + Code.toBinary32("" + ramAddress);
-                    }
+                    value = "0" + Code.toBinary("" + ramAddress);
+
                     ramAddress++;
                 }
 
@@ -199,12 +171,6 @@ public class Assemble {
             }
 
                
-        }
-
-        } catch (InvalidAssemblyException ex) {
-            close();
-            delete();
-            System.exit(1);
         }
 
         if(outMIF!=null) {

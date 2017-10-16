@@ -98,7 +98,6 @@ public class Parser
      * @return Verdadeiro se ainda hÃ¡ instruÃ§Ãµes, Falso se as instruÃ§Ãµes terminaram.
      */
     public boolean advance()
-    
     {
     	
     	
@@ -248,6 +247,11 @@ public class Parser
       public SymbolTable getSymbolTable(){
           return symbolTable;
     	
+    }
+
+    // fecha o arquivo de leitura
+    public void close() throws IOException {
+        br.close();
     }
 
 }
