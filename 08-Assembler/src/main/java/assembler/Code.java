@@ -17,33 +17,33 @@ public class Code {
      */
     public static String dest(String[] mnemnonic) {
     	if (mnemnonic.length == 2){
-    	    if (mnemonic [1] == "(%A)"){
+    	    if (mnemnonic [1] == "(%A)"){
     	        return "001";
             }
-            else if (mnemonic [1] == "%D"){
+            else if (mnemnonic [1] == "%D"){
     	        return "010";
             }
-            else if (mnemonic [1] == "%A"){
+            else if (mnemnonic [1] == "%A"){
                 return "100";
             }
         }
 
-        else if (mnemonic.lenght == 3) {
-            if (mnemonic[2] == "(%A)") {
+        else if (mnemnonic.length == 3) {
+            if (mnemnonic[2] == "(%A)") {
                 return "001";
-            } else if (mnemonic[2] == "%D") {
+            } else if (mnemnonic[2] == "%D") {
                 return "010";
-            } else if (mnemonic[2] == "%A") {
+            } else if (mnemnonic[2] == "%A") {
                 return "100";
             }
         }
 
-        else if (mnemonic.lenght == 4) {
-            if (mnemonic[3] == "(%A)") {
+        else if (mnemnonic.length == 4) {
+            if (mnemnonic[3] == "(%A)") {
                 return "001";
-            } else if (mnemonic[3] == "%D") {
+            } else if (mnemnonic[3] == "%D") {
                 return "010";
-            } else if (mnemonic[3] == "%A") {
+            } else if (mnemnonic[3] == "%A") {
                 return "100";
             }
         }
@@ -57,38 +57,38 @@ public class Code {
      */
     public static String comp(String[] mnemnonic) {
 
-        if (mnemonic [0] == "movw"){
+        if (mnemnonic [0] == "movw"){
             return "1110000";
         }
 
-        else if (mnemonic [0] == "addw"){
+        else if (mnemnonic [0] == "addw"){
             return "1000010";
         }
-        else if (mnemonic [0] == "subw"){
+        else if (mnemnonic [0] == "subw"){
             return "1010011";
         }
-        else if (mnemonic [0] == "rsubw"){
+        else if (mnemnonic [0] == "rsubw"){
             return "1000111";
         }
-        else if (mnemonic [0] == "incw"){
+        else if (mnemnonic [0] == "incw"){
             return "0011111";
         }
-        else if (mnemonic [0] == "decw"){
+        else if (mnemnonic [0] == "decw"){
             return "1110010";
         }
-        else if (mnemonic [0] == "notw"){
+        else if (mnemnonic [0] == "notw"){
             return "0001101";
         }
-        else if (mnemonic [0] == "negw"){
+        else if (mnemnonic [0] == "negw"){
             return "0110011";
         }
-        else if (mnemonic [0] == "andw"){
+        else if (mnemnonic [0] == "andw"){
             return "0000000";
         }
-        else if (mnemonic [0] == "orw"){
+        else if (mnemnonic [0] == "orw"){
             return "1010101";
         }
-        else if (mnemonic [0] == "nop"){
+        else if (mnemnonic [0] == "nop"){
             return "0101010";
         }
 
@@ -102,26 +102,26 @@ public class Code {
      * @return Opcode (String de 3 bits) com código em linguagem de máquina para a instrução.
      */
     public static String jump(String[] mnemnonic) {
-        if (mnemonic [0] == "jmp"){
+        if (mnemnonic [0] == "jmp"){
             return "111";
         }
 
-        else if (mnemonic [0] == "je"){
+        else if (mnemnonic [0] == "je"){
             return "010";
         }
-        else if (mnemonic [0] == "jne"){
+        else if (mnemnonic [0] == "jne"){
             return "101";
         }
-        else if (mnemonic [0] == "jg"){
+        else if (mnemnonic [0] == "jg"){
             return "001";
         }
-        else if (mnemonic [0] == "jl"){
+        else if (mnemnonic [0] == "jl"){
             return "100";
         }
-        else if (mnemonic [0] == "jle"){
+        else if (mnemnonic [0] == "jle"){
             return "110";
         }
-        else if (mnemonic [0] == "jge"){
+        else if (mnemnonic [0] == "jge"){
             return "011";
         }
 
