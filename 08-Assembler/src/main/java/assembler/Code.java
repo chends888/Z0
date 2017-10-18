@@ -16,7 +16,38 @@ public class Code {
      * @return Opcode (String de 3 bits) com código em linguagem de máquina para a instrução.
      */
     public static String dest(String[] mnemnonic) {
-    	return null;
+    	if (mnemnonic.length == 2){
+    	    if (mnemonic [1] == "(%A)"){
+    	        return "001";
+            }
+            else if (mnemonic [1] == "%D"){
+    	        return "010";
+            }
+            else if (mnemonic [1] == "%A"){
+                return "100";
+            }
+        }
+
+        else if (mnemonic.lenght == 3) {
+            if (mnemonic[2] == "(%A)") {
+                return "001";
+            } else if (mnemonic[2] == "%D") {
+                return "010";
+            } else if (mnemonic[2] == "%A") {
+                return "100";
+            }
+        }
+
+        else if (mnemonic.lenght == 4) {
+            if (mnemonic[3] == "(%A)") {
+                return "001";
+            } else if (mnemonic[3] == "%D") {
+                return "010";
+            } else if (mnemonic[3] == "%A") {
+                return "100";
+            }
+        }
+        return null;
     }
 
     /**
@@ -25,7 +56,44 @@ public class Code {
      * @return Opcode (String de 7 bits) com código em linguagem de máquina para a instrução.
      */
     public static String comp(String[] mnemnonic) {
-    	return null;
+
+        if (mnemonic [0] == "movw"){
+            return "1110000";
+        }
+
+        else if (mnemonic [0] == "addw"){
+            return "1000010";
+        }
+        else if (mnemonic [0] == "subw"){
+            return "1010011";
+        }
+        else if (mnemonic [0] == "rsubw"){
+            return "1000111";
+        }
+        else if (mnemonic [0] == "incw"){
+            return "0011111";
+        }
+        else if (mnemonic [0] == "decw"){
+            return "1110010";
+        }
+        else if (mnemonic [0] == "notw"){
+            return "0001101";
+        }
+        else if (mnemonic [0] == "negw"){
+            return "0110011";
+        }
+        else if (mnemonic [0] == "andw"){
+            return "0000000";
+        }
+        else if (mnemonic [0] == "orw"){
+            return "1010101";
+        }
+        else if (mnemonic [0] == "nop"){
+            return "0101010";
+        }
+
+
+        return null;
     }
 
     /**
@@ -34,6 +102,29 @@ public class Code {
      * @return Opcode (String de 3 bits) com código em linguagem de máquina para a instrução.
      */
     public static String jump(String[] mnemnonic) {
+        if (mnemonic [0] == "jmp"){
+            return "111";
+        }
+
+        else if (mnemonic [0] == "je"){
+            return "010";
+        }
+        else if (mnemonic [0] == "jne"){
+            return "101";
+        }
+        else if (mnemonic [0] == "jg"){
+            return "001";
+        }
+        else if (mnemonic [0] == "jl"){
+            return "100";
+        }
+        else if (mnemonic [0] == "jle"){
+            return "110";
+        }
+        else if (mnemonic [0] == "jge"){
+            return "011";
+        }
+
     	return null;
     }
 
