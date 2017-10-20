@@ -110,14 +110,19 @@ public class CodeTest  {
 	    }  
 		try {
 			
-        	assertTrue("movw %A %D",Code.comp(new String[] {"movw","%A","%D"}).equals("0110000"));
-        	assertTrue("addw %A %D %D",Code.comp(new String[] {"addw","%A","%D","%D"}).equals("0000010"));
-        	assertTrue("movw %D %A",Code.comp(new String[] {"movw","%D","%A"}).equals("0001100"));
-        	assertTrue("movw %D (%A)",Code.comp(new String[] {"movw","%D","(%A)"}).equals("0001100"));
-        	assertTrue("incw %D",Code.comp(new String[] {"incw","%D"}).equals("0011111"));
+        	assertTrue("movw %A %D", Code.comp(new String[] {"movw","%A","%D"}).equals("0110000"));
+			assertTrue("movw %D %A",Code.comp(new String[] {"movw","%D","%A"}).equals("0001100"));
+			assertTrue("movw %D (%A)",Code.comp(new String[] {"movw","%D","(%A)"}).equals("0001100"));
+			assertTrue("movw (%A) %D",Code.comp(new String[] {"movw","(%A)","%D"}).equals("1110000"));
+			assertTrue("movw (%A) %D",Code.comp(new String[] {"movw","(%A)","%D"}).equals("1110000"));
+
+			assertTrue("addw %A %D %D",Code.comp(new String[] {"addw","%A","%D","%D"}).equals("0000010"));
+			assertTrue("addw (%A) %D %D",Code.comp(new String[] {"addw","(%A)","%D","%D"}).equals("1000010"));
+			assertTrue("addw (%A) (%A) %D",Code.comp(new String[] {"addw","(%A)","(%A)","%D"}).equals(""));
+			assertTrue("addw %D %D %D",Code.comp(new String[] {"addw","%D","%D","%D"}).equals(""));
+
+			assertTrue("incw %D",Code.comp(new String[] {"incw","%D"}).equals("0011111"));
         	assertTrue("nop",Code.comp(new String[] {"nop"}).equals("0101010"));
-        	assertTrue("movw (%A) %D",Code.comp(new String[] {"movw","(%A)","%D"}).equals("1110000"));
-        	assertTrue("addw (%A) %D %D",Code.comp(new String[] {"addw","(%A)","%D","%D"}).equals("1000010"));
 			assertTrue("subw %D (%A) %A",Code.comp(new String[] {"subw","%D","(%A)","%A"}).equals("1010011"));
 			assertTrue("rsubw %D (%A) %A",Code.comp(new String[] {"rsubw","%D","(%A)","%A"}).equals("1000111"));
         	assertTrue("decw %A",Code.comp(new String[] {"decw","%A"}).equals("0110010"));

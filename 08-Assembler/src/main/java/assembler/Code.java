@@ -55,15 +55,30 @@ public class Code {
      * @param  mnemnonic vetor de mnemônicos "instrução" a ser analisada.
      * @return Opcode (String de 7 bits) com código em linguagem de máquina para a instrução.
      */
-    public static String comp(String[] mnemnonic) {
+    public static String comp(String[] mnemnonic){
 
         if (mnemnonic [0] == "movw"){
-            return "1110000";
+            if(mnemnonic[1] == "(%A)")
+                return "1110000";
+            if(mnemnonic[1] == "%D")
+                return "0001100";
+            if(mnemnonic[1] == "%A")
+                return "0110000";
+            return "";
         }
 
         else if (mnemnonic [0] == "addw"){
-            return "1000010";
+            // Operação nao permitida
+            if(mnemnonic[1] == mnemnonic[2])
+                return "";
+            // Endereco de A
+            if(mnemnonic[1] == "(%A)" || mnemnonic[2] == "(%A)")
+                return "1000010";
+            // D
+            else
+                return "0000010";
         }
+
         else if (mnemnonic [0] == "subw"){
             return "1010011";
         }
@@ -92,8 +107,7 @@ public class Code {
             return "0101010";
         }
 
-
-        return null;
+        return "";
     }
 
     /**
