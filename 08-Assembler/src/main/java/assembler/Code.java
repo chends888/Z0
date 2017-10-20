@@ -16,7 +16,38 @@ public class Code {
      * @return Opcode (String de 3 bits) com código em linguagem de máquina para a instrução.
      */
     public static String dest(String[] mnemnonic) {
-    	return null;
+    	if (mnemnonic.length == 2){
+    	    if (mnemnonic [1] == "(%A)"){
+    	        return "001";
+            }
+            else if (mnemnonic [1] == "%D"){
+    	        return "010";
+            }
+            else if (mnemnonic [1] == "%A"){
+                return "100";
+            }
+        }
+
+        else if (mnemnonic.length == 3) {
+            if (mnemnonic[2] == "(%A)") {
+                return "001";
+            } else if (mnemnonic[2] == "%D") {
+                return "010";
+            } else if (mnemnonic[2] == "%A") {
+                return "100";
+            }
+        }
+
+        else if (mnemnonic.length == 4) {
+            if (mnemnonic[3] == "(%A)") {
+                return "001";
+            } else if (mnemnonic[3] == "%D") {
+                return "010";
+            } else if (mnemnonic[3] == "%A") {
+                return "100";
+            }
+        }
+        return null;
     }
 
     /**
@@ -24,8 +55,59 @@ public class Code {
      * @param  mnemnonic vetor de mnemônicos "instrução" a ser analisada.
      * @return Opcode (String de 7 bits) com código em linguagem de máquina para a instrução.
      */
-    public static String comp(String[] mnemnonic) {
-    	return null;
+    public static String comp(String[] mnemnonic){
+
+        if (mnemnonic [0] == "movw"){
+            if(mnemnonic[1] == "(%A)")
+                return "1110000";
+            if(mnemnonic[1] == "%D")
+                return "0001100";
+            if(mnemnonic[1] == "%A")
+                return "0110000";
+            return "";
+        }
+
+        else if (mnemnonic [0] == "addw"){
+            // Operação nao permitida
+            if(mnemnonic[1] == mnemnonic[2])
+                return "";
+            // Endereco de A
+            if(mnemnonic[1] == "(%A)" || mnemnonic[2] == "(%A)")
+                return "1000010";
+            // D
+            else
+                return "0000010";
+        }
+
+        else if (mnemnonic [0] == "subw"){
+            return "1010011";
+        }
+        else if (mnemnonic [0] == "rsubw"){
+            return "1000111";
+        }
+        else if (mnemnonic [0] == "incw"){
+            return "0011111";
+        }
+        else if (mnemnonic [0] == "decw"){
+            return "1110010";
+        }
+        else if (mnemnonic [0] == "notw"){
+            return "0001101";
+        }
+        else if (mnemnonic [0] == "negw"){
+            return "0110011";
+        }
+        else if (mnemnonic [0] == "andw"){
+            return "0000000";
+        }
+        else if (mnemnonic [0] == "orw"){
+            return "1010101";
+        }
+        else if (mnemnonic [0] == "nop"){
+            return "0101010";
+        }
+
+        return "";
     }
 
     /**
@@ -34,6 +116,29 @@ public class Code {
      * @return Opcode (String de 3 bits) com código em linguagem de máquina para a instrução.
      */
     public static String jump(String[] mnemnonic) {
+        if (mnemnonic [0] == "jmp"){
+            return "111";
+        }
+
+        else if (mnemnonic [0] == "je"){
+            return "010";
+        }
+        else if (mnemnonic [0] == "jne"){
+            return "101";
+        }
+        else if (mnemnonic [0] == "jg"){
+            return "001";
+        }
+        else if (mnemnonic [0] == "jl"){
+            return "100";
+        }
+        else if (mnemnonic [0] == "jle"){
+            return "110";
+        }
+        else if (mnemnonic [0] == "jge"){
+            return "011";
+        }
+
     	return null;
     }
 
