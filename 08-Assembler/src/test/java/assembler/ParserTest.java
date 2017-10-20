@@ -45,7 +45,7 @@ public class ParserTest {
     	
         try {
         	
-            assertTrue("leaw $0,%A",parser.commandType("   leaw $0,%A")==Parser.CommandType.A_COMMAND);
+            assertTrue("leaw $0,%A",parser.commandType("  leaw $0,%A")==Parser.CommandType.A_COMMAND);
             assertTrue("abc:",parser.commandType("abc:")==Parser.CommandType.L_COMMAND);
             assertTrue("movw %A,%D",parser.commandType("movw %A,%D")==Parser.CommandType.C_COMMAND);
             assertTrue("TESTE:",parser.commandType("TESTE:")==Parser.CommandType.L_COMMAND);

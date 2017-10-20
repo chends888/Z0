@@ -117,7 +117,7 @@ public class Assemble {
 
                     String[] array = parser.instruction(parser.command());
                     value = "";
-                    value += String.join("", Collections.nCopies(bits-16, "1"));
+                    //value += String.join("", Collections.nCopies(bits-16, "1"));
                     value += "111" + Code.comp(array) + Code.dest(array) + Code.jump(array);
 
 

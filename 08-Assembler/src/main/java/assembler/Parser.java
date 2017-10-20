@@ -147,27 +147,29 @@ public class Parser
      * @param  command instruÃ§Ã£o a ser analisada.
      * @return o tipo da instruÃ§Ã£o.
      */
-    public CommandType commandType(String command) 
-    {
-    	// l == leaw==instrucao do tipo A
-        Character first = command.charAt(0);
-         if(first == 'l') 
-         {
-        	 return CommandType.A_COMMAND;
-         }
+    public CommandType commandType(String command) {
+        // l == leaw==instrucao do tipo A
 
-         // Se termina com :, é um label
-         int length = command.length();
-         
-         Character last = command.charAt(length - 1);
-         
-         if (last == ':')
-         {
-        	 return CommandType.L_COMMAND;
-         }
-         // Caso seja outro comando
-         return CommandType.C_COMMAND;
+        // Search String - ":" Label
+        if (command.contains(":")){
+            return CommandType.L_COMMAND;
+        }
+        for (int i = 0; i < command.length(); i++) {
+            Character each = command.charAt(i);
+
+            if (each == 'l') {
+
+                return CommandType.A_COMMAND;
+            }
+
+            if (each != 'l' && each != ' ') {
+                return CommandType.C_COMMAND;
+            }
+        }
+            return null;
     }
+
+
 
     /**
      * Retorna o sÃ­mbolo ou valor numÃ©rico da instruÃ§Ã£o passada no argumento.
@@ -178,7 +180,12 @@ public class Parser
     public String symbol(String command) 
     {
     	String[] s1 = command.split("\\s");
-    	
+
+        System.out.println("TO AQUI MEN");
+    	for ( int i = 0 ; i < s1.length ; i++){
+    	    System.out.println(s1[i]);
+        }
+
     	String symbol = s1[1].replace("$", "");
     	
     	symbol = symbol.replace(",%A", "");
