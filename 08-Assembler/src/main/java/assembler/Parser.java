@@ -179,20 +179,28 @@ public class Parser
      */
     public String symbol(String command) 
     {
-    	String[] s1 = command.split("\\s");
+    	String[] s1 = command.split("");
 
-        System.out.println("TO AQUI MEN");
-    	for ( int i = 0 ; i < s1.length ; i++){
-    	    System.out.println(s1[i]);
+    	System.out.println(s1[j]);
+
+    	for ( int j = 0 ; j < s1.length ; j++){
+    	    System.out.println(s1[j]);
         }
+            Character cada = command.charAt(j);
 
-    	String symbol = s1[1].replace("$", "");
-    	
-    	symbol = symbol.replace(",%A", "");
-    	
-    	System.out.println("!"+symbol);
-    	
-    	return symbol;
+
+                String symbol = s1[1].replace("$", "");
+
+                symbol = symbol.replace(",%A", "");
+
+                symbol = symbol.replace(",%leaw", "");
+
+                System.out.println("!"+symbol);
+
+                return symbol;
+            }
+
+
     
     }
 

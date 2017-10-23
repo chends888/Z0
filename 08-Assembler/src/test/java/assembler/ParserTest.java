@@ -123,7 +123,7 @@ public class ParserTest {
     	
         try {
     	
-            assertTrue("leaw $0,%A",Arrays.equals(parser.instruction("leaw   $0,%A"),new String[] {"leaw","$0","%A"}));
+            assertTrue("leaw $0,%A",Arrays.equals(parser.instruction("leaw $0,%A"),new String[] {"leaw","$0","%A"}));
             assertTrue("leaw $i,%A",Arrays.equals(parser.instruction("leaw $i,%A"),new String[] {"leaw","$i","%A"}));
             assertTrue("leaw $LOOP,%A",Arrays.equals(parser.instruction("leaw $LOOP,%A"),new String[] {"leaw","$LOOP","%A"}));
             assertTrue("leaw $12345,%A",Arrays.equals(parser.instruction("leaw $12345,%A"),new String[] {"leaw","$12345","%A"}));
@@ -166,7 +166,7 @@ public class ParserTest {
             assertTrue("Parser advance()",parser_testLeaw.advance());
             assertTrue("Parser leaw $1,%A",parser_testLeaw.command().equals("leaw $1,%A"));
             assertTrue("Parser advance()",parser_testLeaw.advance());
-            assertTrue("Parser leaw $2,%A",parser_testLeaw.command().equals("leaw   $2,%A"));
+            assertTrue("Parser leaw $2,%A",parser_testLeaw.command().equals("leaw $2,%A"));
             assertTrue("Parser advance()",parser_testLeaw.advance());
             assertTrue("Parser leaw $R0,%A",parser_testLeaw.command().equals("leaw $R0,%A"));
             assertTrue("Parser advance()",parser_testLeaw.advance());
@@ -197,7 +197,7 @@ public class ParserTest {
 
             Parser parser_testComp = new Parser("src/test/resources/testComp.nasm");
             assertTrue("Parser advance()",parser_testComp.advance());
-            assertTrue("Parser movw %A,%D",parser_testComp.command().equals("movw   %A,%D"));
+            assertTrue("Parser movw %A,%D",parser_testComp.command().equals("movw %A,%D"));
             assertTrue("Parser advance()",parser_testComp.advance());
             assertTrue("Parser addw %A,%D,%D",parser_testComp.command().equals("addw %A,%D,%D"));
             assertTrue("Parser advance()",parser_testComp.advance());
