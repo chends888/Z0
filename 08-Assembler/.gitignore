@@ -13,4 +13,5 @@ target/
 *.swp
 *~.nib
 .loadpath
-./ideia/
+./.ideia/
+.ideia/*
