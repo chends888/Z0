@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Elemulator">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Uteis/Elemulator/Elemulator.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

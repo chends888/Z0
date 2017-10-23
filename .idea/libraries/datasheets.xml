@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="datasheets">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/01-Transitores/datasheets/datasheets.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

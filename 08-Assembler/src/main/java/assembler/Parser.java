@@ -179,30 +179,28 @@ public class Parser
      */
     public String symbol(String command) 
     {
-    	String[] s1 = command.split("");
-
-    	System.out.println(s1[j]);
-
-    	for ( int j = 0 ; j < s1.length ; j++){
-    	    System.out.println(s1[j]);
-        }
-            Character cada = command.charAt(j);
+    	String s = command;
 
 
-                String symbol = s1[1].replace("$", "");
 
-                symbol = symbol.replace(",%A", "");
+                String symbol = s.replace("leaw", "");
 
-                symbol = symbol.replace(",%leaw", "");
+                symbol = symbol.replace("%A", "");
 
-                System.out.println("!"+symbol);
+                symbol = symbol.replace(",", "");
+
+                symbol = symbol.replace("$", "");
+
+                symbol = symbol.replace(" ", "");
+
+        System.out.println("!"+symbol);
 
                 return symbol;
-            }
+    }
 
 
     
-    }
+
 
     /**
      * Retorna o sÃ­mbolo da instruÃ§Ã£o passada no argumento.
@@ -212,8 +210,7 @@ public class Parser
      */
     
     // Comandos sem ':'
-    public String label(String command) 
-    {
+    public String label(String command) {
     	if (command.indexOf(":") !=0)
     		
     	{
