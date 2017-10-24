@@ -27,11 +27,11 @@ public class CodeTest  {
     @Test
     public void testCode_toBinary() {
 
-    	try {
-    		org.junit.Assume.assumeNotNull( Code.toBinary("0") );		// ignora test
-        } catch(Exception e) { 
-        	org.junit.Assume.assumeNoException(e);
-        }  
+    	//try {
+    	//	org.junit.Assume.assumeNotNull( Code.toBinary("0") );		// ignora test
+        //} catch(Exception e) {
+        //	org.junit.Assume.assumeNoException(e);
+        //}
     	
         try {
 
@@ -54,11 +54,11 @@ public class CodeTest  {
     @Test
     public void testCode_Destine() {
 
-    	try {
-    		org.junit.Assume.assumeNotNull( Code.dest(new String[] {"nop"}) );		// ignora test
-        } catch(Exception e) { 
-        	org.junit.Assume.assumeNoException(e);
-        }  
+//    	try {
+//    		org.junit.Assume.assumeNotNull( Code.dest(new String[] {"nop"}) );		// ignora test
+//        } catch(Exception e) {
+//        	org.junit.Assume.assumeNoException(e);
+//        }
     	
 		try {
 
@@ -103,11 +103,11 @@ public class CodeTest  {
     @Test
     public void testCode_Computation() {
 
-    	try {
-    		org.junit.Assume.assumeNotNull( Code.comp(new String[] {"nop"}) );		// ignora test
-	    } catch(Exception e) { 
-	    	org.junit.Assume.assumeNoException(e);
-	    }  
+//    	try {
+//    		org.junit.Assume.assumeNotNull( Code.comp(new String[] {"nop"}) );		// ignora test
+//	    } catch(Exception e) {
+//	    	org.junit.Assume.assumeNoException(e);
+//	    }
 		try {
 			
         	assertTrue("movw %A %D", Code.comp(new String[] {"movw","%A","%D"}).equals("0110000"));
@@ -122,26 +122,41 @@ public class CodeTest  {
 			assertTrue("addw %D %D %D",Code.comp(new String[] {"addw","%D","%D","%D"}).equals(""));
 
 			assertTrue("incw %D",Code.comp(new String[] {"incw","%D"}).equals("0011111"));
-        	assertTrue("nop",Code.comp(new String[] {"nop"}).equals("0101010"));
+
+			assertTrue("nop",Code.comp(new String[] {"nop"}).equals("0101010"));
+
 			assertTrue("subw %D (%A) %A",Code.comp(new String[] {"subw","%D","(%A)","%A"}).equals("1010011"));
+
 			assertTrue("rsubw %D (%A) %A",Code.comp(new String[] {"rsubw","%D","(%A)","%A"}).equals("1000111"));
-        	assertTrue("decw %A",Code.comp(new String[] {"decw","%A"}).equals("0110010"));
+
+			assertTrue("decw %A",Code.comp(new String[] {"decw","%A"}).equals("0110010"));
         	assertTrue("decw %D",Code.comp(new String[] {"decw","%D"}).equals("0001110"));
+
         	assertTrue("notw %A",Code.comp(new String[] {"notw","%A"}).equals("0110001"));
         	assertTrue("notw %D",Code.comp(new String[] {"notw","%D"}).equals("0001101"));
+
         	assertTrue("negw %A",Code.comp(new String[] {"negw","%A"}).equals("0110011"));
         	assertTrue("negw %D",Code.comp(new String[] {"negw","%D"}).equals("0001111"));
+
         	assertTrue("andw (%A) %D %D",Code.comp(new String[] {"andw","(%A)","%D","%D"}).equals("1000000"));
         	assertTrue("andw %D %A %A",Code.comp(new String[] {"andw","%D","%A","%A"}).equals("0000000"));
+
         	assertTrue("orw (%A) %D %D",Code.comp(new String[] {"orw","(%A)","%D","%D"}).equals("1010101"));
-        	assertTrue("orw %D %A %A",Code.comp(new String[] {"orw","%D","%A","%A"}).equals("0010101"));
-        	assertTrue("jmp",Code.comp(new String[] {"jmp"}).equals("0001100"));
-        	assertTrue("je",Code.comp(new String[] {"je"}).equals("0001100"));
-        	assertTrue("jne",Code.comp(new String[] {"jne"}).equals("0001100"));
-        	assertTrue("jg",Code.comp(new String[] {"jg"}).equals("0001100"));
-        	assertTrue("jge",Code.comp(new String[] {"jge"}).equals("0001100"));
-        	assertTrue("jl",Code.comp(new String[] {"jl"}).equals("0001100"));
-        	assertTrue("jle",Code.comp(new String[] {"jle"}).equals("0001100"));
+			assertTrue("orw %D %A %A",Code.comp(new String[] {"orw","%D","%A","%A"}).equals("0010101"));
+
+			assertTrue("jmp",Code.comp(new String[] {"jmp"}).equals("0001100"));
+
+			assertTrue("je",Code.comp(new String[] {"je"}).equals("0001100"));
+
+			assertTrue("jne",Code.comp(new String[] {"jne"}).equals("0001100"));
+
+			assertTrue("jg",Code.comp(new String[] {"jg"}).equals("0001100"));
+
+			assertTrue("jge",Code.comp(new String[] {"jge"}).equals("0001100"));
+
+			assertTrue("jl",Code.comp(new String[] {"jl"}).equals("0001100"));
+
+			assertTrue("jle",Code.comp(new String[] {"jle"}).equals("0001100"));
         	
 		} catch(Exception e) {
 		  	e.printStackTrace();
@@ -154,12 +169,12 @@ public class CodeTest  {
      */
     @Test
     public void testCode_Jump() {
-
-    	try {
-    		org.junit.Assume.assumeNotNull( Code.jump(new String[] {"nop"}) );		// ignora test
-        } catch(Exception e) { 
-        	org.junit.Assume.assumeNoException(e);
-        }  
+//
+//    	try {
+//    		org.junit.Assume.assumeNotNull( Code.jump(new String[] {"nop"}) );
+//        } catch(Exception e) {
+//        	org.junit.Assume.assumeNoException(e);
+//        }
     	
 		try {
 	

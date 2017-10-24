@@ -89,26 +89,85 @@ public class Code {
             return "0011111";
         }
         else if (mnemnonic [0] == "decw"){
-            return "1110010";
+            if (mnemnonic[1] == "%D"){
+                return "0001110";
+            }
+            else if (mnemnonic[1] == "%A"){
+                return "0110010";
+            }
+            else {
+                return "1110010";
+            }
         }
         else if (mnemnonic [0] == "notw"){
-            return "0001101";
+            if (mnemnonic[1] == "%D"){
+                return "0001101";
+            }
+            else if (mnemnonic[1] == "%A"){
+                return "0110001";
+            }
+            else if (mnemnonic[1] == "(%A)"){
+                return "1110001";
+            }
         }
         else if (mnemnonic [0] == "negw"){
-            return "0110011";
+            if (mnemnonic[1] == "%D"){
+                return "0001111";
+            }
+            else if (mnemnonic[1] == "%A"){
+                return "0110011";
+            }
+            else{
+                return "1110011";
+            }
         }
         else if (mnemnonic [0] == "andw"){
-            return "0000000";
+            if (mnemnonic[1] == "%A" || mnemnonic[2] == "%A"){
+                return "0000000";
+            }
+            else{
+                return "1000000";
+            }
         }
         else if (mnemnonic [0] == "orw"){
-            return "1010101";
+            if (mnemnonic[1] == "%A"|| mnemnonic[2] == "%A"){
+                return "0010101";
+            }
+            else{
+                return "1010101";
+            }
         }
         else if (mnemnonic [0] == "nop"){
             return "0101010";
         }
 
-        return "";
+        else if (mnemnonic [0] == "jmp"){
+            return "0001100";
+        }
+
+        else if (mnemnonic [0] == "je"){
+            return "0001100";
+        }
+        else if (mnemnonic [0] == "jne"){
+            return "0001100";
+        }
+        else if (mnemnonic [0] == "jg"){
+            return "0001100";
+        }
+        else if (mnemnonic [0] == "jl"){
+            return "0001100";
+        }
+        else if (mnemnonic [0] == "jle"){
+            return "0001100";
+        }
+        else if (mnemnonic [0] == "jge"){
+            return "0001100";
+        }
+
+        return null;
     }
+
+
 
     /**
      * Retorna o código binário do mnemônico para realizar uma operação de jump (salto).
@@ -139,7 +198,7 @@ public class Code {
             return "011";
         }
 
-    	return null;
+    	return "000";
     }
 
     /**
