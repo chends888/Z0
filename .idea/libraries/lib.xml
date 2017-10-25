@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Simulator/bin/lib/Simulators.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Simulator/bin/lib/Compilers.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Simulator/bin/lib/SimulatorsGUI.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Simulator/bin/lib/HackGUI.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Simulator/bin/lib/TranslatorsGUI.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Simulator/bin/lib/AssemblerGUI.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Simulator/bin/lib/Hack.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

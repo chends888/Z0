@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ant-junit-1.9.8">
+    <CLASSES>
+      <root url="jar:///usr/share/java/ant-junit-1.9.8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

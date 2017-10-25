@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="AssemblerZ01">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Uteis/AssemblerZ0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
