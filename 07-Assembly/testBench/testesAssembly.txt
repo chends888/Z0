@@ -3,29 +3,19 @@
 # Editado por Rafael Corsi <rafael.corsi@insper.edu.br>
 #   Setembro/2017
 
-<<<<<<< HEAD
 math_max            0 1024 
 math_abs            0 1024  
-=======
-<<<<<<< HEAD
-math_max            0 1024
-math_abs            0 1024
->>>>>>> 3f67611405ac62bf565e72452d1e7f508aaf7f24
-math_divisao        1 1024
+
+math_divisao        0 1024
 math_multiplicacao  0 1024
 math_fibonacci      0 1024
 math_fatorial       0 1024
-<<<<<<< HEAD
-math_somaMatiz      0 1024           
-math_determinante   0 1024
-display_G           0 1024
-display_C           0 1024
-=======
+
 math_somaMatiz      0 1024
 math_determinante   0 1024
 display_G           0 1024
 display_C           0 1024
-=======
+
 Max 3 1024
 #Abs 6 1024
 #Div 8 2097152
@@ -47,5 +37,3 @@ Max 3 1024
 #RightTriangle -1 32768
 #SquareWave -1 32768
 
->>>>>>> 5e41e46b24dd4e1f20efbd51f421498432cb2b86
->>>>>>> 3f67611405ac62bf565e72452d1e7f508aaf7f24
