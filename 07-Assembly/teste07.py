@@ -31,5 +31,5 @@ def test07(args):
 
 if __name__ == "__main__":
     root = os.getcwd()
-    print(root)n
+    print(root)
     test07(root)

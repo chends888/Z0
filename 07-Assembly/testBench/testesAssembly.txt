@@ -3,37 +3,5 @@
 # Editado por Rafael Corsi <rafael.corsi@insper.edu.br>
 #   Setembro/2017
 
-math_max            0 1024 
-math_abs            0 1024  
 
-math_divisao        0 1024
-math_multiplicacao  0 1024
-math_fibonacci      0 1024
-math_fatorial       0 1024
-
-math_somaMatiz      0 1024
-math_determinante   0 1024
 display_G           0 1024
-display_C           0 1024
-
-Max 3 1024
-#Abs 6 1024
-#Div 8 2097152
-#Mod 8 2097152
-#Pow 5 8096
-
-#Fibonacci 1 4096
-#SternDiatomicSeries 1 2097152
-#Factorial 8 4096
-#Fibonacci 1 4096
-#KolakoskiSequence 1 4096
-
-#Parallelogram -1 32768
-#Diamond -1 32768
-#EquilateralTriangle -1 32768
-#Hexagon -1 32768
-#Hourglass -1 32768
-#Pentagon -1 32768
-#RightTriangle -1 32768
-#SquareWave -1 32768
-
