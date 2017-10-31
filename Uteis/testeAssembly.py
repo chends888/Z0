@@ -26,7 +26,7 @@ def test_Assembly(nomes_testes):
 
 		for i in range(int(nomes_testes[1])):
 
-			resultado = "../07-Assembly/bin/mif_ram/{0}{1}_out.mif".format(nomes_testes[0],i)
+			resultado = "../07-Assembly/bin/{0}{1}_out.mif".format(nomes_testes[0],i)
 			teste = "../07-Assembly/testBench/testesAssembly/{0}{1}_tst.mif".format(nomes_testes[0],i)
 			debug = False
 
@@ -48,7 +48,6 @@ def test_Assembly(nomes_testes):
 					print("\n")
 
 			# rotina do teste da emulação
-            
 			with open(teste, 'r') as arquivo:
 				linhas = arquivo.read().splitlines()
 
@@ -67,9 +66,9 @@ def test_Assembly(nomes_testes):
 
 	else:
 
-		resultado = "../07-Assembly/bin/mif_ram/{0}_out.mif".format(nomes_testes[0])
+		resultado = "../07-Assembly/bin/{0}_out.mif".format(nomes_testes[0])
 		teste = "../07-Assembly/testBench/testesAssembly/{0}_tst.txt".format(nomes_testes[0])
-		imagem = "../07-Assembly/bin/mif_ram/{0}.pbm".format(nomes_testes[0])
+		imagem = "../07-Assembly/bin/{0}.pbm".format(nomes_testes[0])
 		debug = False
 
 		linha = []
