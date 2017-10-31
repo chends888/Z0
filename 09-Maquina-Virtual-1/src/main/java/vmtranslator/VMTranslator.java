@@ -5,6 +5,7 @@
 
 package vmtranslator;
 
+import java.io.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -98,9 +99,10 @@ class VMTranslator {
 
     public static void main(String[] args) {
 
-        if (args.length < 1)  // checa se arquivo foi passado
+        if (args.length < 1) {  // checa se arquivo foi passado
             System.out.println("informe o nome ou pasta dos arquivos vm");
             System.exit(0);
+        }
 
         argsParser(args);
 
@@ -108,6 +110,50 @@ class VMTranslator {
             int nFiles = loadDirOrFileToFiles();
             System.out.printf("Localizado %d arquivos . nasm \n inicializando conversão. ", nFiles);
 
+            Code code = new Code(outputFilename);
+            for (String file : files) {
+                Parser parser = new Parser(file);
+                code.vmfile(file);
+
+                // Avança enquanto houver linhas para traduzir
+                while (parser.advance()){
+
+                    if( parser.commandType(parser.command())==Parser.CommandType.C_PUSH ||
+                        parser.commandType(parser.command())==Parser.CommandType.C_POP) {
+                        code.writePushPop(parser.commandType(parser.command()),
+                                parser.arg1(parser.command()),
+                                parser.arg2(parser.command())
+                        );
+                    } else if( parser.commandType(parser.command())==Parser.CommandType.C_ARITHMETIC) {
+                        code.writeArithmetic(parser.command());
+                    /**
+                    } else if( parser.commandType(parser.command())==Parser.CommandType.C_LABEL) {
+                        code.writeLabel(parser.arg1(parser.command()));
+
+                    } else if( parser.commandType(parser.command())==Parser.CommandType.C_GOTO) {
+                        code.writeGoto(parser.arg1(parser.command()));
+
+                    } else if( parser.commandType(parser.command())==Parser.CommandType.C_IF) {
+                        code.writeIf(parser.arg1(parser.command()));
+
+                    } else if( parser.commandType(parser.command())==Parser.CommandType.C_FUNCTION) {
+                        code.writeFunction(parser.arg1(parser.command()),parser.arg2(parser.command()));
+
+                    } else if( parser.commandType(parser.command())==Parser.CommandType.C_RETURN) {
+                        code.writeReturn();
+
+                    } else if( parser.commandType(parser.command())==Parser.CommandType.C_CALL) {
+                        code.writeCall(parser.arg1(parser.command()code),parser.arg2(parser.command()));
+                        */
+
+                    } else {
+                        Error.error("Comando não reconhecido");
+                    }
+
+                }
+                parser.close();
+            }
+            code.close();
         } catch (FileNotFoundException e) {
             error("Arquivo \'" + inputFilename + "\' nao encontrado");
             System.exit(1);
