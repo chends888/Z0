@@ -113,14 +113,10 @@ public class Assemble {
                 System.out.println(parser.command());
             }
             if (parser.commandType(parser.command()) == Parser.CommandType.C_COMMAND) {
-
-
                     String[] array = parser.instruction(parser.command());
                     value = "";
                     //value += String.join("", Collections.nCopies(bits-16, "1"));
                     value += "111" + Code.comp(array) + Code.dest(array) + Code.jump(array);
-
-
             } else if (parser.commandType(parser.command()) == Parser.CommandType.A_COMMAND) {
                 symbol = parser.symbol(parser.command());
                 value = "0";
@@ -131,7 +127,6 @@ public class Assemble {
                     System.err.println("Arquitetura não suporta a entrada de números negativos no LEAW");
                 } else if (table.contains(symbol)) {
                     value = Integer.toString(table.getAddress(symbol));
-                    //value = "0" + Code.toBinary(value);
                     value = "0" + Code.toBinary(value);
 
                 } else { // avisos caso memória tenha estourado
@@ -140,7 +135,6 @@ public class Assemble {
                     if (ramAddress > 24576)
                         System.err.println("Aviso: não há mais memória RAM disponível");
                     table.addEntry(symbol, ramAddress);
-                    //value = "0" + Code.toBinary("" + ramAddress);
                     value = "0" + Code.toBinary("" + ramAddress);
 
                     ramAddress++;
@@ -156,7 +150,7 @@ public class Assemble {
                 outMIF.println(String.format(" %5d", line)+" : "+value+";");
                 line++;
             }
-
+            /*
             if(!simulator) {
                 if(flagNOP) {
                     if(value.charAt(0)=='1' && value.substring(10, 16).equals("000000")) {
@@ -168,9 +162,7 @@ public class Assemble {
                 } else if(value.charAt(0)=='1' && ( value.charAt(13)=='1' || value.charAt(14)=='1' || value.charAt(15)=='1' ) ) {
                     flagNOP = true;
                 }
-            }
-
-               
+            }*/
         }
 
         if(outMIF!=null) {
