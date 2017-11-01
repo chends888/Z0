@@ -4,7 +4,10 @@
 SimplePush 1 256
 SimpleAdd 1 256
 SimpleSub 1 256
+SimpleNot 1 256
+
 SimplePushAdd 1 256
+
 
 #BasicLoop 0 1024 n
 #BasicTest 0 1024 n

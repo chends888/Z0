@@ -25,16 +25,16 @@ def test09():
     os.system("mvn package -DskipTests")
 
     print(colored("---------- Gerando .nasm dos .vm", 'magenta'))
-    os.system("python ./tests/vmtranslator.py -j ./target/VMTranslator-1.0.jar -t ./tests/testesVMTranslator.txt -in ./tests/vm/ -out ./tests/nasm/ -p 3")
+    os.system("python3 ./tests/vmtranslator.py -j ./target/VMTranslator-1.0.jar -t ./tests/testesVMTranslator.txt -in ./tests/vm/ -out ./tests/nasm/ -p 3")
 
     print(colored("---------- Gerando o .hack do .nasm", 'magenta'))
-    os.system("python ../Uteis/assembler.py -j ../Uteis/AssemblerZ0-1.0.jar -t ./tests/testesVMTranslator.txt -in ./tests/nasm -o ./tests/hack -p 3")
+    os.system("python3 ../Uteis/assembler.py -j ../Uteis/AssemblerZ0-1.0.jar -t ./tests/testesVMTranslator.txt -in ./tests/nasm -o ./tests/hack -p 3")
 
     print(colored("---------- Emulando                  ", 'magenta'))
-    os.system("python ../Uteis/emulate.py -jar ../Uteis/Elemulator/Elemulator.jar -t ./tests/testesVMTranslator.txt -inRAM ./tests/ramIn/ -inHACK ./tests/hack/ -outRAM ./tests/ramOut/  -p 3 -r 512,256")
+    os.system("python3 ../Uteis/emulate.py -jar ../Uteis/Elemulator/Elemulator.jar -t ./tests/testesVMTranslator.txt -inRAM ./tests/ramIn/ -inHACK ./tests/hack/ -outRAM ./tests/ramOut/  -p 3 -r 512,256")
 
     print(colored("---------- Verificando                  ", 'magenta'))
-    os.system("python -m pytest -v ./tests/testeVMTranslator.py -rs")
+    os.system("python3 -m pytest -v ./tests/testeVMTranslator.py -rs")
 
 if __name__ == "__main__":
     root = os.getcwd()

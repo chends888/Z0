@@ -226,7 +226,7 @@ public class Parser
      */
     public String[] instruction(String command) 
     {
-    	
+        command = command.replace(" ", "");
         String[] instructionCode = command.split(" ");
 
      	if (instructionCode.length <= 1)

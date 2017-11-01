@@ -1,11 +1,12 @@
-; SUB
+; NOT
 leaw $SP,%A
 movw (%A),%D
 decw %D
 movw %D,(%A)
-movw (%A),%A
 movw (%A),%D
+notw %D
+movw %D,(%A)
 leaw $SP,%A
-subw (%A),$1,%A
-subw (%A),%D,%D
+movw (%A),%D
+incw %D
 movw %D,(%A)
