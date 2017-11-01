@@ -11,8 +11,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/max.mif" afterPath="$PROJECT_DIR$/max.mif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/AssemblerZ0_jar/AssemblerZ0.jar" afterPath="$PROJECT_DIR$/out/artifacts/AssemblerZ0_jar/AssemblerZ0.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Max.nasm" afterPath="$PROJECT_DIR$/Max.nasm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/assembler/Assemble.java" afterPath="$PROJECT_DIR$/src/main/java/assembler/Assemble.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/assembler/Code.java" afterPath="$PROJECT_DIR$/src/main/java/assembler/Code.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/assembler/Parser.java" afterPath="$PROJECT_DIR$/src/main/java/assembler/Parser.java" />
     </list>
@@ -35,18 +33,18 @@
       <file leaf-file-name="AssemblerZ0.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/assembler/AssemblerZ0.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="821">
+            <state relative-caret-position="314">
               <caret line="84" column="53" lean-forward="false" selection-start-line="84" selection-start-column="48" selection-end-line="84" selection-end-column="53" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Code.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Code.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/assembler/Code.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="207" column="50" lean-forward="false" selection-start-line="207" selection-start-column="50" selection-end-line="207" selection-end-column="50" />
+            <state relative-caret-position="418">
+              <caret line="167" column="47" lean-forward="false" selection-start-line="167" selection-start-column="47" selection-end-line="167" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -55,8 +53,8 @@
       <file leaf-file-name="Assemble.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/assembler/Assemble.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+            <state relative-caret-position="480">
+              <caret line="118" column="63" lean-forward="true" selection-start-line="118" selection-start-column="63" selection-end-line="118" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#fillSymbolTable#0;class#Assemble#0" expanded="false" />
@@ -67,19 +65,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Parser.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ParserTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/assembler/ParserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="734">
+              <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+              <folding>
+                <element signature="docComment;method#ParserTest#0;class#ParserTest#0" expanded="false" />
+                <element signature="method#ParserTest#0;class#ParserTest#0" expanded="false" />
+                <element signature="docComment;method#testParser_commandType#0;class#ParserTest#0" expanded="false" />
+                <element signature="docComment;method#testParser_label#0;class#ParserTest#0" expanded="false" />
+                <element signature="docComment;method#testParser_symbol#0;class#ParserTest#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/assembler/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1354">
-              <caret line="249" column="19" lean-forward="false" selection-start-line="249" selection-start-column="8" selection-end-line="249" selection-end-column="19" />
+            <state relative-caret-position="442">
+              <caret line="233" column="12" lean-forward="true" selection-start-line="233" selection-start-column="12" selection-end-line="233" selection-end-column="12" />
               <folding>
                 <element signature="docComment;method#Parser#0;class#Parser#0" expanded="false" />
-                <element signature="method#Parser#0;class#Parser#0" expanded="false" />
-                <element signature="e#3295#3296#0" expanded="true" />
-                <element signature="e#3329#3330#0" expanded="true" />
                 <element signature="docComment;method#commandType#0;class#Parser#0" expanded="false" />
                 <element signature="docComment;method#symbol#0;class#Parser#0" expanded="false" />
-                <element signature="e#6059#6067#0" expanded="true" />
+                <element signature="e#6068#6076#0" expanded="true" />
                 <element signature="method#getSymbolTable#0;class#Parser#0" expanded="false" />
                 <element signature="method#close#0;class#Parser#0" expanded="false" />
               </folding>
@@ -122,9 +133,9 @@
         <option value="$PROJECT_DIR$/src/test/java/assembler/ParserTest.java" />
         <option value="$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class" />
         <option value="$PROJECT_DIR$/src/test/java/assembler/CodeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/assembler/Code.java" />
-        <option value="$PROJECT_DIR$/src/main/java/assembler/Parser.java" />
         <option value="$PROJECT_DIR$/src/main/java/assembler/Assemble.java" />
+        <option value="$PROJECT_DIR$/src/main/java/assembler/Parser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/assembler/Code.java" />
       </list>
     </option>
   </component>
@@ -143,7 +154,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="108" />
     <option name="y" value="56" />
     <option name="width" value="3732" />
@@ -166,7 +177,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,8 +235,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -493,8 +504,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CodeTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ParserTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ParserTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CodeTest" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.All in AssemblerZ0" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.All in AssemblerZ0 (2)" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.All in AssemblerZ0 (1)" />
@@ -523,16 +534,11 @@
       <workItem from="1508497530418" duration="1995000" />
       <workItem from="1508790693822" duration="3101000" />
       <workItem from="1509540628791" duration="2033000" />
+      <workItem from="1509551137176" duration="2095000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CodeTest - 2017.10.23 at 20h 40m 45s.xml">
-      <configuration name="CodeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CodeTest - 2017.10.23 at 20h 42m 35s.xml">
-      <configuration name="CodeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CodeTest - 2017.10.23 at 20h 43m 19s.xml">
       <configuration name="CodeTest" configurationId="JUnit" />
     </history-entry>
@@ -557,12 +563,19 @@
     <history-entry file="ParserTest - 2017.10.23 at 20h 40m 27s.xml">
       <configuration name="ParserTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ParserTest - 2017.11.01 at 14h 08m 47s.xml">
+      <configuration name="ParserTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParserTest - 2017.11.01 at 14h 09m 27s.xml">
+      <configuration name="ParserTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27042000" />
+    <option name="totallyTimeSpent" value="29137000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="108" y="56" width="3732" height="2104" extended-state="0" />
+    <frame x="108" y="56" width="3732" height="2104" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -572,20 +585,19 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3877551" sideWeight="0.527027" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20169401" sideWeight="0.48336798" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42562202" sideWeight="0.48336798" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16907825" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980412" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3631551" sideWeight="0.48960498" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -593,6 +605,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.101231925" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45641026" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980412" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -636,12 +649,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/assembler/ParserTest.java</url>
-          <line>99</line>
-          <properties />
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/assembler/CodeTest.java</url>
           <line>37</line>
           <properties />
@@ -663,16 +670,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/assembler/Assemble.java</url>
           <line>115</line>
           <properties />
-          <option name="timeStamp" value="51" />
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/assembler/Parser.java</url>
-          <line>229</line>
+          <url>file://$PROJECT_DIR$/src/main/java/assembler/Assemble.java</url>
+          <line>118</line>
           <properties />
-          <option name="timeStamp" value="52" />
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="53" />
+      <option name="time" value="55" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -686,14 +693,10 @@
         <state relative-caret-position="368">
           <caret line="193" column="39" lean-forward="true" selection-start-line="193" selection-start-column="39" selection-end-line="193" selection-end-column="39" />
           <folding>
-            <element signature="class#CommandType#0;class#Parser#0" expanded="false" />
             <element signature="docComment;method#Parser#0;class#Parser#0" expanded="false" />
-            <element signature="method#Parser#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#advance#0;class#Parser#0" expanded="false" />
-            <element signature="method#advance#0;class#Parser#0" expanded="false" />
             <element signature="docComment;method#commandType#0;class#Parser#0" expanded="false" />
-            <element signature="method#commandType#0;class#Parser#0" expanded="false" />
             <element signature="docComment;method#symbol#0;class#Parser#0" expanded="false" />
+            <element signature="e#6068#6076#0" expanded="true" />
             <element signature="method#getSymbolTable#0;class#Parser#0" expanded="false" />
             <element signature="method#close#0;class#Parser#0" expanded="false" />
           </folding>
@@ -733,14 +736,10 @@
         <state relative-caret-position="1029">
           <caret line="154" column="0" lean-forward="false" selection-start-line="154" selection-start-column="0" selection-end-line="154" selection-end-column="0" />
           <folding>
-            <element signature="class#CommandType#0;class#Parser#0" expanded="false" />
             <element signature="docComment;method#Parser#0;class#Parser#0" expanded="false" />
-            <element signature="method#Parser#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#advance#0;class#Parser#0" expanded="false" />
-            <element signature="method#advance#0;class#Parser#0" expanded="false" />
             <element signature="docComment;method#commandType#0;class#Parser#0" expanded="false" />
-            <element signature="method#commandType#0;class#Parser#0" expanded="false" />
             <element signature="docComment;method#symbol#0;class#Parser#0" expanded="false" />
+            <element signature="e#6068#6076#0" expanded="true" />
             <element signature="method#getSymbolTable#0;class#Parser#0" expanded="false" />
             <element signature="method#close#0;class#Parser#0" expanded="false" />
           </folding>
@@ -779,14 +778,10 @@
         <state relative-caret-position="3549">
           <caret line="169" column="20" lean-forward="true" selection-start-line="169" selection-start-column="20" selection-end-line="169" selection-end-column="20" />
           <folding>
-            <element signature="class#CommandType#0;class#Parser#0" expanded="false" />
             <element signature="docComment;method#Parser#0;class#Parser#0" expanded="false" />
-            <element signature="method#Parser#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#advance#0;class#Parser#0" expanded="false" />
-            <element signature="method#advance#0;class#Parser#0" expanded="false" />
             <element signature="docComment;method#commandType#0;class#Parser#0" expanded="false" />
-            <element signature="method#commandType#0;class#Parser#0" expanded="false" />
             <element signature="docComment;method#symbol#0;class#Parser#0" expanded="false" />
+            <element signature="e#6068#6076#0" expanded="true" />
             <element signature="method#getSymbolTable#0;class#Parser#0" expanded="false" />
             <element signature="method#close#0;class#Parser#0" expanded="false" />
           </folding>
@@ -906,14 +901,10 @@
         <state relative-caret-position="861">
           <caret line="96" column="36" lean-forward="false" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
           <folding>
-            <element signature="class#CommandType#0;class#Parser#0" expanded="false" />
             <element signature="docComment;method#Parser#0;class#Parser#0" expanded="false" />
-            <element signature="method#Parser#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#advance#0;class#Parser#0" expanded="false" />
-            <element signature="method#advance#0;class#Parser#0" expanded="false" />
             <element signature="docComment;method#commandType#0;class#Parser#0" expanded="false" />
-            <element signature="method#commandType#0;class#Parser#0" expanded="false" />
             <element signature="docComment;method#symbol#0;class#Parser#0" expanded="false" />
+            <element signature="e#6068#6076#0" expanded="true" />
             <element signature="method#getSymbolTable#0;class#Parser#0" expanded="false" />
             <element signature="method#close#0;class#Parser#0" expanded="false" />
           </folding>
@@ -1016,20 +1007,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/assembler/ParserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1168">
-          <caret line="99" column="64" lean-forward="false" selection-start-line="99" selection-start-column="64" selection-end-line="99" selection-end-column="64" />
-          <folding>
-            <element signature="docComment;method#ParserTest#0;class#ParserTest#0" expanded="false" />
-            <element signature="method#ParserTest#0;class#ParserTest#0" expanded="false" />
-            <element signature="docComment;method#testParser_commandType#0;class#ParserTest#0" expanded="false" />
-            <element signature="docComment;method#testParser_label#0;class#ParserTest#0" expanded="false" />
-            <element signature="docComment;method#testParser_symbol#0;class#ParserTest#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="121">
@@ -1084,24 +1061,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/assembler/AssemblerZ0.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="821">
+        <state relative-caret-position="314">
           <caret line="84" column="53" lean-forward="false" selection-start-line="84" selection-start-column="48" selection-end-line="84" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assembler/Code.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/assembler/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="207" column="50" lean-forward="false" selection-start-line="207" selection-start-column="50" selection-end-line="207" selection-end-column="50" />
-          <folding />
+        <state relative-caret-position="442">
+          <caret line="233" column="12" lean-forward="true" selection-start-line="233" selection-start-column="12" selection-end-line="233" selection-end-column="12" />
+          <folding>
+            <element signature="docComment;method#Parser#0;class#Parser#0" expanded="false" />
+            <element signature="docComment;method#commandType#0;class#Parser#0" expanded="false" />
+            <element signature="docComment;method#symbol#0;class#Parser#0" expanded="false" />
+            <element signature="e#6068#6076#0" expanded="true" />
+            <element signature="method#getSymbolTable#0;class#Parser#0" expanded="false" />
+            <element signature="method#close#0;class#Parser#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/assembler/ParserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="99" column="0" lean-forward="false" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;method#ParserTest#0;class#ParserTest#0" expanded="false" />
+            <element signature="method#ParserTest#0;class#ParserTest#0" expanded="false" />
+            <element signature="docComment;method#testParser_commandType#0;class#ParserTest#0" expanded="false" />
+            <element signature="docComment;method#testParser_label#0;class#ParserTest#0" expanded="false" />
+            <element signature="docComment;method#testParser_symbol#0;class#ParserTest#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/assembler/Assemble.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+        <state relative-caret-position="480">
+          <caret line="118" column="63" lean-forward="true" selection-start-line="118" selection-start-column="63" selection-end-line="118" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#fillSymbolTable#0;class#Assemble#0" expanded="false" />
@@ -1111,21 +1109,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/assembler/Parser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/assembler/Code.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1354">
-          <caret line="249" column="19" lean-forward="false" selection-start-line="249" selection-start-column="8" selection-end-line="249" selection-end-column="19" />
-          <folding>
-            <element signature="docComment;method#Parser#0;class#Parser#0" expanded="false" />
-            <element signature="method#Parser#0;class#Parser#0" expanded="false" />
-            <element signature="e#3295#3296#0" expanded="true" />
-            <element signature="e#3329#3330#0" expanded="true" />
-            <element signature="docComment;method#commandType#0;class#Parser#0" expanded="false" />
-            <element signature="docComment;method#symbol#0;class#Parser#0" expanded="false" />
-            <element signature="e#6059#6067#0" expanded="true" />
-            <element signature="method#getSymbolTable#0;class#Parser#0" expanded="false" />
-            <element signature="method#close#0;class#Parser#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="418">
+          <caret line="167" column="47" lean-forward="false" selection-start-line="167" selection-start-column="47" selection-end-line="167" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>
