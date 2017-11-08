@@ -107,13 +107,74 @@ public class Code {
         }
 
         else if (command.equals("eq")) {
+
+            commands.add('leaw $SP, %A');
+	    	commands.add('movw (%A)');
         }
 
-        else if (command.equals("gt")) {
-        }
+        else if (command.equals("gt") or command == 'lt' or command =='eq') {
 
-        else if (command.equals("lt")) {
-        }
+
+        commands.add('leaw $SP,%A');
+
+		    	commands.add('decw (%A)');
+
+		    	commands.add('subw $1,(%A),%A');
+    
+		    	commands.add('movw (%A),%D');
+
+		    	commands.add("leaw $0,%A");
+
+		    	commands.add('subw (%A),%D,%D');
+
+		    	commands.add('leaw $true,%A');
+
+		    	if(command == 'gt'){
+
+		    		commands.add('jg');
+
+		    	}else if (command == 'lt'){
+
+		    		commands.add('jl');
+
+		    	}else if (command == 'eq'){
+
+		    		commands.add('je');
+		    	}
+
+		    	commands.add('nop');
+
+		    	commands.add('leaw $0,%A');
+
+		    	commands.add('movw %A,%D');
+
+		    	commands.add('leaw (%A),%A');
+
+		    	commands.add('movw %D,(%A)');
+
+		    	commands.add('leaw $end,%A');
+
+	    		commands.add('jmp');
+
+	    		commands.add('nop');
+
+	    		commands.add('true:');
+
+	    		commands.add('leaw $1,%A');
+
+	    		commands.add('movw %A,%D');
+
+	    		commands.add('leaw $0,%A');
+
+	    		commands.add('movw (%A),%A');
+                
+	    		commands.add('movw %D,(%A)');
+                
+	    		commands.add('end:');
+	    	}
+      
+
+        
 
         else if (command.equals("and")) {
             commands.add("; AND");
