@@ -1,14 +1,16 @@
-leaw %5 ,%A
+leaw $5 ,%A
 movw %A,%D
 leaw $SP,%A
+movw (%A),%A
 movw %D,(%A)
 leaw $SP,%A
 movw (%A),%D
 incw %D
 movw %D,(%A)
-leaw %9 ,%A
+leaw $9 ,%A
 movw %A,%D
 leaw $SP,%A
+movw (%A),%A
 movw %D,(%A)
 leaw $SP,%A
 movw (%A),%D

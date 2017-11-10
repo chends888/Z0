@@ -86,7 +86,7 @@ public class Code {
             commands.add("leaw $SP,%A");
             commands.add("subw (%A),$1,%A");
 
-            commands.add("addw (%A),%D,%D");
+            commands.add("subw (%A),%D,%D");
 
             commands.add("movw %D,(%A)");
         }
@@ -183,11 +183,13 @@ public class Code {
 
                 //Constante (int) para string
                 String constant = Integer.toString(index);
-                commands.add("leaw %"+ constant +" ,%A");
+                commands.add("leaw $"+ constant +" ,%A");
 
                 commands.add("movw %A,%D");
 
                 commands.add("leaw $SP,%A");
+                commands.add("movw (%A),%A");
+
                 commands.add("movw %D,(%A)");
 
                 commands.addAll(increaseSP());
