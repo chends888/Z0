@@ -210,7 +210,6 @@ public class Parser
     // Comandos sem ':'
     public String label(String command) {
     	if (command.indexOf(":") !=0)
-    		
     	{
             return command.replace(":","");
             
@@ -229,12 +228,11 @@ public class Parser
         command = command.replace(" ", "");
         String[] instructionCode = command.split(" ");
 
-     	if (instructionCode.length <= 1)
-    {
-     		return instructionCode;
-   	}
-   	else 
-   	{
+     	if (instructionCode.length <= 1) {
+                return instructionCode;
+        }
+        else
+        {
    		String[] secondParts = instructionCode[1].split(",");
    		
    		List<String> answer = new ArrayList<String>();
