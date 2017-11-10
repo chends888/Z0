@@ -21,6 +21,8 @@ def cmd_exists(cmd):
 
 def emulate(jar,testes,in_dir_ram,in_dir_hack,out_dir_ram,bits,processos,resolution, verbose):
 
+    debug = False
+
     processes = set()
     max_processes = processos
     start_time = time.time()
@@ -44,13 +46,20 @@ def emulate(jar,testes,in_dir_ram,in_dir_hack,out_dir_ram,bits,processos,resolut
         nome = j.split()
         if int(nome[1]) > 0:
             for i in range(int(nome[1])):
-                print('....', end='', flush=True)
+                #print('....', end='', flush=True)
+                print(nome)
                 # Testa se arquivos existem, senão pula
                 if os.path.exists(in_dir_hack+"{0}.hack".format(nome[0])):
                     rotina = ['java', '-jar', PATH_ELEMULATOR,
-                        in_dir_hack+"{0}.hack".format(nome[0]),
-                        "-i",in_dir_ram+"{0}{1}_in.mif".format(nome[0],i),
-                        "-o",out_dir_ram+"{0}{1}_out.mif".format(nome[0],i),"-c",nome[2]]
+                        os.path.abspath(in_dir_hack+"{0}.hack".format(nome[0])),
+                        "-i",
+                        os.path.abspath(in_dir_ram+"{0}{1}_in.mif".format(nome[0],i)),
+                        "-o",
+                        os.path.abspath(out_dir_ram+"{0}{1}_out.mif".format(nome[0],i)),
+                        "-c",
+                        nome[2]]
+                    if(debug):
+                        print(rotina)
                     if bits==32:
                         rotina.append("-b")
                         rotina.append("32")
@@ -153,8 +162,6 @@ def emulate(jar,testes,in_dir_ram,in_dir_hack,out_dir_ram,bits,processos,resolut
         if(verbose):
             print('\033[91m'+"Failed {0} process(es)".format(n_error)+'\033[0m')
         exit(n_error)
-
-    print('.')
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()

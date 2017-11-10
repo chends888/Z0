@@ -10,21 +10,4 @@
    movw (%A) , %D
    leaw $1,%A
    subw %D,(%A),%D
-   leaw $OUTPUT_FIRST,%A
-   jg
-   nop
-   leaw $1,%A
-   movw (%A) , %D
-   leaw $OUTPUT_D,%A
-   jmp
-   nop
-OUTPUT_FIRST:
-   leaw $0,%A
-   movw (%A),%D
-OUTPUT_D:
-   leaw $2,%A
-   movw %D, (%A)
-INFINITE_LOOP:
-   leaw $INFINITE_LOOP,%A
-   jmp
-   nop
+ 

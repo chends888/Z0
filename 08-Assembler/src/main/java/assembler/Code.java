@@ -197,7 +197,6 @@ public class Code {
         else if (mnemnonic [0] == "jge"){
             return "011";
         }
-
     	return "000";
     }
 
@@ -207,7 +206,9 @@ public class Code {
      * @return Valor em binário (String de 15 bits) representado com 0s e 1s.
      */
     public static String toBinary(String symbol) {
-    	return null;
+        int value = Integer.valueOf(symbol);
+        String binary = Integer.toBinaryString(value);
+        return String.format("%1$15s", binary).replace(" ", "0");
     }
 
 }

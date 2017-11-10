@@ -99,8 +99,6 @@ public class Parser
      */
     public boolean advance()
     {
-    	
-    	
     	try {
 			currentCommand = br.readLine();
 			} catch (IOException e) 
@@ -109,7 +107,7 @@ public class Parser
 			e.printStackTrace();
 		}
 
-		//System.out.println(currentCommand);
+		System.out.println(currentCommand);
 
     	if(currentCommand==null)
     	{
@@ -228,7 +226,7 @@ public class Parser
      */
     public String[] instruction(String command) 
     {
-    	
+        command = command.replace(" ", "");
         String[] instructionCode = command.split(" ");
 
      	if (instructionCode.length <= 1)
