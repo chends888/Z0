@@ -78,11 +78,22 @@ public class Parser {
             return CommandType.C_PUSH;  // comandos de PUSH
         } else if (command.startsWith("pop")) {
             return CommandType.C_POP;  //  comandos de POP
+        } else if (command.startsWith("label")) {
+            return CommandType.C_LABEL;  //  comandos de label
+        } else if (command.startsWith("goto")) {
+            return CommandType.C_GOTO;  //  comandos de goto
+        } else if (command.startsWith("if-goto")) {
+            return CommandType.C_IF;  //  comandos de if-goto
+        } else if (command.startsWith("function")) {
+            return CommandType.C_FUNCTION;  //  comandos de function
+        } else if (command.startsWith("return")) {
+            return CommandType.C_RETURN;  //  comandos de return
+        } else if (command.startsWith("call")) {
+            return CommandType.C_CALL;  //  comandos de call
         } else {
             return CommandType.C_ARITHMETIC;  // C_ARITHMETIC for add, sub, etc...
         }
     }
-
 
     /**
      * Retorna o primeiro argumento de um comando push ou pop passada no argumento.

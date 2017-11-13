@@ -262,7 +262,6 @@ public class Code {
         commands.toArray( stringArray );
         write(stringArray);
     }
-     
 
     /**
      * Grava no arquivo de saida as instruções em Assembly para inicializar o processo da VM (bootstrap).
