@@ -1,0 +1,3 @@
+{
+  "tests/testeVMTranslator.py::test_Assembly[SimpleGT 2 256]": true
+}

@@ -1,0 +1,13 @@
+; NEG
+leaw $SP,%A
+movw (%A),%D
+decw %D
+movw %D,(%A)
+movw (%A),%A
+movw (%A),%D
+negw %D
+movw %D,(%A)
+leaw $SP,%A
+movw (%A),%D
+incw %D
+movw %D,(%A)

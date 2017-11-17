@@ -208,6 +208,10 @@ public class Code {
             commands.add("orw (%A),%D,%D");
 
             commands.add("movw %D,(%A)");
+
+            commands.addAll(increaseSP());
+
+
         }
 
         else if (command.equals("not")) {
