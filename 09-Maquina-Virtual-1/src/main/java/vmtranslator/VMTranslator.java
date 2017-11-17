@@ -43,7 +43,6 @@ class VMTranslator {
                         System.out.println("<arquivo> : programa em linguagem de máquina virtual a ser carregado");
                         System.out.println("-o <arquivo> : nome do arquivo para salvar no formato NASM");
                         System.out.println("-n : não colocar rotina de bootstrap (conveniente para testar)");
-
                     } else if (args[i].charAt(1) == 'o') {
                         outputFilename = args[i + 1]; // arquivo output
                         i++;
@@ -118,39 +117,41 @@ class VMTranslator {
                 // Avança enquanto houver linhas para traduzir
                 while (parser.advance()){
 
-                    if( parser.commandType(parser.command())==Parser.CommandType.C_PUSH ||
-                        parser.commandType(parser.command())==Parser.CommandType.C_POP) {
-                        code.writePushPop(parser.commandType(parser.command()),
-                                parser.arg1(parser.command()),
-                                parser.arg2(parser.command())
-                        );
-                    } else if( parser.commandType(parser.command())==Parser.CommandType.C_ARITHMETIC) {
-                        code.writeArithmetic(parser.command());
-                    /**
-                    } else if( parser.commandType(parser.command())==Parser.CommandType.C_LABEL) {
-                        code.writeLabel(parser.arg1(parser.command()));
-
-                    } else if( parser.commandType(parser.command())==Parser.CommandType.C_GOTO) {
-                        code.writeGoto(parser.arg1(parser.command()));
-
-                    } else if( parser.commandType(parser.command())==Parser.CommandType.C_IF) {
-                        code.writeIf(parser.arg1(parser.command()));
-
-                    } else if( parser.commandType(parser.command())==Parser.CommandType.C_FUNCTION) {
-                        code.writeFunction(parser.arg1(parser.command()),parser.arg2(parser.command()));
-
-                    } else if( parser.commandType(parser.command())==Parser.CommandType.C_RETURN) {
-                        code.writeReturn();
-
-                    } else if( parser.commandType(parser.command())==Parser.CommandType.C_CALL) {
-                        code.writeCall(parser.arg1(parser.command()code),parser.arg2(parser.command()));
-                        */
-
-                    } else {
-                        Error.error("Comando não reconhecido");
-                    }
-
-                }
+                    switch (parser.commandType(parser.command())) {
+                            case C_PUSH:
+                            case C_POP:
+                                code.writePushPop(parser.commandType(parser.command()),
+                                                  parser.arg1(parser.command()),
+                                                  parser.arg2(parser.command()));
+                                break;
+                            case C_LABEL:
+                                code.writeLabel(parser.arg1(parser.command()));
+                                break;
+                            case C_GOTO:
+                                code.writeGoto(parser.arg1(parser.command()));
+                                break;
+                            case C_IF:
+                                code.writeIf(parser.arg1(parser.command()));
+                                break;
+                            case C_FUNCTION:
+                                code.writeFunction(parser.arg1(parser.command()),
+                                                   parser.arg2(parser.command()));
+                                break;
+                            case C_RETURN:
+                                code.writeReturn();
+                                break;
+                            case C_CALL:
+                                code.writeCall(parser.arg1(parser.command()),
+                                               parser.arg2(parser.command()));
+                                break;
+                            case C_ARITHMETIC:
+                                code.writeArithmetic(parser.command());
+                                break;
+                            default:
+                                Error.error("Comando não reconhecido");
+                                break;
+                  }
+              }
                 parser.close();
             }
             code.close();

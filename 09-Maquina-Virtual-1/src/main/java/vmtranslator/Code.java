@@ -96,6 +96,8 @@ public class Code {
 
             commands.addAll(reduceSP());
 
+            commands.add("movw (%A),%A");
+
             commands.add("movw (%A),%D");
 
             commands.add("negw %D");
@@ -206,12 +208,18 @@ public class Code {
             commands.add("orw (%A),%D,%D");
 
             commands.add("movw %D,(%A)");
+
+            commands.addAll(increaseSP());
+
+
         }
 
         else if (command.equals("not")) {
             commands.add("; NOT");
 
             commands.addAll(reduceSP());
+
+            commands.add("movw (%A),%A");
 
             commands.add("movw (%A),%D");
 
@@ -263,6 +271,65 @@ public class Code {
         write(stringArray);
     }
 
+    /**
+     * Grava no arquivo de saida as instruções em Assembly para inicializar o processo da VM (bootstrap).
+     * Também prepara a chamada para a função Sys.init
+     * O código deve ser colocado no início do arquivo de saída.
+     */
+    public void writeInit() {
+
+    }
+
+    /**
+     * Grava no arquivo de saida as instruções em Assembly para gerar o labels (marcadores de jump).
+     * @param  label define nome do label (marcador) a ser escrito.
+     */
+    public void writeLabel(String label) {
+
+    }
+
+    /**
+     * Grava no arquivo de saida as instruções em Assembly para gerar as instruções de goto (jumps).
+     * Realiza um jump incondicional para o label informado.
+     * @param  label define jump a ser realizado para um label (marcador).
+     */
+    public void writeGoto(String label) {
+
+    }
+
+    /**
+     * Grava no arquivo de saida as instruções em Assembly para gerar as instruções de goto condicional (jumps condicionais).
+     * Realiza um jump condicional para o label informado.
+     * @param  label define jump a ser realizado para um label (marcador).
+     */
+    public void writeIf(String label) {
+
+    }
+
+    /**
+     * Grava no arquivo de saida as instruções em Assembly para uma chamada de função (Call).
+     * @param  functionName nome da função a ser "chamada" pelo call.
+     * @param  numArgs número de argumentos a serem passados na função call.
+     */
+    public void writeCall(String functionName, Integer numArgs) {
+
+    }
+
+    /**
+     * Grava no arquivo de saida as instruções em Assembly para o retorno de uma sub rotina.
+     */
+    public void writeReturn() {
+
+    }
+
+    /**
+     * Grava no arquivo de saida as instruções em Assembly para a declaração de uma função.
+     * @param  functionName nome da função a ser criada.
+     * @param  numLocals número de argumentos a serem passados na função call.
+     */
+    public void writeFunction(String functionName, Integer numLocals) {
+
+    }
 
     /**
      * Armazena o nome do arquivo vm de origem.
