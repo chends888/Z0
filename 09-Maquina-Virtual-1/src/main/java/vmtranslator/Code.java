@@ -109,13 +109,74 @@ public class Code {
         }
 
         else if (command.equals("eq")) {
+
+            commands.add('leaw $SP, %A');
+	    	commands.add('movw (%A)');
         }
 
-        else if (command.equals("gt")) {
-        }
+        else if (command.equals("gt") or command == 'lt' or command =='eq') {
 
-        else if (command.equals("lt")) {
-        }
+
+        commands.add('leaw $SP,%A');
+
+		    	commands.add('decw (%A)');
+
+		    	commands.add('subw $1,(%A),%A');
+    
+		    	commands.add('movw (%A),%D');
+
+		    	commands.add("leaw $0,%A");
+
+		    	commands.add('subw (%A),%D,%D');
+
+		    	commands.add('leaw $true,%A');
+
+		    	if(command == 'gt'){
+
+		    		commands.add('jg');
+
+		    	}else if (command == 'lt'){
+
+		    		commands.add('jl');
+
+		    	}else if (command == 'eq'){
+
+		    		commands.add('je');
+		    	}
+
+		    	commands.add('nop');
+
+		    	commands.add('leaw $0,%A');
+
+		    	commands.add('movw %A,%D');
+
+		    	commands.add('leaw (%A),%A');
+
+		    	commands.add('movw %D,(%A)');
+
+		    	commands.add('leaw $end,%A');
+
+	    		commands.add('jmp');
+
+	    		commands.add('nop');
+
+	    		commands.add('true:');
+
+	    		commands.add('leaw $1,%A');
+
+	    		commands.add('movw %A,%D');
+
+	    		commands.add('leaw $0,%A');
+
+	    		commands.add('movw (%A),%A');
+                
+	    		commands.add('movw %D,(%A)');
+                
+	    		commands.add('end:');
+	    	}
+      
+
+        
 
         else if (command.equals("and")) {
             commands.add("; AND");
@@ -206,6 +267,65 @@ public class Code {
         write(stringArray);
     }
 
+    /**
+     * Grava no arquivo de saida as instruções em Assembly para inicializar o processo da VM (bootstrap).
+     * Também prepara a chamada para a função Sys.init
+     * O código deve ser colocado no início do arquivo de saída.
+     */
+    public void writeInit() {
+
+    }
+
+    /**
+     * Grava no arquivo de saida as instruções em Assembly para gerar o labels (marcadores de jump).
+     * @param  label define nome do label (marcador) a ser escrito.
+     */
+    public void writeLabel(String label) {
+
+    }
+
+    /**
+     * Grava no arquivo de saida as instruções em Assembly para gerar as instruções de goto (jumps).
+     * Realiza um jump incondicional para o label informado.
+     * @param  label define jump a ser realizado para um label (marcador).
+     */
+    public void writeGoto(String label) {
+
+    }
+
+    /**
+     * Grava no arquivo de saida as instruções em Assembly para gerar as instruções de goto condicional (jumps condicionais).
+     * Realiza um jump condicional para o label informado.
+     * @param  label define jump a ser realizado para um label (marcador).
+     */
+    public void writeIf(String label) {
+
+    }
+
+    /**
+     * Grava no arquivo de saida as instruções em Assembly para uma chamada de função (Call).
+     * @param  functionName nome da função a ser "chamada" pelo call.
+     * @param  numArgs número de argumentos a serem passados na função call.
+     */
+    public void writeCall(String functionName, Integer numArgs) {
+
+    }
+
+    /**
+     * Grava no arquivo de saida as instruções em Assembly para o retorno de uma sub rotina.
+     */
+    public void writeReturn() {
+
+    }
+
+    /**
+     * Grava no arquivo de saida as instruções em Assembly para a declaração de uma função.
+     * @param  functionName nome da função a ser criada.
+     * @param  numLocals número de argumentos a serem passados na função call.
+     */
+    public void writeFunction(String functionName, Integer numLocals) {
+
+    }
 
     /**
      * Armazena o nome do arquivo vm de origem.

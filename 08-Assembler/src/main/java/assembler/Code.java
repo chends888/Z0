@@ -47,7 +47,8 @@ public class Code {
                 return "100";
             }
         }
-        return null;
+        Error.error("Destino:"+mnemnonic[3]+"nao encontrado");
+    	return null;
     }
 
     /**
@@ -164,6 +165,7 @@ public class Code {
             return "0001100";
         }
 
+        Error.error("Comando: "+mnemnonic[0]+" nao encontrado");
         return null;
     }
 
@@ -178,7 +180,6 @@ public class Code {
         if (mnemnonic [0] == "jmp"){
             return "111";
         }
-
         else if (mnemnonic [0] == "je"){
             return "010";
         }
