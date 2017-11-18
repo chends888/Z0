@@ -5,6 +5,9 @@ SimplePush 1 256
 SimpleAdd 1 256
 SimpleSub 1 256
 SimpleNot 1 256
+SimpleNeg 1 256
+SimpleAnd 1 256
+SimpleOr 1 256
 
 SimplePushAdd 1 256
 

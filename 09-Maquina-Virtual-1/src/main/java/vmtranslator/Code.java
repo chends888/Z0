@@ -96,6 +96,8 @@ public class Code {
 
             commands.addAll(reduceSP());
 
+            commands.add("movw (%A),%A");
+
             commands.add("movw (%A),%D");
 
             commands.add("negw %D");
@@ -206,12 +208,18 @@ public class Code {
             commands.add("orw (%A),%D,%D");
 
             commands.add("movw %D,(%A)");
+
+            commands.addAll(increaseSP());
+
+
         }
 
         else if (command.equals("not")) {
             commands.add("; NOT");
 
             commands.addAll(reduceSP());
+
+            commands.add("movw (%A),%A");
 
             commands.add("movw (%A),%D");
 
