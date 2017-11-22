@@ -23,7 +23,7 @@ leaw $32768,%A
 movw %D,%A
 
 leaw $16448,%A
-movw %D,(%A)
+movw %D(%A)
 
 ;3
 
@@ -31,7 +31,7 @@ leaw $32768,%A
 movw %D,%A
 
 leaw $16480,%A
-movw %D,(%A)
+movw %D(%A)
 
 ;4
 
@@ -39,7 +39,7 @@ leaw $32768,%A
 movw %D,%A
 
 leaw $16512,%A
-movw %D,(%A)
+movw %D(%A)
 
 ;5
 
@@ -47,7 +47,7 @@ leaw $32768,%A
 movw %D,%A
 
 leaw $16544,%A
-movw %D,(%A)
+movw %D(%A)
 
 ;6
 
@@ -55,7 +55,7 @@ leaw $32768,%A
 movw %D,%A
 
 leaw $16576,%A
-movw %D,(%A)
+movw %D(%A)
 
 ;7
 
@@ -63,7 +63,7 @@ leaw $32768,%A
 movw %D,%A
 
 leaw $16608,%A
-movw %D,(%A)
+movw %D(%A)
 
 ;8
 
@@ -71,7 +71,7 @@ leaw $32768,%A
 movw %D,%A
 
 leaw $16640,%A
-movw %D,(%A)
+movw %D(%A)
 
 ;9
 
@@ -79,7 +79,7 @@ leaw $32768,%A
 movw %D,%A
 
 leaw $16672,%A
-movw %D,(%A)
+movw %D(%A)
 
 ;10
 

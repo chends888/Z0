@@ -20,7 +20,7 @@ nomes_testes = loadTestes.testes(PATH_TESTES)
 @pytest.mark.parametrize(('nomes_testes'),nomes_testes)
 def test_Assembly(nomes_testes):
 
-	nomes_testes = nomes_testes.split()
+	nomes_testes = nomes_testes.split()pi
 
 	if int(nomes_testes[1]) > 0:
 
