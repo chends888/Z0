@@ -5,12 +5,23 @@
 
 package compiler;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
 /**
  * Encapsula o código de leitura. Carrega as instruções na linguagem de máquina virtual a pilha,
  * analisa, e oferece acesso aos comandos.
  * Além disso, remove todos os espaços em branco e comentários.
  */
 public class JackTokenizer {
+
+    public String currentToken = "";       // comando atual
+    public String[] currentTokens = {""};  // comandos atuais
+    private BufferedReader fileReader;       // leitor de arquivo
+
+    boolean comment = false;
+    int tokencounter;
 
     /** Enumerator para os tipos de símbolos terminais de Linguagem Jack. */
     public enum TokenType {
@@ -46,12 +57,18 @@ public class JackTokenizer {
         THIS
     }
 
-    /** 
+    /**
      * Abre o arquivo de entrada no formato Jack e se prepara para analisá-lo.
      * @param file arquivo VM que será feito o parser.
      */
     public JackTokenizer(String file) {
-
+        try {
+            this.fileReader = new BufferedReader(new FileReader(file));
+        } catch (FileNotFoundException e) {
+            Error.error("Arquivo \'" + file + "\' nao encontrado");
+            System.exit(1);
+        }
+        tokencounter = 1;
     }
 
     /**
