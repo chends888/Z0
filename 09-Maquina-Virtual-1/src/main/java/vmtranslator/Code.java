@@ -110,69 +110,69 @@ public class Code {
 
         else if (command.equals("eq")) {
 
-            commands.add('leaw $SP, %A');
-	    	commands.add('movw (%A)');
+            commands.add("leaw $SP, %A");
+	    	commands.add("movw (%A)");
         }
 
-        else if (command.equals("gt") or command == 'lt' or command =='eq') {
+        else if (command.equals("gt") or command == "lt" or command == "eq") {
 
 
-        commands.add('leaw $SP,%A');
+        commands.add("leaw $SP,%A");
 
-		    	commands.add('decw (%A)');
+		    	commands.add("decw (%A)");
 
-		    	commands.add('subw $1,(%A),%A');
+		    	commands.add("subw $1,(%A),%A");
     
-		    	commands.add('movw (%A),%D');
+		    	commands.add("movw (%A),%D");
 
 		    	commands.add("leaw $0,%A");
 
-		    	commands.add('subw (%A),%D,%D');
+		    	commands.add("subw (%A),%D,%D");
 
-		    	commands.add('leaw $true,%A');
+		    	commands.add("leaw $true,%A");
 
-		    	if(command == 'gt'){
+		    	if(command == "gt"){
 
-		    		commands.add('jg');
+		    		commands.add("jg");
 
-		    	}else if (command == 'lt'){
+		    	}else if (command == "lt"){
 
-		    		commands.add('jl');
+		    		commands.add("jl");
 
-		    	}else if (command == 'eq'){
+		    	}else if (command == "eq"){
 
-		    		commands.add('je');
+		    		commands.add("je");
 		    	}
 
-		    	commands.add('nop');
+		    	commands.add("nop");
 
-		    	commands.add('leaw $0,%A');
+		    	commands.add("leaw $0,%A");
 
-		    	commands.add('movw %A,%D');
+		    	commands.add("movw %A,%D");
 
-		    	commands.add('leaw (%A),%A');
+		    	commands.add("leaw (%A),%A");
 
-		    	commands.add('movw %D,(%A)');
+		    	commands.add("movw %D,(%A)");
 
-		    	commands.add('leaw $end,%A');
+		    	commands.add("leaw $end,%A");
 
-	    		commands.add('jmp');
+	    		commands.add("jmp");
 
-	    		commands.add('nop');
+	    		commands.add("nop");
 
-	    		commands.add('true:');
+	    		commands.add("true:");
 
-	    		commands.add('leaw $1,%A');
+	    		commands.add("leaw $1,%A");
 
-	    		commands.add('movw %A,%D');
+	    		commands.add("movw %A,%D");
 
-	    		commands.add('leaw $0,%A');
+	    		commands.add("leaw $0,%A");
 
-	    		commands.add('movw (%A),%A');
+	    		commands.add("movw (%A),%A");
                 
-	    		commands.add('movw %D,(%A)');
+	    		commands.add("movw %D,(%A)");
                 
-	    		commands.add('end:');
+	    		commands.add("end:");
 	    	}
       
 
