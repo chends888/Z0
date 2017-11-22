@@ -15,12 +15,22 @@
       <file leaf-file-name="Code.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/vmtranslator/Code.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3614">
-              <caret line="340" column="36" lean-forward="false" selection-start-line="340" selection-start-column="36" selection-end-line="340" selection-end-column="36" />
+            <state relative-caret-position="191">
+              <caret line="377" column="0" lean-forward="true" selection-start-line="377" selection-start-column="0" selection-end-line="377" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testesVMTranslator.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/testesVMTranslator.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -58,6 +68,7 @@
       <find>writelabel</find>
       <find>error</find>
       <find>&quot;</find>
+      <find>writer.write</find>
       <find>'</find>
     </findStrings>
   </component>
@@ -314,15 +325,16 @@
       <workItem from="1508677832059" duration="2221000" />
       <workItem from="1508862754717" duration="642000" />
       <workItem from="1510914873088" duration="675000" />
-      <workItem from="1511319677343" duration="317000" />
+      <workItem from="1511319677343" duration="962000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10721000" />
+    <option name="totallyTimeSpent" value="11366000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -830,10 +842,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/tests/testesVMTranslator.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="25" lean-forward="true" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vmtranslator/Code.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3614">
-          <caret line="340" column="36" lean-forward="false" selection-start-line="340" selection-start-column="36" selection-end-line="340" selection-end-column="36" />
+        <state relative-caret-position="191">
+          <caret line="377" column="0" lean-forward="true" selection-start-line="377" selection-start-column="0" selection-end-line="377" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />

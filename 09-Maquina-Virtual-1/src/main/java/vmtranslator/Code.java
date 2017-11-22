@@ -285,6 +285,11 @@ public class Code {
      * @param  label define nome do label (marcador) a ser escrito.
      */
     public void writeLabel(String label) {
+        try {
+            commands.add(label + ":");
+        } catch (IOException e) {
+            System.out.println("writeLabel error");
+        }
 
     }
 
@@ -303,6 +308,13 @@ public class Code {
      * @param  label define jump a ser realizado para um label (marcador).
      */
     public void writeIf(String label) {
+        try {
+            commands.add("leaw $" + label + ", %A");
+            commands.add("jne");
+            commands.add("nop");
+        } catch (IOException e) {
+            System.out.println("writeIf error");
+        }
 
     }
 
@@ -319,7 +331,62 @@ public class Code {
      * Grava no arquivo de saida as instruções em Assembly para o retorno de uma sub rotina.
      */
     public void writeReturn() {
+        try {
+            commands.add("leaw $LCL,%A");
+            commands.add("movw (%A),%D");
+            commands.add("leaw $R13,%A");
+            commands.add("movw %D,(%A)");
+            commands.add("leaw $5,%A");
+            commands.add("movw %A,%D");
+            commands.add("leaw $R13,%A);
 
+                    commands.add("subw (%A),%D,%D");
+            commands.add("leaw $R15,%A");
+            commands.add("movw %D,(%A)");
+            commands.add("leaw $ARG,%A");
+            commands.add("movw (%A),%D");
+            commands.add("movw (%A),%D");
+            commands.add("addw %D,$1,%D");
+            commands.add("leaw $SP,%A");
+            commands.add("movw %D,(%A)");
+            commands.add("leaw $1,%A");
+            commands.add("movw %A,%D");
+            commands.add("leaw $R13,%A);
+                    commands.add("subw (%A),%D,%D");
+
+            commands.add("leaw $THAT,%A");
+            commands.add("movw %D,(%A)");
+            commands.add("leaw $2,%A");
+            commands.add("movw %A,%D");
+            commands.add("leaw $R13,%A);
+
+                    commands.add("subw (%A),%D,%D");
+            commands.add("leaw $THIS,%A");
+            commands.add("movw %D,(%A)");
+            commands.add("leaw $3,%A");
+            commands.add("movw %A,%D");
+            commands.add("leaw $R13,%A");
+            commands.add("subw (%A),%D,%D");
+            commands.add("leaw $ARG,%A");
+            commands.add("movw %D,(%A)");
+            commands.add("leaw $4,%A");
+
+            commands.add("movw %A,%D");
+            commands.add("leaw $R13,%A);
+
+
+
+                    commands.add("subw (%A),%D,%D");
+            commands.add("leaw $LCL,%A");
+            commands.add("movw %D,(%A)");
+
+            commands.add("leaw $R15, %A");
+            commands.add("jmp"); //jump para A
+            commands.add("nop");
+        }
+        catch (IOException e) {
+            System.out.println("writeReturn error");
+        }
     }
 
     /**
