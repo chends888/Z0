@@ -112,7 +112,6 @@ public class Code {
 
         else if (command.equals("gt") || command == "lt" || command == "eq") {
 
-
             commands.addAll(reduceSP());
 
             commands.add("movw %D,%A");
@@ -131,22 +130,60 @@ public class Code {
 
             commands.add("leaw $LabelTrue,%A");
 
-            commands.add("leaw $1,%(A)");
+            commands.add("leaw $0 ,%A");
 
-            commands.add("jg");
+            commands.add("notw %A");
 
-            commands.add("nop");
+            commands.add("movw %A,%D");
 
-            commands.add("LabelFalse:");
+            commands.add("leaw $SP ,%A");
 
-            commands.add("leaw $LabelTrue,%A");
+            commands.add("movw (%A) ,%A");
 
-            commands.add("leaw $0,(%A)");
+            commands.add("decw %A");
+
+            commands.add("movw %D, (%A)");
+
+            commands.add("leaw $LabelEnd,%A");
 
             commands.add("jl");
 
             commands.add("nop");
 
+            /**
+             * false
+             */
+            commands.add("LabelFalse:");
+
+            commands.add("leaw $0 ,%A");
+
+            commands.add("movw %A,%D");
+
+            commands.add("leaw $SP ,%A");
+
+            commands.add("movw (%A) ,%A");
+
+            commands.add("decw %A");
+
+            commands.add("movw %D, (%A)");
+
+            commands.add("leaw $LabelEnd,%A");
+
+            commands.add("jl");
+
+            commands.add("nop");
+
+            commands.add("leaw $0,(%A");
+
+            commands.add("leaw $LabelEnd,%A");
+
+            commands.add("je");
+
+            commands.add("nop");
+
+            commands.add("LabelEnd:");
+
+            commands.add("nop");
 
 
         }

@@ -10,11 +10,29 @@ subw %D,%A,%D
 movw %D,%A
 LabelTrue:
 leaw $LabelTrue,%A
-leaw $1,%(A)
-jg
+leaw $0 ,%A
+notw %A
+movw %A,%D
+leaw $SP ,%A
+movw (%A) ,%A
+decw %A
+movw %D, (%A)
+leaw $LabelEnd,%A
+jl
 nop
 LabelFalse:
-leaw $LabelTrue,%A
-leaw $0,(%A)
+leaw $0 ,%A
+movw %A,%D
+leaw $SP ,%A
+movw (%A) ,%A
+decw %A
+movw %D, (%A)
+leaw $LabelEnd,%A
 jl
+nop
+leaw $0,(%A
+leaw $LabelEnd,%A
+je
+nop
+LabelEnd:
 nop
