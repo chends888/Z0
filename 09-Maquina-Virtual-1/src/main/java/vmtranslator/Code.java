@@ -108,72 +108,49 @@ public class Code {
 
         }
 
-        else if (command.equals("eq")) {
 
-            commands.add("leaw $SP, %A");
-	    	commands.add("movw (%A)");
+
+        else if (command.equals("gt") || command == "lt" || command == "eq") {
+
+
+            commands.addAll(reduceSP());
+
+            commands.add("movw %D,%A");
+
+            commands.add("movw (%A),%D");
+
+            commands.add("decw %A");
+
+            commands.add("movw (%A),%A");
+
+            commands.add("subw %D,%A,%D");
+
+            commands.add("movw %D,%A");
+
+            commands.add("LabelTrue:");
+
+            commands.add("leaw $LabelTrue,%A");
+
+            commands.add("leaw $1,%(A)");
+
+            commands.add("jg");
+
+            commands.add("nop");
+
+            commands.add("LabelFalse:");
+
+            commands.add("leaw $LabelTrue,%A");
+
+            commands.add("leaw $0,(%A)");
+
+            commands.add("jl");
+
+            commands.add("nop");
+
+
+
         }
 
-        else if (command.equals("gt") or command == "lt" or command == "eq") {
-
-
-        commands.add("leaw $SP,%A");
-
-		    	commands.add("decw (%A)");
-
-		    	commands.add("subw $1,(%A),%A");
-    
-		    	commands.add("movw (%A),%D");
-
-		    	commands.add("leaw $0,%A");
-
-		    	commands.add("subw (%A),%D,%D");
-
-		    	commands.add("leaw $true,%A");
-
-		    	if(command == "gt"){
-
-		    		commands.add("jg");
-
-		    	}else if (command == "lt"){
-
-		    		commands.add("jl");
-
-		    	}else if (command == "eq"){
-
-		    		commands.add("je");
-		    	}
-
-		    	commands.add("nop");
-
-		    	commands.add("leaw $0,%A");
-
-		    	commands.add("movw %A,%D");
-
-		    	commands.add("leaw (%A),%A");
-
-		    	commands.add("movw %D,(%A)");
-
-		    	commands.add("leaw $end,%A");
-
-	    		commands.add("jmp");
-
-	    		commands.add("nop");
-
-	    		commands.add("true:");
-
-	    		commands.add("leaw $1,%A");
-
-	    		commands.add("movw %A,%D");
-
-	    		commands.add("leaw $0,%A");
-
-	    		commands.add("movw (%A),%A");
-                
-	    		commands.add("movw %D,(%A)");
-                
-	    		commands.add("end:");
-	    	}
       
 
         
@@ -285,11 +262,8 @@ public class Code {
      * @param  label define nome do label (marcador) a ser escrito.
      */
     public void writeLabel(String label) {
-        try {
-            commands.add(label + ":");
-        } catch (IOException e) {
-            System.out.println("writeLabel error");
-        }
+        List<String> commands = new ArrayList<String>();
+        commands.add(label + ":");
 
     }
 
@@ -308,13 +282,10 @@ public class Code {
      * @param  label define jump a ser realizado para um label (marcador).
      */
     public void writeIf(String label) {
-        try {
-            commands.add("leaw $" + label + ", %A");
-            commands.add("jne");
-            commands.add("nop");
-        } catch (IOException e) {
-            System.out.println("writeIf error");
-        }
+        List<String> commands = new ArrayList<String>();
+        commands.add("leaw $" + label + ", %A");
+        commands.add("jne");
+        commands.add("nop");
 
     }
 
@@ -331,62 +302,57 @@ public class Code {
      * Grava no arquivo de saida as instruções em Assembly para o retorno de uma sub rotina.
      */
     public void writeReturn() {
-        try {
-            commands.add("leaw $LCL,%A");
-            commands.add("movw (%A),%D");
-            commands.add("leaw $R13,%A");
-            commands.add("movw %D,(%A)");
-            commands.add("leaw $5,%A");
-            commands.add("movw %A,%D");
-            commands.add("leaw $R13,%A);
+        List<String> commands = new ArrayList<String>();
+        commands.add("leaw $LCL,%A");
+        commands.add("movw (%A),%D");
+        commands.add("leaw $R13,%A");
+        commands.add("movw %D,(%A)");
+        commands.add("leaw $5,%A");
+        commands.add("movw %A,%D");
+        commands.add("leaw $R13,%A");
 
-                    commands.add("subw (%A),%D,%D");
-            commands.add("leaw $R15,%A");
-            commands.add("movw %D,(%A)");
-            commands.add("leaw $ARG,%A");
-            commands.add("movw (%A),%D");
-            commands.add("movw (%A),%D");
-            commands.add("addw %D,$1,%D");
-            commands.add("leaw $SP,%A");
-            commands.add("movw %D,(%A)");
-            commands.add("leaw $1,%A");
-            commands.add("movw %A,%D");
-            commands.add("leaw $R13,%A);
-                    commands.add("subw (%A),%D,%D");
+        commands.add("subw (%A),%D,%D");
+        commands.add("leaw $R15,%A");
+        commands.add("movw %D,(%A)");
+        commands.add("leaw $ARG,%A");
+        commands.add("movw (%A),%D");
+        commands.add("movw (%A),%D");
+        commands.add("addw %D,$1,%D");
+        commands.add("leaw $SP,%A");
+        commands.add("movw %D,(%A)");
+        commands.add("leaw $1,%A");
+        commands.add("movw %A,%D");
+        commands.add("leaw $R13,%A");
+        commands.add("subw (%A),%D,%D");
 
-            commands.add("leaw $THAT,%A");
-            commands.add("movw %D,(%A)");
-            commands.add("leaw $2,%A");
-            commands.add("movw %A,%D");
-            commands.add("leaw $R13,%A);
+        commands.add("leaw $THAT,%A");
+        commands.add("movw %D,(%A)");
+        commands.add("leaw $2,%A");
+        commands.add("movw %A,%D");
+        commands.add("leaw $R13,%A");
 
-                    commands.add("subw (%A),%D,%D");
-            commands.add("leaw $THIS,%A");
-            commands.add("movw %D,(%A)");
-            commands.add("leaw $3,%A");
-            commands.add("movw %A,%D");
-            commands.add("leaw $R13,%A");
-            commands.add("subw (%A),%D,%D");
-            commands.add("leaw $ARG,%A");
-            commands.add("movw %D,(%A)");
-            commands.add("leaw $4,%A");
+        commands.add("subw (%A),%D,%D");
+        commands.add("leaw $THIS,%A");
+        commands.add("movw %D,(%A)");
+        commands.add("leaw $3,%A");
+        commands.add("movw %A,%D");
+        commands.add("leaw $R13,%A");
+        commands.add("subw (%A),%D,%D");
+        commands.add("leaw $ARG,%A");
+        commands.add("movw %D,(%A)");
+        commands.add("leaw $4,%A");
 
-            commands.add("movw %A,%D");
-            commands.add("leaw $R13,%A);
+        commands.add("movw %A,%D");
+        commands.add("leaw $R13,%A");
 
 
+        commands.add("subw (%A),%D,%D");
+        commands.add("leaw $LCL,%A");
+        commands.add("movw %D,(%A)");
 
-                    commands.add("subw (%A),%D,%D");
-            commands.add("leaw $LCL,%A");
-            commands.add("movw %D,(%A)");
-
-            commands.add("leaw $R15, %A");
-            commands.add("jmp"); //jump para A
-            commands.add("nop");
-        }
-        catch (IOException e) {
-            System.out.println("writeReturn error");
-        }
+        commands.add("leaw $R15, %A");
+        commands.add("jmp"); //jump para A
+        commands.add("nop");
     }
 
     /**

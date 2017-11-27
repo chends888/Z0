@@ -9,3 +9,7 @@ leaw $SP,%A
 subw (%A),$1,%A
 orw (%A),%D,%D
 movw %D,(%A)
+leaw $SP,%A
+movw (%A),%D
+incw %D
+movw %D,(%A)

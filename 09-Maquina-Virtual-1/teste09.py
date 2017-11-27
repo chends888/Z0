@@ -21,10 +21,10 @@ def test09():
     print(colored("---------- Testando                  ", 'magenta'))
     print(colored("---------- 09-VM-Translator          ", 'magenta'))
 
-    print(colored("---------- Compilando mvn", 'magenta'))
+    #print(colored("---------- Compilando mvn", 'magenta'))
     os.system("mvn package -DskipTests")
 
-    print(colored("---------- Gerando .nasm dos .vm", 'magenta'))
+    #print(colored("---------- Gerando .nasm dos .vm", 'magenta'))
     os.system("python3 ./tests/vmtranslator.py -j ./target/VMTranslator-1.0.jar -t ./tests/testesVMTranslator.txt -in ./tests/vm/ -out ./tests/nasm/ -p 3")
 
     print(colored("---------- Gerando o .hack do .nasm", 'magenta'))
@@ -33,8 +33,8 @@ def test09():
     print(colored("---------- Emulando                  ", 'magenta'))
     os.system("python3 ../Uteis/emulate.py -jar ../Uteis/Elemulator/Elemulator.jar -t ./tests/testesVMTranslator.txt -inRAM ./tests/ramIn/ -inHACK ./tests/hack/ -outRAM ./tests/ramOut/  -p 3 -r 512,256")
 
-    print(colored("---------- Verificando                  ", 'magenta'))
-    os.system("python3 -m pytest -v ./tests/testeVMTranslator.py -rs")
+    #print(colored("---------- Verificando                  ", 'magenta'))
+    #os.system("python3 -m pytest -v ./tests/testeVMTranslator.py -rs")
 
 if __name__ == "__main__":
     root = os.getcwd()
