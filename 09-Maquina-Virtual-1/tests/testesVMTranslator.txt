@@ -8,6 +8,7 @@
 #SimpleNeg 1 256
 #SimpleAnd 1 256
 #SimpleOr 1 256
+testeprova 1 256
 
 #SimplePushAdd 1 256
 

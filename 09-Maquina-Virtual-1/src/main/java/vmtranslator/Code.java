@@ -90,14 +90,14 @@ public class Code {
             commands.addAll(increaseSP());
         }
 
-<<<<<<< HEAD
+
         else if (command.equals("eq")) {
             commands.add("leaw $SP, %A");
 	    	commands.add("movw (%A)");
         }
 
         else if (command.equals("gt") or command == "lt" or command =="eq") {
-=======
+
 
 
         else if (command.equals("gt") || command == "lt" || command == "eq") {
@@ -113,11 +113,11 @@ public class Code {
             commands.add("movw (%A),%A");
 
             commands.add("subw %D,%A,%D");
->>>>>>> e480d647f7dcf1d9846244b397514d7901c3a738
+
 
             commands.add("movw %D,%A");
 
-<<<<<<< HEAD
+
         commands.add("leaw $SP,%A");
 
 		    	commands.add("decw (%A)");
@@ -125,17 +125,17 @@ public class Code {
 		    	commands.add("subw $1,(%A),%A");
     
 		    	commands.add("movw (%A),%D");
-=======
+
             commands.add("LabelTrue:");
 
             commands.add("leaw $LabelTrue,%A");
 
             commands.add("leaw $0 ,%A");
->>>>>>> e480d647f7dcf1d9846244b397514d7901c3a738
+
 
             commands.add("notw %A");
 
-<<<<<<< HEAD
+
 		    	commands.add("subw (%A),%D,%D");
 
 		    	commands.add("leaw $true,%A");
@@ -183,7 +183,7 @@ public class Code {
                 
 	    		commands.add("end:");
 	    	}
-=======
+
             commands.add("movw %A,%D");
 
             commands.add("leaw $SP ,%A");
@@ -238,8 +238,6 @@ public class Code {
 
         }
 
->>>>>>> e480d647f7dcf1d9846244b397514d7901c3a738
-      
 
         
 
