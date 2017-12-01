@@ -1,0 +1,6 @@
+vm code for sub
+
+push local 0 
+psuh local 1 
+sub 
+pop local 3 
