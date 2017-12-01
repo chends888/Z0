@@ -34,7 +34,7 @@ def test09():
     os.system("python3 ../Uteis/emulate.py -jar ../Uteis/Elemulator/Elemulator.jar -t ./tests/testesVMTranslator.txt -inRAM ./tests/ramIn/ -inHACK ./tests/hack/ -outRAM ./tests/ramOut/  -p 3 -r 512,256")
 
     #print(colored("---------- Verificando                  ", 'magenta'))
-    #os.system("python3 -m pytest -v ./tests/testeVMTranslator.py -rs")
+    os.system("python3 -m pytest -v ./tests/testeVMTranslator.py -rs")
 
 if __name__ == "__main__":
     root = os.getcwd()

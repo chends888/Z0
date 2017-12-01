@@ -11,7 +11,7 @@
 
 #SimplePushAdd 1 256
 
-SimpleGT 2 256
+#SimpleGT 2 256
 
 #BasicLoop 0 1024 n
 #BasicTest 0 1024 n

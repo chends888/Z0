@@ -228,6 +228,7 @@ public class Code {
 
         }
 
+
         else if (command.equals("not")) {
             commands.add("; NOT");
 
@@ -340,6 +341,7 @@ public class Code {
      */
     public void writeReturn() {
         List<String> commands = new ArrayList<String>();
+
         commands.add("leaw $LCL,%A");
         commands.add("movw (%A),%D");
         commands.add("leaw $R13,%A");
