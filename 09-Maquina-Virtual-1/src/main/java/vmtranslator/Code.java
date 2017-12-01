@@ -16,19 +16,18 @@ public class Code {
 
     PrintWriter outputFile = null;
     String filename = null;
+    static retornoCnt = 0 ;
 
     /** 
      * Abre o arquivo de entrada VM e se prepara para analisá-lo.
      * @param filename nome do arquivo NASM que receberá o código traduzido.
      */
-    public Code(String filename) throws  FileNotFoundException, IOException{
+    public Code(String filename) throws FileNotFoundException, IOException {
         File file = new File(filename);
         this.outputFile = new PrintWriter(new FileWriter(file));
     }
 
-
-
-    public List<String> reduceSP () {
+    public List<String> reduceSP() {
         List<String> commands = new ArrayList<String>();
         commands.add("leaw $SP,%A");
         commands.add("movw (%A),%D");
@@ -37,7 +36,7 @@ public class Code {
         return commands;
     }
 
-    public List<String> increaseSP () {
+    public List<String> increaseSP() {
         List<String> commands = new ArrayList<String>();
         commands.add("leaw $SP,%A");
         commands.add("movw (%A),%D");
@@ -60,119 +59,101 @@ public class Code {
         if(command.equals("add")) {
             // Comentário para facilitar o debug:
             commands.add("; ADD");
-
             commands.addAll(reduceSP());
-
             commands.add("movw (%A),%A");
             commands.add("movw (%A),%D");
-
             commands.add("leaw $SP,%A");
             commands.add("subw (%A),$1,%A");
-
             commands.add("addw (%A),%D,%D");
-
             commands.add("movw %D,(%A)");
             
         }
 
         else if (command.equals("sub")) {
             commands.add("; SUB");
-
             commands.addAll(reduceSP());
-
             commands.add("movw (%A),%A");
             commands.add("movw (%A),%D");
-
             commands.add("leaw $SP,%A");
             commands.add("subw (%A),$1,%A");
-
             commands.add("subw (%A),%D,%D");
-
             commands.add("movw %D,(%A)");
         }
 
         else if (command.equals("neg")) {
             commands.add("; NEG");
-
             commands.addAll(reduceSP());
-
             commands.add("movw (%A),%A");
-
             commands.add("movw (%A),%D");
-
             commands.add("negw %D");
-
             commands.add("movw %D,(%A)");
-
             commands.addAll(increaseSP());
-
         }
 
         else if (command.equals("eq")) {
-
-            commands.add('leaw $SP, %A');
-	    	commands.add('movw (%A)');
+            commands.add("leaw $SP, %A");
+	    	commands.add("movw (%A)");
         }
 
-        else if (command.equals("gt") or command == 'lt' or command =='eq') {
+        else if (command.equals("gt") or command == "lt" or command =="eq") {
 
 
-        commands.add('leaw $SP,%A');
+        commands.add("leaw $SP,%A");
 
-		    	commands.add('decw (%A)');
+		    	commands.add("decw (%A)");
 
-		    	commands.add('subw $1,(%A),%A');
+		    	commands.add("subw $1,(%A),%A");
     
-		    	commands.add('movw (%A),%D');
+		    	commands.add("movw (%A),%D");
 
 		    	commands.add("leaw $0,%A");
 
-		    	commands.add('subw (%A),%D,%D');
+		    	commands.add("subw (%A),%D,%D");
 
-		    	commands.add('leaw $true,%A');
+		    	commands.add("leaw $true,%A");
 
-		    	if(command == 'gt'){
+		    	if(command == "gt"){
 
-		    		commands.add('jg');
+		    		commands.add("jg");
 
-		    	}else if (command == 'lt'){
+		    	}else if (command == "lt"){
 
-		    		commands.add('jl');
+		    		commands.add("jl");
 
-		    	}else if (command == 'eq'){
+		    	}else if (command == "eq"){
 
-		    		commands.add('je');
+		    		commands.add("je");
 		    	}
 
-		    	commands.add('nop');
+		    	commands.add("nop");
 
-		    	commands.add('leaw $0,%A');
+		    	commands.add("leaw $0,%A");
 
-		    	commands.add('movw %A,%D');
+		    	commands.add("movw %A,%D");
 
-		    	commands.add('leaw (%A),%A');
+		    	commands.add("leaw (%A),%A");
 
-		    	commands.add('movw %D,(%A)');
+		    	commands.add("movw %D,(%A)");
 
-		    	commands.add('leaw $end,%A');
+		    	commands.add("leaw $end,%A");
 
-	    		commands.add('jmp');
+	    		commands.add("jmp");
 
-	    		commands.add('nop');
+	    		commands.add("nop");
 
-	    		commands.add('true:');
+	    		commands.add("true:");
 
-	    		commands.add('leaw $1,%A');
+	    		commands.add("leaw $1,%A");
 
-	    		commands.add('movw %A,%D');
+	    		commands.add("movw %A,%D");
 
-	    		commands.add('leaw $0,%A');
+	    		commands.add("leaw $0,%A");
 
-	    		commands.add('movw (%A),%A');
+	    		commands.add("movw (%A),%A");
                 
-	    		commands.add('movw %D,(%A)');
+	    		commands.add("movw %D,(%A)");
                 
-	    		commands.add('end:');
+	    		commands.add("end:");
 	    	}
       
 
@@ -180,55 +161,37 @@ public class Code {
 
         else if (command.equals("and")) {
             commands.add("; AND");
-
             commands.addAll(reduceSP());
-
             commands.add("movw (%A),%A");
             commands.add("movw (%A),%D");
-
             commands.add("leaw $SP,%A");
             commands.add("subw (%A),$1,%A");
-
             commands.add("andw (%A),%D,%D");
-
             commands.add("movw %D,(%A)");
         }
 
         else if (command.equals("or")) {
             commands.add("; OR");
-
             commands.addAll(reduceSP());
-
             commands.add("movw (%A),%A");
             commands.add("movw (%A),%D");
-
             commands.add("leaw $SP,%A");
             commands.add("subw (%A),$1,%A");
-
             commands.add("orw (%A),%D,%D");
-
             commands.add("movw %D,(%A)");
-
             commands.addAll(increaseSP());
-
-
         }
 
         else if (command.equals("not")) {
             commands.add("; NOT");
-
             commands.addAll(reduceSP());
-
             commands.add("movw (%A),%A");
-
             commands.add("movw (%A),%D");
-
             commands.add("notw %D");
-
             commands.add("movw %D,(%A)");
-
             commands.addAll(increaseSP());
         }
+
         else {
                 Error.error("Instrução invalida");
         }
@@ -247,27 +210,78 @@ public class Code {
     public void writePushPop(Parser.CommandType command, String segment, Integer index) {
         List<String> commands = new ArrayList<String>();
         //instruções do tipo: push constant 8
-        if(command == Parser.CommandType.C_PUSH){
-            if(segment.equals("constant")){
+        if (command == Parser.CommandType.C_PUSH) {
+            String constant = Integer.toString(index);
 
+            if (segment.equals("constant")) {
                 //Constante (int) para string
-                String constant = Integer.toString(index);
-                commands.add("leaw $"+ constant +" ,%A");
-
+                commands.add("leaw $" + constant + ",%A");
                 commands.add("movw %A,%D");
-
                 commands.add("leaw $SP,%A");
                 commands.add("movw (%A),%A");
+                commands.add("movw %D,(%A)");
+                commands.addAll(increaseSP());
+            }
 
+            else if (segment.equals("argument") || segment.equals ("local") || segment.equals ("static")) {
+                commands.add("leaw $" + segment + ",%A");
+                commands.add("movw %A,%D");
+                commands.add("leaw $" + constant + ",%A");
+                commands.add("addw %A,%D,%A");
+                commands.add("movw (%A),%A");
+                commands.add("movw %A,%D");
+                commands.add("leaw $SP,%A");
+                commands.add("movw (%A),%A");
                 commands.add("movw %D,(%A)");
 
-                commands.addAll(increaseSP());
+            }
 
+            else if (segment.equals("temp")) {
+                commands.add("leaw $5,%A");
+                commands.add("movw $A,%D");
+                commands.add("leaw $" + constant + ",%A");
+                commands.add("addw %A,%D,%A");
+                commands.add("movw (%A),%A");
+                commands.add("movw %A,%D");
+                commands.add("leaw $SP,%A");
+                commands.add("movw (%A),%A");
+                commands.add("movw %D,(%A)");
+            }
+
+            else if (segment.equals("that") || segment.equals ("this")) {
+                commands.add("leaw $" + segment + ",%A");
+                commands.add("movw (%A),%A");
+                commands.add("movw %A,%D");
 
             }
+
         }
-        String[] stringArray = new String[ commands.size() ];
-        commands.toArray( stringArray );
+
+        if (command == Parser.CommandType.C_POP) {
+
+            if (segment.equals("argument") || segment.equals ("local")) {
+                commands.addAll(reduceSP());
+                commands.add("movw (%A),%A");
+                commands.add("movw (%A),%D");
+                commands.add("leaw $" + segment + ",%A");
+                commands.add("movw %D,(%A)");
+                commands.addAll(reduceSP());
+            }
+
+
+            if (segment.equals("temp")) {
+                commands.addAll(reduceSP());
+                commands.add("movw (%A),%A");
+                commands.add("movw (%A),%D");
+                int index2 = 5 + index;
+                String constant2 = Integer.toString(index2);
+                commands.add("leaw $" + constant2 + ",%A");
+                commands.add("movw %D,(%A)");
+                commands.addAll(reduceSP());
+            }
+        }
+        String[] stringArray = new String[commands.size()];
+        commands.toArray(stringArray);
         write(stringArray);
     }
 
@@ -294,7 +308,16 @@ public class Code {
      * @param  label define jump a ser realizado para um label (marcador).
      */
     public void writeGoto(String label) {
+        List<String> commands = new ArrayList<String>();
+        
+        commands.add("leaw" + label + ",%A");
+        commands.add("movw (%A),%A");
+        commands.add("movw %A,%D");
+        commands.add("jmp");
 
+        String[] stringArray = new String[commands.size()];
+        commands.toArray(stringArray);
+        write(stringArray);
     }
 
     /**
@@ -312,7 +335,80 @@ public class Code {
      * @param  numArgs número de argumentos a serem passados na função call.
      */
     public void writeCall(String functionName, Integer numArgs) {
+        List<String> commands = new ArrayList<String>();
 
+        String rtnLabel = "RETORNO-"+functionName+"-"+Integer.toString(retornoCnt);
+
+        commands.add("leaw $"+ rtnLabel + ",%A");
+        commands.add("leaw %A,%D");
+        commands.add("leaw $SP,%A");
+        commands.add("movw (%A),%A");
+        commands.add("movw %D,(%A)");
+
+        commands.addAll(increaseSP());
+
+        //pushando LCL na pilha
+        commands.add("leaw $LCL,%A");
+        commands.add("movw %A,%D");
+        commands.add("leaw %SP,%A");
+        commands.add("movw (%A),%A");
+        commands.add("movw %D,(%A)");
+        commands.addAll(increaseSP());
+        
+        //pushando ARG na pilha
+        commands.add("leaw $ARG,%A");
+        commands.add("movw %A,%D");
+        commands.add("leaw %SP,%A");
+        commands.add("movw (%A),%A");
+        commands.add("movw %D,(%A)");
+        commands.addAll(increaseSP());
+
+        //pushando THIS
+        commands.add("leaw $THIS,%A");
+        commands.add("movw %A,%D");
+        commands.add("leaw %SP,%A");
+        commands.add("movw (%A),%A");
+        commands.add("movw %D,(%A)");
+        commands.addAll(increaseSP());
+
+        //pushando THAT
+        commands.add("leaw $THAT,%A");
+        commands.add("movw %A,%D");
+        commands.add("leaw %SP,%A");
+        commands.add("movw (%A),%A");
+        commands.add("movw %D,(%A)");
+        commands.addAll(increaseSP());
+
+
+
+        //redefinindo valor de ARG 
+        commands.add("leaw $SP,%A");
+        commands.add("movw (%A),%A");
+        commands.add("movw %A,%D");
+
+        Integer newarg = numArgs + 5;
+
+        commands.add("leaw $"+ Integer.toString(newarg) + "%A");
+        commands.add("subw %D,%A,%D");
+        commands.add("leaw $ARG,%A");
+        commands.add("movw %D,(%A)");
+
+        //redefinindo valor de LCL
+        commands.add("leaw $SP,%A");
+        commands.add("movw (%A),%A");
+        commands.add("movw %A,%D");
+        commands.add("leaw $LCL,%A");
+        commands.add("movw %D,(%A)");
+
+        writeGoto(rtnLabel);
+
+        commands.add(rtnlabel + ":");
+
+        String[] stringArray = new String[commands.size()];
+        commands.toArray(stringArray);
+        write(stringArray);
+
+        retornoCnt++;
     }
 
     /**
@@ -328,7 +424,6 @@ public class Code {
      * @param  numLocals número de argumentos a serem passados na função call.
      */
     public void writeFunction(String functionName, Integer numLocals) {
-
     }
 
     /**
@@ -338,14 +433,14 @@ public class Code {
      */
     public void vmfile(String file) {
         int i = file.lastIndexOf(File.separator);
-        int j = file.lastIndexOf('.');
-        this.filename= file.substring(i+1,j);
+        int j = file.lastIndexOf(".");
+        this.filename = file.substring(i + 1, j);
     }
 
     // grava as instruções em Assembly no arquivo de saída
     public void write(String[] stringArray) {
         // gravando comandos no arquivos
-        for (String s: stringArray) {
+        for (String s : stringArray) {
             this.outputFile.println(s);
         }
     }
@@ -354,6 +449,5 @@ public class Code {
     public void close() throws IOException {
         this.outputFile.close();
     }
-
 
 }
