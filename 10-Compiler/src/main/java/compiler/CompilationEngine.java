@@ -5,7 +5,9 @@
 
 package compiler;
 
-/** 
+import java.io.*;
+
+/**
  * Classe principal do compilador que é responsável por dar rítmo no processo de compilação.
  * Essa classe é responsável por instanciar o Tokenizer, VMWrites e SymbolTable.
  * O processo é gerenciado por funções recursivas.
@@ -17,8 +19,51 @@ public class CompilationEngine {
      * @param inputfilename nome do arquivo Jack que será compilador.
      * @param outputfilename nome do arquivo VM que receberá o código gerado.
      */   
-    public CompilationEngine(String inputfilename, String outputfilename) {
-        
+    public CompilationEngine(String inputfilename, String outputfilename) throws IOException {
+        PrintWriter outputFileXml = null;
+
+        JackTokenizer tokenizerI = new JackTokenizer(inputfilename);
+        File fileXml = new File(outputfilename);
+        outputFileXml = new PrintWriter(new FileWriter(fileXml));
+
+        // Avança enquanto houver linhas para traduzir
+        while(tokenizerI.advance() != null) {
+            if      (tokenizerI.tokenType(tokenizerI.token())==JackTokenizer.TokenType.KEYWORD) {
+                outputFileXml.print("  <keyword>");
+            }else if(tokenizerI.tokenType(tokenizerI.token())==JackTokenizer.TokenType.SYMBOL) {
+                outputFileXml.print("  <symbol>");
+            }else if(tokenizerI.tokenType(tokenizerI.token())==JackTokenizer.TokenType.IDENTIFIER) {
+                outputFileXml.print("  <identifier>");
+            }else if(tokenizerI.tokenType(tokenizerI.token())==JackTokenizer.TokenType.INT_CONST) {
+                outputFileXml.print("  <integerConstant>");
+            }else if(tokenizerI.tokenType(tokenizerI.token())==JackTokenizer.TokenType.STRING_CONST) {
+                outputFileXml.print("  <stringConstant>");
+            }
+            if(tokenizerI.tokenType(tokenizerI.token())==JackTokenizer.TokenType.STRING_CONST) {
+                outputFileXml.print(tokenizerI.stringVal(tokenizerI.token()));
+            } else if(tokenizerI.token().equals("<")) {
+                outputFileXml.print("&lt;");
+            } else if(tokenizerI.token().equals(">")) {
+                outputFileXml.print("&gt;");
+            } else if(tokenizerI.token().equals("&")) {
+                outputFileXml.print("&amp;");
+            } else {
+                outputFileXml.print(" "+tokenizerI.token());
+            }
+            if      (tokenizerI.tokenType(tokenizerI.token())==JackTokenizer.TokenType.KEYWORD) {
+                outputFileXml.println("  </keyword>");
+            }else if(tokenizerI.tokenType(tokenizerI.token())==JackTokenizer.TokenType.SYMBOL) {
+                outputFileXml.println("  </symbol>");
+            }else if(tokenizerI.tokenType(tokenizerI.token())==JackTokenizer.TokenType.IDENTIFIER) {
+                outputFileXml.println("  </identifier>");
+            }else if(tokenizerI.tokenType(tokenizerI.token())==JackTokenizer.TokenType.INT_CONST) {
+                outputFileXml.println("  </integerConstant>");
+            }else if(tokenizerI.tokenType(tokenizerI.token())==JackTokenizer.TokenType.STRING_CONST) {
+                outputFileXml.println("  </stringConstant>");
+            }
+        }
+        outputFileXml.println("</tokens>");
+        outputFileXml.close();
     }
 
     /**
@@ -178,4 +223,11 @@ public class CompilationEngine {
     
     }
 
+    /**
+    * fecha arquivo
+    *
+    */
+    public void close(){
+
+    }
 }

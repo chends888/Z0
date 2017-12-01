@@ -90,14 +90,34 @@ public class Code {
             commands.addAll(increaseSP());
         }
 
+<<<<<<< HEAD
         else if (command.equals("eq")) {
             commands.add("leaw $SP, %A");
 	    	commands.add("movw (%A)");
         }
 
         else if (command.equals("gt") or command == "lt" or command =="eq") {
+=======
 
 
+        else if (command.equals("gt") || command == "lt" || command == "eq") {
+
+            commands.addAll(reduceSP());
+
+            commands.add("movw %D,%A");
+
+            commands.add("movw (%A),%D");
+
+            commands.add("decw %A");
+
+            commands.add("movw (%A),%A");
+
+            commands.add("subw %D,%A,%D");
+>>>>>>> e480d647f7dcf1d9846244b397514d7901c3a738
+
+            commands.add("movw %D,%A");
+
+<<<<<<< HEAD
         commands.add("leaw $SP,%A");
 
 		    	commands.add("decw (%A)");
@@ -105,9 +125,17 @@ public class Code {
 		    	commands.add("subw $1,(%A),%A");
     
 		    	commands.add("movw (%A),%D");
+=======
+            commands.add("LabelTrue:");
 
-		    	commands.add("leaw $0,%A");
+            commands.add("leaw $LabelTrue,%A");
 
+            commands.add("leaw $0 ,%A");
+>>>>>>> e480d647f7dcf1d9846244b397514d7901c3a738
+
+            commands.add("notw %A");
+
+<<<<<<< HEAD
 		    	commands.add("subw (%A),%D,%D");
 
 		    	commands.add("leaw $true,%A");
@@ -155,6 +183,62 @@ public class Code {
                 
 	    		commands.add("end:");
 	    	}
+=======
+            commands.add("movw %A,%D");
+
+            commands.add("leaw $SP ,%A");
+
+            commands.add("movw (%A) ,%A");
+
+            commands.add("decw %A");
+
+            commands.add("movw %D, (%A)");
+
+            commands.add("leaw $LabelEnd,%A");
+
+            commands.add("jl");
+
+            commands.add("nop");
+
+            /**
+             * false
+             */
+            commands.add("LabelFalse:");
+
+            commands.add("leaw $0 ,%A");
+
+            commands.add("movw %A,%D");
+
+            commands.add("leaw $SP ,%A");
+
+            commands.add("movw (%A) ,%A");
+
+            commands.add("decw %A");
+
+            commands.add("movw %D, (%A)");
+
+            commands.add("leaw $LabelEnd,%A");
+
+            commands.add("jl");
+
+            commands.add("nop");
+
+            commands.add("leaw $0,(%A");
+
+            commands.add("leaw $LabelEnd,%A");
+
+            commands.add("je");
+
+            commands.add("nop");
+
+            commands.add("LabelEnd:");
+
+            commands.add("nop");
+
+
+        }
+
+>>>>>>> e480d647f7dcf1d9846244b397514d7901c3a738
       
 
         
@@ -181,6 +265,7 @@ public class Code {
             commands.add("movw %D,(%A)");
             commands.addAll(increaseSP());
         }
+
 
         else if (command.equals("not")) {
             commands.add("; NOT");
@@ -299,6 +384,8 @@ public class Code {
      * @param  label define nome do label (marcador) a ser escrito.
      */
     public void writeLabel(String label) {
+        List<String> commands = new ArrayList<String>();
+        commands.add(label + ":");
 
     }
 
@@ -326,6 +413,10 @@ public class Code {
      * @param  label define jump a ser realizado para um label (marcador).
      */
     public void writeIf(String label) {
+        List<String> commands = new ArrayList<String>();
+        commands.add("leaw $" + label + ", %A");
+        commands.add("jne");
+        commands.add("nop");
 
     }
 
@@ -415,7 +506,58 @@ public class Code {
      * Grava no arquivo de saida as instruções em Assembly para o retorno de uma sub rotina.
      */
     public void writeReturn() {
+        List<String> commands = new ArrayList<String>();
 
+        commands.add("leaw $LCL,%A");
+        commands.add("movw (%A),%D");
+        commands.add("leaw $R13,%A");
+        commands.add("movw %D,(%A)");
+        commands.add("leaw $5,%A");
+        commands.add("movw %A,%D");
+        commands.add("leaw $R13,%A");
+
+        commands.add("subw (%A),%D,%D");
+        commands.add("leaw $R15,%A");
+        commands.add("movw %D,(%A)");
+        commands.add("leaw $ARG,%A");
+        commands.add("movw (%A),%D");
+        commands.add("movw (%A),%D");
+        commands.add("addw %D,$1,%D");
+        commands.add("leaw $SP,%A");
+        commands.add("movw %D,(%A)");
+        commands.add("leaw $1,%A");
+        commands.add("movw %A,%D");
+        commands.add("leaw $R13,%A");
+        commands.add("subw (%A),%D,%D");
+
+        commands.add("leaw $THAT,%A");
+        commands.add("movw %D,(%A)");
+        commands.add("leaw $2,%A");
+        commands.add("movw %A,%D");
+        commands.add("leaw $R13,%A");
+
+        commands.add("subw (%A),%D,%D");
+        commands.add("leaw $THIS,%A");
+        commands.add("movw %D,(%A)");
+        commands.add("leaw $3,%A");
+        commands.add("movw %A,%D");
+        commands.add("leaw $R13,%A");
+        commands.add("subw (%A),%D,%D");
+        commands.add("leaw $ARG,%A");
+        commands.add("movw %D,(%A)");
+        commands.add("leaw $4,%A");
+
+        commands.add("movw %A,%D");
+        commands.add("leaw $R13,%A");
+
+
+        commands.add("subw (%A),%D,%D");
+        commands.add("leaw $LCL,%A");
+        commands.add("movw %D,(%A)");
+
+        commands.add("leaw $R15, %A");
+        commands.add("jmp"); //jump para A
+        commands.add("nop");
     }
 
     /**

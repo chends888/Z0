@@ -1,0 +1,8 @@
+a) As melhorias propostas na questão não seriam possíveis dentro do projeto desenvolvido. Isso porque, a arquitetura que foi criada suporta um número específico de instruções. Ou seja,
+a instrução decw %A,%D seria duas instruções no nosso sistema: decw %A e depois movw %A,%D. 
+Dessa forma, concluí-se que para que para conseguir utilizar esta intrução seria necessário alterar a nossas arquitetura, já que o registrador D é utilzado basicamente para guardar valores,
+aumentando a complexidade da lógica por usar mais comandos do que seria necessário como mostra o exemplo.
+b) O ganho seria muito grande, já que as operações em pilha utilizam muito o push e o pop. Isto é, o primeiro é necessário aumentar o stack pointer, e no segundo, reduzí-lo. Desse modo, se 
+fosse possível subtrair o valor de algo e já colocar em outro registrador, assim como somar, os códigos em assembly ficariam muito mais curtos e nítidos para gerar a lógica em pilha na máqui-
+na virtual.
+ 
