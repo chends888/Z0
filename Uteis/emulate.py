@@ -46,10 +46,11 @@ def emulate(jar,testes,in_dir_ram,in_dir_hack,out_dir_ram,bits,processos,resolut
         nome = j.split()
         if int(nome[1]) > 0:
             for i in range(int(nome[1])):
-                #print('....', end='', flush=True)
+                print('....', end='', flush=True)
                 print(nome)
                 # Testa se arquivos existem, senão pula
                 if os.path.exists(in_dir_hack+"{0}.hack".format(nome[0])):
+                    print
                     rotina = ['java', '-jar', PATH_ELEMULATOR,
                         os.path.abspath(in_dir_hack+"{0}.hack".format(nome[0])),
                         "-i",

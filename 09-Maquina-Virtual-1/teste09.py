@@ -21,7 +21,7 @@ def test09():
     print(colored("---------- Testando                  ", 'magenta'))
     print(colored("---------- 09-VM-Translator          ", 'magenta'))
 
-    #print(colored("---------- Compilando mvn", 'magenta'))
+    print(colored("---------- Compilando mvn", 'magenta'))
     os.system("mvn package -DskipTests")
 
     #print(colored("---------- Gerando .nasm dos .vm", 'magenta'))

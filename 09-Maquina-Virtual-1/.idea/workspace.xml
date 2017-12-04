@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f2d68cd-64f6-419c-9b88-45eccc0a5939" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/ramOut/.hack" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/ramOut/.mif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/ramOut/SimpleAdd0_out.mif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/ramOut/SimpleAnd0_out.mif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/ramOut/SimpleGT0_out.mif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/ramOut/SimpleGT1_out.mif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/ramOut/SimpleNot0_out.mif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/ramOut/SimpleOr0_out.mif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/ramOut/SimplePush0_out.mif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/ramOut/SimplePushAdd0_out.mif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/ramOut/SimpleSub0_out.mif" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.cache/v/cache/lastfailed" afterPath="$PROJECT_DIR$/.cache/v/cache/lastfailed" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/vmtranslator/Code.java" afterPath="$PROJECT_DIR$/src/main/java/vmtranslator/Code.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Avaliacao-AI/Questao6Vmsub.txt" afterPath="$PROJECT_DIR$/../Avaliacao-AI/Questao6Vmsub.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/teste09.py" afterPath="$PROJECT_DIR$/teste09.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/testesVMTranslator.txt" afterPath="$PROJECT_DIR$/tests/testesVMTranslator.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Uteis/emulate.py" afterPath="$PROJECT_DIR$/../Uteis/emulate.py" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,20 +33,20 @@
       <file leaf-file-name="Code.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/vmtranslator/Code.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+            <state relative-caret-position="21">
+              <caret line="403" column="8" lean-forward="false" selection-start-line="403" selection-start-column="8" selection-end-line="403" selection-end-column="8" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#751#759#0" expanded="true" />
-                <element signature="e#1025#1033#0" expanded="true" />
-                <element signature="e#1573#1581#0" expanded="true" />
-                <element signature="e#7375#7383#0" expanded="true" />
-                <element signature="e#10796#10804#0" expanded="true" />
-                <element signature="e#11191#11199#0" expanded="true" />
-                <element signature="e#11857#11865#0" expanded="true" />
-                <element signature="e#12352#12360#0" expanded="true" />
-                <element signature="e#14725#14733#0" expanded="true" />
+                <element signature="e#755#763#0" expanded="true" />
+                <element signature="e#1029#1037#0" expanded="true" />
+                <element signature="e#1577#1585#0" expanded="true" />
+                <element signature="e#6131#6139#0" expanded="true" />
+                <element signature="e#9552#9560#0" expanded="true" />
+                <element signature="e#9947#9955#0" expanded="true" />
+                <element signature="e#10613#10621#0" expanded="true" />
+                <element signature="e#11107#11115#0" expanded="true" />
+                <element signature="e#13485#13493#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,8 +87,8 @@
       <file leaf-file-name="VMTranslator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/vmtranslator/VMTranslator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2310">
-              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="486">
+              <caret line="105" column="18" lean-forward="false" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,8 +143,8 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="64" />
     <option name="y" value="27" />
-    <option name="width" value="908" />
-    <option name="height" value="522" />
+    <option name="width" value="1518" />
+    <option name="height" value="808" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -150,6 +163,7 @@
     <panes>
       <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,59 +176,11 @@
               <item name="09-Maquina-Virtual-1" type="462c0819:PsiDirectoryNode" />
               <item name="exemplos" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="VMTranslator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="09-Maquina-Virtual-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VMTranslator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="09-Maquina-Virtual-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VMTranslator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="09-Maquina-Virtual-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VMTranslator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="09-Maquina-Virtual-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vmtranslator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VMTranslator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="09-Maquina-Virtual-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VMTranslator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="09-Maquina-Virtual-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="VMTranslator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="09-Maquina-Virtual-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="vmtranslator" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -244,7 +210,7 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="vmtranslator.VMTranslator" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="./tests/vm/SimplePush.vm -o pushTest.nasm" />
+      <option name="PROGRAM_PARAMETERS" value="./tests/vm/return.vm -o return.nasm" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -361,12 +327,13 @@
       <workItem from="1511813355483" duration="2366000" />
       <workItem from="1511893886472" duration="828000" />
       <workItem from="1512081380202" duration="751000" />
-      <workItem from="1512126627204" duration="1268000" />
+      <workItem from="1512126627204" duration="1770000" />
+      <workItem from="1512413518400" duration="6070000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29106000" />
+    <option name="totallyTimeSpent" value="35678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -374,6 +341,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997882" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -391,13 +359,12 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39765102" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39730638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32997882" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32997763" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -413,24 +380,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/vmtranslator/Code.java</url>
-          <line>246</line>
+          <line>140</line>
           <properties />
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/vmtranslator/Code.java</url>
-          <line>248</line>
+          <line>142</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/vmtranslator/Code.java</url>
-          <line>119</line>
-          <properties />
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -452,15 +413,15 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#751#759#0" expanded="true" />
-            <element signature="e#1025#1033#0" expanded="true" />
-            <element signature="e#1573#1581#0" expanded="true" />
-            <element signature="e#7375#7383#0" expanded="true" />
-            <element signature="e#10796#10804#0" expanded="true" />
-            <element signature="e#11191#11199#0" expanded="true" />
-            <element signature="e#11857#11865#0" expanded="true" />
-            <element signature="e#12352#12360#0" expanded="true" />
-            <element signature="e#14725#14733#0" expanded="true" />
+            <element signature="e#755#763#0" expanded="true" />
+            <element signature="e#1029#1037#0" expanded="true" />
+            <element signature="e#1577#1585#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9552#9560#0" expanded="true" />
+            <element signature="e#9947#9955#0" expanded="true" />
+            <element signature="e#10613#10621#0" expanded="true" />
+            <element signature="e#11107#11115#0" expanded="true" />
+            <element signature="e#13485#13493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -492,15 +453,15 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#751#759#0" expanded="true" />
-            <element signature="e#1025#1033#0" expanded="true" />
-            <element signature="e#1573#1581#0" expanded="true" />
-            <element signature="e#7375#7383#0" expanded="true" />
-            <element signature="e#10796#10804#0" expanded="true" />
-            <element signature="e#11191#11199#0" expanded="true" />
-            <element signature="e#11857#11865#0" expanded="true" />
-            <element signature="e#12352#12360#0" expanded="true" />
-            <element signature="e#14725#14733#0" expanded="true" />
+            <element signature="e#755#763#0" expanded="true" />
+            <element signature="e#1029#1037#0" expanded="true" />
+            <element signature="e#1577#1585#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9552#9560#0" expanded="true" />
+            <element signature="e#9947#9955#0" expanded="true" />
+            <element signature="e#10613#10621#0" expanded="true" />
+            <element signature="e#11107#11115#0" expanded="true" />
+            <element signature="e#13485#13493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -532,15 +493,15 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#751#759#0" expanded="true" />
-            <element signature="e#1025#1033#0" expanded="true" />
-            <element signature="e#1573#1581#0" expanded="true" />
-            <element signature="e#7375#7383#0" expanded="true" />
-            <element signature="e#10796#10804#0" expanded="true" />
-            <element signature="e#11191#11199#0" expanded="true" />
-            <element signature="e#11857#11865#0" expanded="true" />
-            <element signature="e#12352#12360#0" expanded="true" />
-            <element signature="e#14725#14733#0" expanded="true" />
+            <element signature="e#755#763#0" expanded="true" />
+            <element signature="e#1029#1037#0" expanded="true" />
+            <element signature="e#1577#1585#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9552#9560#0" expanded="true" />
+            <element signature="e#9947#9955#0" expanded="true" />
+            <element signature="e#10613#10621#0" expanded="true" />
+            <element signature="e#11107#11115#0" expanded="true" />
+            <element signature="e#13485#13493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -579,15 +540,15 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#751#759#0" expanded="true" />
-            <element signature="e#1025#1033#0" expanded="true" />
-            <element signature="e#1573#1581#0" expanded="true" />
-            <element signature="e#7375#7383#0" expanded="true" />
-            <element signature="e#10796#10804#0" expanded="true" />
-            <element signature="e#11191#11199#0" expanded="true" />
-            <element signature="e#11857#11865#0" expanded="true" />
-            <element signature="e#12352#12360#0" expanded="true" />
-            <element signature="e#14725#14733#0" expanded="true" />
+            <element signature="e#755#763#0" expanded="true" />
+            <element signature="e#1029#1037#0" expanded="true" />
+            <element signature="e#1577#1585#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9552#9560#0" expanded="true" />
+            <element signature="e#9947#9955#0" expanded="true" />
+            <element signature="e#10613#10621#0" expanded="true" />
+            <element signature="e#11107#11115#0" expanded="true" />
+            <element signature="e#13485#13493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -620,15 +581,15 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#751#759#0" expanded="true" />
-            <element signature="e#1025#1033#0" expanded="true" />
-            <element signature="e#1573#1581#0" expanded="true" />
-            <element signature="e#7375#7383#0" expanded="true" />
-            <element signature="e#10796#10804#0" expanded="true" />
-            <element signature="e#11191#11199#0" expanded="true" />
-            <element signature="e#11857#11865#0" expanded="true" />
-            <element signature="e#12352#12360#0" expanded="true" />
-            <element signature="e#14725#14733#0" expanded="true" />
+            <element signature="e#755#763#0" expanded="true" />
+            <element signature="e#1029#1037#0" expanded="true" />
+            <element signature="e#1577#1585#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9552#9560#0" expanded="true" />
+            <element signature="e#9947#9955#0" expanded="true" />
+            <element signature="e#10613#10621#0" expanded="true" />
+            <element signature="e#11107#11115#0" expanded="true" />
+            <element signature="e#13485#13493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -660,15 +621,15 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#751#759#0" expanded="true" />
-            <element signature="e#1025#1033#0" expanded="true" />
-            <element signature="e#1573#1581#0" expanded="true" />
-            <element signature="e#7375#7383#0" expanded="true" />
-            <element signature="e#10796#10804#0" expanded="true" />
-            <element signature="e#11191#11199#0" expanded="true" />
-            <element signature="e#11857#11865#0" expanded="true" />
-            <element signature="e#12352#12360#0" expanded="true" />
-            <element signature="e#14725#14733#0" expanded="true" />
+            <element signature="e#755#763#0" expanded="true" />
+            <element signature="e#1029#1037#0" expanded="true" />
+            <element signature="e#1577#1585#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9552#9560#0" expanded="true" />
+            <element signature="e#9947#9955#0" expanded="true" />
+            <element signature="e#10613#10621#0" expanded="true" />
+            <element signature="e#11107#11115#0" expanded="true" />
+            <element signature="e#13485#13493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -691,15 +652,15 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#751#759#0" expanded="true" />
-            <element signature="e#1025#1033#0" expanded="true" />
-            <element signature="e#1573#1581#0" expanded="true" />
-            <element signature="e#7375#7383#0" expanded="true" />
-            <element signature="e#10796#10804#0" expanded="true" />
-            <element signature="e#11191#11199#0" expanded="true" />
-            <element signature="e#11857#11865#0" expanded="true" />
-            <element signature="e#12352#12360#0" expanded="true" />
-            <element signature="e#14725#14733#0" expanded="true" />
+            <element signature="e#755#763#0" expanded="true" />
+            <element signature="e#1029#1037#0" expanded="true" />
+            <element signature="e#1577#1585#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9552#9560#0" expanded="true" />
+            <element signature="e#9947#9955#0" expanded="true" />
+            <element signature="e#10613#10621#0" expanded="true" />
+            <element signature="e#11107#11115#0" expanded="true" />
+            <element signature="e#13485#13493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -732,15 +693,15 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#751#759#0" expanded="true" />
-            <element signature="e#1025#1033#0" expanded="true" />
-            <element signature="e#1573#1581#0" expanded="true" />
-            <element signature="e#7375#7383#0" expanded="true" />
-            <element signature="e#10796#10804#0" expanded="true" />
-            <element signature="e#11191#11199#0" expanded="true" />
-            <element signature="e#11857#11865#0" expanded="true" />
-            <element signature="e#12352#12360#0" expanded="true" />
-            <element signature="e#14725#14733#0" expanded="true" />
+            <element signature="e#755#763#0" expanded="true" />
+            <element signature="e#1029#1037#0" expanded="true" />
+            <element signature="e#1577#1585#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9552#9560#0" expanded="true" />
+            <element signature="e#9947#9955#0" expanded="true" />
+            <element signature="e#10613#10621#0" expanded="true" />
+            <element signature="e#11107#11115#0" expanded="true" />
+            <element signature="e#13485#13493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -786,15 +747,15 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#751#759#0" expanded="true" />
-            <element signature="e#1025#1033#0" expanded="true" />
-            <element signature="e#1573#1581#0" expanded="true" />
-            <element signature="e#7375#7383#0" expanded="true" />
-            <element signature="e#10796#10804#0" expanded="true" />
-            <element signature="e#11191#11199#0" expanded="true" />
-            <element signature="e#11857#11865#0" expanded="true" />
-            <element signature="e#12352#12360#0" expanded="true" />
-            <element signature="e#14725#14733#0" expanded="true" />
+            <element signature="e#755#763#0" expanded="true" />
+            <element signature="e#1029#1037#0" expanded="true" />
+            <element signature="e#1577#1585#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9552#9560#0" expanded="true" />
+            <element signature="e#9947#9955#0" expanded="true" />
+            <element signature="e#10613#10621#0" expanded="true" />
+            <element signature="e#11107#11115#0" expanded="true" />
+            <element signature="e#13485#13493#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -891,16 +852,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/vmtranslator/VMTranslator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2310">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vmtranslator/Parser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2121">
@@ -919,22 +870,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/vmtranslator/VMTranslator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="105" column="18" lean-forward="false" selection-start-line="105" selection-start-column="8" selection-end-line="105" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/vmtranslator/Code.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="92" column="0" lean-forward="true" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+        <state relative-caret-position="21">
+          <caret line="403" column="8" lean-forward="false" selection-start-line="403" selection-start-column="8" selection-end-line="403" selection-end-column="8" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#751#759#0" expanded="true" />
-            <element signature="e#1025#1033#0" expanded="true" />
-            <element signature="e#1573#1581#0" expanded="true" />
-            <element signature="e#7375#7383#0" expanded="true" />
-            <element signature="e#10796#10804#0" expanded="true" />
-            <element signature="e#11191#11199#0" expanded="true" />
-            <element signature="e#11857#11865#0" expanded="true" />
-            <element signature="e#12352#12360#0" expanded="true" />
-            <element signature="e#14725#14733#0" expanded="true" />
+            <element signature="e#755#763#0" expanded="true" />
+            <element signature="e#1029#1037#0" expanded="true" />
+            <element signature="e#1577#1585#0" expanded="true" />
+            <element signature="e#6131#6139#0" expanded="true" />
+            <element signature="e#9552#9560#0" expanded="true" />
+            <element signature="e#9947#9955#0" expanded="true" />
+            <element signature="e#10613#10621#0" expanded="true" />
+            <element signature="e#11107#11115#0" expanded="true" />
+            <element signature="e#13485#13493#0" expanded="true" />
           </folding>
         </state>
       </provider>

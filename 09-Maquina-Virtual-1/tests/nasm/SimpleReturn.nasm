@@ -1,0 +1,43 @@
+leaw $LCL,%A
+movw (%A),%D
+leaw $R13,%A
+movw %D,(%A)
+leaw $5,%A
+movw %A,%D
+leaw $R13,%A
+subw (%A),%D,%D
+leaw $R15,%A
+movw %D,(%A)
+leaw $ARG,%A
+movw (%A),%D
+movw (%A),%D
+addw %D,$1,%D
+leaw $SP,%A
+movw %D,(%A)
+leaw $1,%A
+movw %A,%D
+leaw $R13,%A
+subw (%A),%D,%D
+leaw $THAT,%A
+movw %D,(%A)
+leaw $2,%A
+movw %A,%D
+leaw $R13,%A
+subw (%A),%D,%D
+leaw $THIS,%A
+movw %D,(%A)
+leaw $3,%A
+movw %A,%D
+leaw $R13,%A
+subw (%A),%D,%D
+leaw $ARG,%A
+movw %D,(%A)
+leaw $4,%A
+movw %A,%D
+leaw $R13,%A
+subw (%A),%D,%D
+leaw $LCL,%A
+movw %D,(%A)
+leaw $R15, %A
+jmp
+nop

@@ -1,0 +1,14 @@
+push constant 10
+push contanto 20
+call soma 2
+
+function soma 2 :
+ push local 0
+ pop temp 0
+ push local 1
+ pop temp 1
+ push temp 0
+ push temp 1
+ add
+ return
+
